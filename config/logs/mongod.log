@@ -1,0 +1,1324 @@
+2024-02-13T10:03:37.663+0000 I CONTROL  [initandlisten] MongoDB starting : pid=335 port=27117 dbpath=/usr/lib/unifi/data/db 64-bit host=41456b79963f
+2024-02-13T10:03:37.663+0000 I CONTROL  [initandlisten] db version v3.6.8
+2024-02-13T10:03:37.663+0000 I CONTROL  [initandlisten] git version: 8e540c0b6db93ce994cc548f000900bdc740f80a
+2024-02-13T10:03:37.663+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.1.1f  31 Mar 2020
+2024-02-13T10:03:37.663+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2024-02-13T10:03:37.663+0000 I CONTROL  [initandlisten] modules: none
+2024-02-13T10:03:37.663+0000 I CONTROL  [initandlisten] build environment:
+2024-02-13T10:03:37.663+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2024-02-13T10:03:37.663+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2024-02-13T10:03:37.663+0000 I CONTROL  [initandlisten] options: { net: { bindIp: "127.0.0.1", port: 27117, unixDomainSocket: { pathPrefix: "/usr/lib/unifi/run" } }, processManagement: { pidFilePath: "/usr/lib/unifi/run/mongod.pid" }, storage: { dbPath: "/usr/lib/unifi/data/db", wiredTiger: { engineConfig: { configString: "cache_size=256M" } } }, systemLog: { destination: "file", logAppend: true, logRotate: "reopen", path: "/usr/lib/unifi/logs/mongod.log" } }
+2024-02-13T10:03:37.663+0000 I STORAGE  [initandlisten] 
+2024-02-13T10:03:37.663+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2024-02-13T10:03:37.663+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2024-02-13T10:03:37.663+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3382M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),cache_size=256M
+2024-02-13T10:03:38.251+0000 I STORAGE  [initandlisten] WiredTiger message [1707818618:251349][335:0x7fd901fbdac0], txn-recover: Set global recovery timestamp: 0
+2024-02-13T10:03:38.334+0000 I CONTROL  [initandlisten] 
+2024-02-13T10:03:38.334+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2024-02-13T10:03:38.334+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2024-02-13T10:03:38.334+0000 I CONTROL  [initandlisten] 
+2024-02-13T10:03:38.336+0000 I STORAGE  [initandlisten] createCollection: admin.system.version with provided UUID: 89a992da-40b2-42dd-9068-6ee4653b23c2
+2024-02-13T10:03:38.370+0000 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.6
+2024-02-13T10:03:38.382+0000 I STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: e2f58ebd-5b6e-4ca3-b459-2c103abb2566
+2024-02-13T10:03:38.415+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/usr/lib/unifi/data/db/diagnostic.data'
+2024-02-13T10:03:38.416+0000 I NETWORK  [initandlisten] waiting for connections on port 27117
+2024-02-13T10:03:38.416+0000 I STORAGE  [LogicalSessionCacheRefresh] createCollection: config.system.sessions with generated UUID: 614e3032-9864-4f31-b0e3-394c8f14e94e
+2024-02-13T10:03:38.455+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:39308 #1 (1 connection now open)
+2024-02-13T10:03:38.466+0000 I INDEX    [LogicalSessionCacheRefresh] build index on: config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 }
+2024-02-13T10:03:38.467+0000 I INDEX    [LogicalSessionCacheRefresh] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:38.470+0000 I INDEX    [LogicalSessionCacheRefresh] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:38.479+0000 I NETWORK  [conn1] received client metadata from 127.0.0.1:39308 conn1: { driver: { name: "mongo-java-driver|sync", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }
+2024-02-13T10:03:38.520+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:39314 #2 (2 connections now open)
+2024-02-13T10:03:38.520+0000 I NETWORK  [conn2] received client metadata from 127.0.0.1:39314 conn2: { driver: { name: "mongo-java-driver|sync", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }
+2024-02-13T10:03:38.590+0000 I STORAGE  [conn2] createCollection: ace.heatmap with generated UUID: fe720ffc-f8bd-423f-8872-7d774d895404
+2024-02-13T10:03:38.632+0000 I INDEX    [conn2] build index on: ace.heatmap properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.heatmap" }
+2024-02-13T10:03:38.632+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:38.632+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:38.649+0000 I INDEX    [conn2] build index on: ace.heatmap properties: { v: 2, key: { map_id: 1, site_id: 1 }, name: "map_id_1_site_id_1", ns: "ace.heatmap" }
+2024-02-13T10:03:38.649+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:38.649+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:38.666+0000 I INDEX    [conn2] build index on: ace.heatmap properties: { v: 2, key: { type: 1, site_id: 1 }, name: "type_1_site_id_1", ns: "ace.heatmap" }
+2024-02-13T10:03:38.666+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:38.667+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:38.671+0000 I STORAGE  [conn2] createCollection: ace.voucher with generated UUID: 25537a19-1654-4e73-a47f-ad996666ecca
+2024-02-13T10:03:38.715+0000 I INDEX    [conn2] build index on: ace.voucher properties: { v: 2, key: { code: 1, site_id: 1 }, name: "code_1_site_id_1", ns: "ace.voucher" }
+2024-02-13T10:03:38.715+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:38.716+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:38.733+0000 I INDEX    [conn2] build index on: ace.voucher properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.voucher" }
+2024-02-13T10:03:38.733+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:38.734+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:38.751+0000 I INDEX    [conn2] build index on: ace.voucher properties: { v: 2, key: { create_time: 1, site_id: 1 }, name: "create_time_1_site_id_1", ns: "ace.voucher" }
+2024-02-13T10:03:38.751+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:38.752+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:38.769+0000 I INDEX    [conn2] build index on: ace.voucher properties: { v: 2, key: { end_time: 1, site_id: 1 }, name: "end_time_1_site_id_1", ns: "ace.voucher" }
+2024-02-13T10:03:38.769+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:38.770+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:38.775+0000 I STORAGE  [conn2] createCollection: ace.networkconf with generated UUID: 8e3b21c0-53e5-432d-9dfe-dc31d6dc402c
+2024-02-13T10:03:38.820+0000 I INDEX    [conn2] build index on: ace.networkconf properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.networkconf" }
+2024-02-13T10:03:38.820+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:38.821+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:38.839+0000 I INDEX    [conn2] build index on: ace.networkconf properties: { v: 2, key: { name: 1, site_id: 1 }, name: "name_1_site_id_1", ns: "ace.networkconf" }
+2024-02-13T10:03:38.839+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:38.841+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:38.848+0000 I STORAGE  [conn2] createCollection: ace.rogueknown with generated UUID: 874f6afd-2a47-429a-b1a5-b4eedc10f8c1
+2024-02-13T10:03:38.889+0000 I INDEX    [conn2] build index on: ace.rogueknown properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.rogueknown" }
+2024-02-13T10:03:38.889+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:38.890+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:38.895+0000 I STORAGE  [conn2] createCollection: ace.setting with generated UUID: f0d36fea-f370-487a-84e7-e58fe3270c4d
+2024-02-13T10:03:38.942+0000 I INDEX    [conn2] build index on: ace.setting properties: { v: 2, key: { key: 1, site_id: 1 }, name: "key_1_site_id_1", ns: "ace.setting" }
+2024-02-13T10:03:38.942+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:38.944+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:38.967+0000 I INDEX    [conn2] build index on: ace.setting properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.setting" }
+2024-02-13T10:03:38.968+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:38.970+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:38.982+0000 I STORAGE  [conn2] createCollection: ace.payment with generated UUID: 364723cd-c2e8-4ec1-bb6a-6472b00029ef
+2024-02-13T10:03:39.024+0000 I INDEX    [conn2] build index on: ace.payment properties: { v: 2, key: { within: 1, site_id: 1 }, name: "within_1_site_id_1", ns: "ace.payment" }
+2024-02-13T10:03:39.024+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:39.025+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:39.041+0000 I INDEX    [conn2] build index on: ace.payment properties: { v: 2, key: { time: 1, site_id: 1 }, name: "time_1_site_id_1", ns: "ace.payment" }
+2024-02-13T10:03:39.041+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:39.042+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:39.059+0000 I INDEX    [conn2] build index on: ace.payment properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.payment" }
+2024-02-13T10:03:39.059+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:39.060+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:39.066+0000 I STORAGE  [conn2] createCollection: ace.crashlog with generated UUID: 24d2cf67-7bc7-4174-b014-c0e259f5e8bf
+2024-02-13T10:03:39.107+0000 I INDEX    [conn2] build index on: ace.crashlog properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.crashlog" }
+2024-02-13T10:03:39.107+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:39.107+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:39.111+0000 I STORAGE  [conn2] createCollection: ace.tag with generated UUID: 9895c8a8-093a-4296-b684-2dd8faff10af
+2024-02-13T10:03:39.160+0000 I INDEX    [conn2] build index on: ace.tag properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.tag" }
+2024-02-13T10:03:39.160+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:39.162+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:39.171+0000 I STORAGE  [conn2] createCollection: ace.spatialrecord with generated UUID: c17a246f-aae5-4b84-b8a7-68140e83e0e8
+2024-02-13T10:03:39.226+0000 I INDEX    [conn2] build index on: ace.spatialrecord properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.spatialrecord" }
+2024-02-13T10:03:39.226+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:39.228+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:39.242+0000 I STORAGE  [conn2] createCollection: ace.verification with generated UUID: b2a23c33-d001-4d8f-b669-382c08f8b09b
+2024-02-13T10:03:39.296+0000 I INDEX    [conn2] build index on: ace.verification properties: { v: 2, key: { email: 1 }, name: "email_1", ns: "ace.verification" }
+2024-02-13T10:03:39.296+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:39.299+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:39.319+0000 I INDEX    [conn2] build index on: ace.verification properties: { v: 2, key: { token: 1 }, name: "token_1", ns: "ace.verification" }
+2024-02-13T10:03:39.319+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:39.319+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:39.323+0000 I STORAGE  [conn2] createCollection: ace.rogue with generated UUID: db76ae23-3369-4c49-8008-9fcea12a8e68
+2024-02-13T10:03:39.378+0000 I INDEX    [conn2] build index on: ace.rogue properties: { v: 2, key: { ap_mac: 1, site_id: 1 }, name: "ap_mac_1_site_id_1", ns: "ace.rogue" }
+2024-02-13T10:03:39.378+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:39.381+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:39.404+0000 I INDEX    [conn2] build index on: ace.rogue properties: { v: 2, key: { bssid: 1, site_id: 1 }, name: "bssid_1_site_id_1", ns: "ace.rogue" }
+2024-02-13T10:03:39.404+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:39.406+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:39.428+0000 I INDEX    [conn2] build index on: ace.rogue properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.rogue" }
+2024-02-13T10:03:39.428+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:39.430+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:39.454+0000 I INDEX    [conn2] build index on: ace.rogue properties: { v: 2, key: { rssi: 1, site_id: 1 }, name: "rssi_1_site_id_1", ns: "ace.rogue" }
+2024-02-13T10:03:39.454+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:39.456+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:39.479+0000 I INDEX    [conn2] build index on: ace.rogue properties: { v: 2, key: { last_seen: 1, site_id: 1 }, name: "last_seen_1_site_id_1", ns: "ace.rogue" }
+2024-02-13T10:03:39.479+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:39.482+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:39.496+0000 I STORAGE  [conn2] createCollection: ace.dpiapp with generated UUID: 380dad7a-45e2-4acf-b1df-e9a523cb30a1
+2024-02-13T10:03:39.547+0000 I INDEX    [conn2] build index on: ace.dpiapp properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.dpiapp" }
+2024-02-13T10:03:39.547+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:39.549+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:39.560+0000 I STORAGE  [conn2] createCollection: ace.virtualdevice with generated UUID: 97a35be5-09d6-453e-927a-cbb19092ec0c
+2024-02-13T10:03:39.609+0000 I INDEX    [conn2] build index on: ace.virtualdevice properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.virtualdevice" }
+2024-02-13T10:03:39.609+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:39.611+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:39.617+0000 I STORAGE  [conn2] createCollection: ace.firewallgroup with generated UUID: 7a771a73-9227-4799-a600-1d6911af9d1c
+2024-02-13T10:03:39.667+0000 I INDEX    [conn2] build index on: ace.firewallgroup properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.firewallgroup" }
+2024-02-13T10:03:39.667+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:39.669+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:39.695+0000 I INDEX    [conn2] build index on: ace.firewallgroup properties: { v: 2, key: { name: 1, site_id: 1 }, name: "name_1_site_id_1", ns: "ace.firewallgroup" }
+2024-02-13T10:03:39.695+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:39.698+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:39.710+0000 I STORAGE  [conn2] createCollection: ace.hotspotop with generated UUID: 43284109-ab1f-4512-9969-628fb566983a
+2024-02-13T10:03:39.764+0000 I INDEX    [conn2] build index on: ace.hotspotop properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.hotspotop" }
+2024-02-13T10:03:39.764+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:39.767+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:39.788+0000 I INDEX    [conn2] build index on: ace.hotspotop properties: { v: 2, key: { name: 1, site_id: 1 }, name: "name_1_site_id_1", ns: "ace.hotspotop" }
+2024-02-13T10:03:39.788+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:39.790+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:39.796+0000 I STORAGE  [conn2] createCollection: ace.portforward with generated UUID: d0a61d9f-560d-46a0-b12f-cdb8248e60d4
+2024-02-13T10:03:39.848+0000 I INDEX    [conn2] build index on: ace.portforward properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.portforward" }
+2024-02-13T10:03:39.849+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:39.851+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:39.874+0000 I INDEX    [conn2] build index on: ace.portforward properties: { v: 2, key: { name: 1, site_id: 1 }, name: "name_1_site_id_1", ns: "ace.portforward" }
+2024-02-13T10:03:39.874+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:39.876+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:39.885+0000 I STORAGE  [conn2] createCollection: ace.dhcpoption with generated UUID: 828c43de-eed7-4cee-87e5-f2037ac56365
+2024-02-13T10:03:39.941+0000 I INDEX    [conn2] build index on: ace.dhcpoption properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.dhcpoption" }
+2024-02-13T10:03:39.941+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:39.944+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:39.953+0000 I STORAGE  [conn2] createCollection: ace.task with generated UUID: 9422e8ad-6001-49c6-b796-4a65601f5fbd
+2024-02-13T10:03:39.996+0000 I INDEX    [conn2] build index on: ace.task properties: { v: 2, key: { device_id: 1 }, name: "device_id_1", ns: "ace.task" }
+2024-02-13T10:03:39.996+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:39.996+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:40.013+0000 I INDEX    [conn2] build index on: ace.task properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.task" }
+2024-02-13T10:03:40.013+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:40.014+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:40.018+0000 I STORAGE  [conn2] createCollection: ace.usergroup with generated UUID: 49408732-f10e-4545-83e8-dbd286dd6309
+2024-02-13T10:03:40.061+0000 I INDEX    [conn2] build index on: ace.usergroup properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.usergroup" }
+2024-02-13T10:03:40.062+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:40.063+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:40.066+0000 I STORAGE  [conn2] createCollection: ace.guest with generated UUID: a8b8852b-a7ef-41dd-b0cd-e16869778254
+2024-02-13T10:03:40.110+0000 I INDEX    [conn2] build index on: ace.guest properties: { v: 2, key: { end: 1, site_id: 1 }, name: "end_1_site_id_1", ns: "ace.guest" }
+2024-02-13T10:03:40.110+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:40.111+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:40.128+0000 I INDEX    [conn2] build index on: ace.guest properties: { v: 2, key: { authorized_by: 1, site_id: 1 }, name: "authorized_by_1_site_id_1", ns: "ace.guest" }
+2024-02-13T10:03:40.128+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:40.129+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:40.146+0000 I INDEX    [conn2] build index on: ace.guest properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.guest" }
+2024-02-13T10:03:40.146+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:40.147+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:40.167+0000 I INDEX    [conn2] build index on: ace.guest properties: { v: 2, key: { mac: 1, site_id: 1 }, name: "mac_1_site_id_1", ns: "ace.guest" }
+2024-02-13T10:03:40.167+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:40.169+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:40.187+0000 I INDEX    [conn2] build index on: ace.guest properties: { v: 2, key: { start: 1, site_id: 1 }, name: "start_1_site_id_1", ns: "ace.guest" }
+2024-02-13T10:03:40.187+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:40.188+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:40.209+0000 I INDEX    [conn2] build index on: ace.guest properties: { v: 2, key: { unauthorized_by: 1, site_id: 1 }, name: "unauthorized_by_1_site_id_1", ns: "ace.guest" }
+2024-02-13T10:03:40.209+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:40.212+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:40.222+0000 I STORAGE  [conn2] createCollection: ace.device with generated UUID: 0b095901-c919-4020-886e-f86ca6027d9a
+2024-02-13T10:03:40.277+0000 I INDEX    [conn2] build index on: ace.device properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.device" }
+2024-02-13T10:03:40.277+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:40.279+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:40.298+0000 I INDEX    [conn2] build index on: ace.device properties: { v: 2, key: { mac: 1, site_id: 1 }, name: "mac_1_site_id_1", ns: "ace.device" }
+2024-02-13T10:03:40.299+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:40.301+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:40.310+0000 I STORAGE  [conn2] createCollection: ace.admin with generated UUID: 7d99a487-5cb7-47da-ac89-997765f39d29
+2024-02-13T10:03:40.364+0000 I INDEX    [conn2] build index on: ace.admin properties: { v: 2, key: { email: 1 }, name: "email_1", ns: "ace.admin" }
+2024-02-13T10:03:40.364+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:40.367+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:40.389+0000 I INDEX    [conn2] build index on: ace.admin properties: { v: 2, key: { uid: 1 }, name: "uid_1", ns: "ace.admin" }
+2024-02-13T10:03:40.389+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:40.391+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:40.397+0000 I STORAGE  [conn2] createCollection: ace.privilege with generated UUID: 58ce7eaf-a6ab-4cc3-ba56-5a3bcc30018e
+2024-02-13T10:03:40.444+0000 I INDEX    [conn2] build index on: ace.privilege properties: { v: 2, key: { admin_id: 1 }, name: "admin_id_1", ns: "ace.privilege" }
+2024-02-13T10:03:40.444+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:40.447+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:40.455+0000 I STORAGE  [conn2] createCollection: ace.radiusprofile with generated UUID: 6b2994c3-fd3a-485a-ae10-ebe5d7f0cce7
+2024-02-13T10:03:40.506+0000 I INDEX    [conn2] build index on: ace.radiusprofile properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.radiusprofile" }
+2024-02-13T10:03:40.507+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:40.508+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:40.526+0000 I INDEX    [conn2] build index on: ace.radiusprofile properties: { v: 2, key: { name: 1, site_id: 1 }, name: "name_1_site_id_1", ns: "ace.radiusprofile" }
+2024-02-13T10:03:40.526+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:40.527+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:40.531+0000 I STORAGE  [conn2] createCollection: ace.scheduletask with generated UUID: 161c4435-5f22-48e5-8faf-496342000c24
+2024-02-13T10:03:40.577+0000 I INDEX    [conn2] build index on: ace.scheduletask properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.scheduletask" }
+2024-02-13T10:03:40.577+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:40.578+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:40.583+0000 I STORAGE  [conn2] createCollection: ace.routing with generated UUID: 9ce13a19-3932-4337-854b-87a4e8717244
+2024-02-13T10:03:40.631+0000 I INDEX    [conn2] build index on: ace.routing properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.routing" }
+2024-02-13T10:03:40.631+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:40.632+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:40.650+0000 I INDEX    [conn2] build index on: ace.routing properties: { v: 2, key: { name: 1, site_id: 1 }, name: "name_1_site_id_1", ns: "ace.routing" }
+2024-02-13T10:03:40.650+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:40.651+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:40.655+0000 I STORAGE  [conn2] createCollection: ace.portconf with generated UUID: dc3dcda5-8493-44b3-86b5-a87f83fe81e7
+2024-02-13T10:03:40.696+0000 I INDEX    [conn2] build index on: ace.portconf properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.portconf" }
+2024-02-13T10:03:40.696+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:40.697+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:40.700+0000 I STORAGE  [conn2] createCollection: ace.featuremigration with generated UUID: 4337b8a3-d2c3-46bc-a99d-6c297f141a3b
+2024-02-13T10:03:40.752+0000 I INDEX    [conn2] build index on: ace.featuremigration properties: { v: 2, key: { name: 1 }, name: "name_1", ns: "ace.featuremigration" }
+2024-02-13T10:03:40.752+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:40.754+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:40.763+0000 I STORAGE  [conn2] createCollection: ace.alarm with generated UUID: beecbd76-272a-4c9c-8bc3-8d6d31bacadd
+2024-02-13T10:03:40.816+0000 I INDEX    [conn2] build index on: ace.alarm properties: { v: 2, key: { datetime: 1 }, name: "datetime_1", ns: "ace.alarm" }
+2024-02-13T10:03:40.816+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:40.819+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:40.841+0000 I INDEX    [conn2] build index on: ace.alarm properties: { v: 2, key: { site_id: 1, archived: 1 }, name: "site_id_1_archived_1", ns: "ace.alarm" }
+2024-02-13T10:03:40.841+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:40.844+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:40.862+0000 I INDEX    [conn2] build index on: ace.alarm properties: { v: 2, key: { key: 1 }, name: "key_1", ns: "ace.alarm" }
+2024-02-13T10:03:40.862+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:40.863+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:40.867+0000 I STORAGE  [conn2] createCollection: ace.firewallrule with generated UUID: e65a51d7-d343-4e19-9819-3f4e234f8036
+2024-02-13T10:03:40.917+0000 I INDEX    [conn2] build index on: ace.firewallrule properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.firewallrule" }
+2024-02-13T10:03:40.917+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:40.920+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:40.941+0000 I INDEX    [conn2] build index on: ace.firewallrule properties: { v: 2, key: { name: 1, site_id: 1 }, name: "name_1_site_id_1", ns: "ace.firewallrule" }
+2024-02-13T10:03:40.941+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:40.943+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:40.954+0000 I STORAGE  [conn2] createCollection: ace.event with generated UUID: e3c28caf-7c01-4b70-a618-36596cd36701
+2024-02-13T10:03:41.007+0000 I INDEX    [conn2] build index on: ace.event properties: { v: 2, key: { subsystem: 1, site_id: 1 }, name: "subsystem_1_site_id_1", ns: "ace.event" }
+2024-02-13T10:03:41.007+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:41.009+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:41.030+0000 I INDEX    [conn2] build index on: ace.event properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.event" }
+2024-02-13T10:03:41.030+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:41.032+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:41.055+0000 I INDEX    [conn2] build index on: ace.event properties: { v: 2, key: { datetime: 1, key: 1 }, name: "datetime_1_key_1", ns: "ace.event" }
+2024-02-13T10:03:41.055+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:41.058+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:41.068+0000 I STORAGE  [conn2] createCollection: ace.wlangroup with generated UUID: 2301d69f-1bf7-4b8d-9eff-9bb1933f232f
+2024-02-13T10:03:41.116+0000 I INDEX    [conn2] build index on: ace.wlangroup properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.wlangroup" }
+2024-02-13T10:03:41.116+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:41.117+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:41.133+0000 I INDEX    [conn2] build index on: ace.wlangroup properties: { v: 2, key: { name: 1, site_id: 1 }, name: "name_1_site_id_1", ns: "ace.wlangroup" }
+2024-02-13T10:03:41.133+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:41.134+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:41.137+0000 I STORAGE  [conn2] createCollection: ace.map with generated UUID: 3d149a64-0498-4f9d-9414-478527f10cca
+2024-02-13T10:03:41.185+0000 I INDEX    [conn2] build index on: ace.map properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.map" }
+2024-02-13T10:03:41.185+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:41.189+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:41.199+0000 I STORAGE  [conn2] createCollection: ace.stat with generated UUID: 00ce56a1-5ae8-4bd3-8b7a-280718315858
+2024-02-13T10:03:41.253+0000 I INDEX    [conn2] build index on: ace.stat properties: { v: 2, key: { datetime: 1, site_id: 1 }, name: "datetime_1_site_id_1", ns: "ace.stat" }
+2024-02-13T10:03:41.253+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:41.256+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:41.279+0000 I INDEX    [conn2] build index on: ace.stat properties: { v: 2, key: { wlan: 1, site_id: 1 }, name: "wlan_1_site_id_1", ns: "ace.stat" }
+2024-02-13T10:03:41.279+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:41.281+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:41.306+0000 I INDEX    [conn2] build index on: ace.stat properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.stat" }
+2024-02-13T10:03:41.306+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:41.309+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:41.333+0000 I INDEX    [conn2] build index on: ace.stat properties: { v: 2, key: { ap: 1, site_id: 1 }, name: "ap_1_site_id_1", ns: "ace.stat" }
+2024-02-13T10:03:41.334+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:41.336+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:41.357+0000 I INDEX    [conn2] build index on: ace.stat properties: { v: 2, key: { user: 1, site_id: 1 }, name: "user_1_site_id_1", ns: "ace.stat" }
+2024-02-13T10:03:41.358+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:41.360+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:41.386+0000 I INDEX    [conn2] build index on: ace.stat properties: { v: 2, key: { o: 1, site_id: 1 }, name: "o_1_site_id_1", ns: "ace.stat" }
+2024-02-13T10:03:41.386+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:41.388+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:41.398+0000 I STORAGE  [conn2] createCollection: ace.portalfile with generated UUID: 9259cc63-5f77-4046-a671-457252f1536d
+2024-02-13T10:03:41.448+0000 I INDEX    [conn2] build index on: ace.portalfile properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.portalfile" }
+2024-02-13T10:03:41.448+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:41.450+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:41.459+0000 I STORAGE  [conn2] createCollection: ace.wlanconf with generated UUID: 77f0dc57-b97c-47d9-8cf2-1bd18ec5b845
+2024-02-13T10:03:41.512+0000 I INDEX    [conn2] build index on: ace.wlanconf properties: { v: 2, key: { usergroup_id: 1, site_id: 1 }, name: "usergroup_id_1_site_id_1", ns: "ace.wlanconf" }
+2024-02-13T10:03:41.512+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:41.514+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:41.539+0000 I INDEX    [conn2] build index on: ace.wlanconf properties: { v: 2, key: { attr_hidden_id: 1, site_id: 1 }, name: "attr_hidden_id_1_site_id_1", ns: "ace.wlanconf" }
+2024-02-13T10:03:41.539+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:41.542+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:41.563+0000 I INDEX    [conn2] build index on: ace.wlanconf properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.wlanconf" }
+2024-02-13T10:03:41.563+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:41.564+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:41.581+0000 I INDEX    [conn2] build index on: ace.wlanconf properties: { v: 2, key: { name: 1, site_id: 1 }, name: "name_1_site_id_1", ns: "ace.wlanconf" }
+2024-02-13T10:03:41.581+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:41.582+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:41.587+0000 I STORAGE  [conn2] createCollection: ace.ipsalert with generated UUID: 557f2b1d-c1e8-4207-99b6-3276352fba90
+2024-02-13T10:03:41.632+0000 I INDEX    [conn2] build index on: ace.ipsalert properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.ipsalert" }
+2024-02-13T10:03:41.632+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:41.633+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:41.649+0000 I INDEX    [conn2] build index on: ace.ipsalert properties: { v: 2, key: { timestamp: 1 }, name: "timestamp_1", ns: "ace.ipsalert" }
+2024-02-13T10:03:41.649+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:41.650+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:41.653+0000 I STORAGE  [conn2] createCollection: ace.heatmappoint with generated UUID: d993d3b9-826a-4dd2-8fe0-b93735a4b0ef
+2024-02-13T10:03:41.696+0000 I INDEX    [conn2] build index on: ace.heatmappoint properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.heatmappoint" }
+2024-02-13T10:03:41.696+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:41.699+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:41.720+0000 I INDEX    [conn2] build index on: ace.heatmappoint properties: { v: 2, key: { heatmap_id: 1, site_id: 1 }, name: "heatmap_id_1_site_id_1", ns: "ace.heatmappoint" }
+2024-02-13T10:03:41.720+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:41.722+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:41.727+0000 I STORAGE  [conn2] createCollection: ace.site with generated UUID: c1b6c825-5ceb-48aa-bbc1-91ff8ed44e5e
+2024-02-13T10:03:41.772+0000 I INDEX    [conn2] build index on: ace.site properties: { v: 2, key: { name: 1 }, name: "name_1", ns: "ace.site" }
+2024-02-13T10:03:41.772+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:41.773+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:41.790+0000 I INDEX    [conn2] build index on: ace.site properties: { v: 2, key: { attr_hidden_id: 1 }, name: "attr_hidden_id_1", ns: "ace.site" }
+2024-02-13T10:03:41.790+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:41.791+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:41.794+0000 I STORAGE  [conn2] createCollection: ace.ssooauthtoken with generated UUID: efdcc929-9557-4a40-adfb-abc7aab42f0b
+2024-02-13T10:03:41.839+0000 I INDEX    [conn2] build index on: ace.ssooauthtoken properties: { v: 2, key: { ssooauthtoken: 1 }, name: "ssooauthtoken_1", ns: "ace.ssooauthtoken" }
+2024-02-13T10:03:41.839+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:41.841+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:41.847+0000 I STORAGE  [conn2] createCollection: ace.hotspot2conf with generated UUID: 2ac8bd3e-9db3-4e07-b675-9dbbbb0a9a1a
+2024-02-13T10:03:41.897+0000 I INDEX    [conn2] build index on: ace.hotspot2conf properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.hotspot2conf" }
+2024-02-13T10:03:41.897+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:41.898+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:41.904+0000 I STORAGE  [conn2] createCollection: ace.dynamicdns with generated UUID: d4d1c265-ca37-457b-8150-35c070800199
+2024-02-13T10:03:41.957+0000 I INDEX    [conn2] build index on: ace.dynamicdns properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.dynamicdns" }
+2024-02-13T10:03:41.957+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:41.959+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:41.969+0000 I STORAGE  [conn2] createCollection: ace.hotspotpackage with generated UUID: f77d9e00-5608-4324-8d72-7860748d49ae
+2024-02-13T10:03:42.015+0000 I INDEX    [conn2] build index on: ace.hotspotpackage properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.hotspotpackage" }
+2024-02-13T10:03:42.015+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:42.016+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:42.029+0000 I INDEX    [conn2] build index on: ace.hotspotpackage properties: { v: 2, key: { name: 1, site_id: 1 }, name: "name_1_site_id_1", ns: "ace.hotspotpackage" }
+2024-02-13T10:03:42.029+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:42.030+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:42.032+0000 I STORAGE  [conn2] createCollection: ace.user with generated UUID: bb429aee-05ea-4633-b487-9859b618d9c7
+2024-02-13T10:03:42.084+0000 I INDEX    [conn2] build index on: ace.user properties: { v: 2, key: { fingerprint_source: 1, product_line: 1 }, name: "fingerprint_source_1_product_line_1", ns: "ace.user" }
+2024-02-13T10:03:42.084+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:42.087+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:42.108+0000 I INDEX    [conn2] build index on: ace.user properties: { v: 2, key: { is_guest: 1, site_id: 1 }, name: "is_guest_1_site_id_1", ns: "ace.user" }
+2024-02-13T10:03:42.108+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:42.110+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:42.133+0000 I INDEX    [conn2] build index on: ace.user properties: { v: 2, key: { blocked: 1, site_id: 1 }, name: "blocked_1_site_id_1", ns: "ace.user" }
+2024-02-13T10:03:42.133+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:42.135+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:42.156+0000 I INDEX    [conn2] build index on: ace.user properties: { v: 2, key: { fixed_ap_enabled: 1, site_id: 1 }, name: "fixed_ap_enabled_1_site_id_1", ns: "ace.user" }
+2024-02-13T10:03:42.156+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:42.158+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:42.181+0000 I INDEX    [conn2] build index on: ace.user properties: { v: 2, key: { blocked: 1, use_fixedip: 1, noted: 1, last_seen: 1, first_seen: 1 }, name: "blocked_1_use_fixedip_1_noted_1_last_seen_1_first_seen_1", ns: "ace.user" }
+2024-02-13T10:03:42.181+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:42.183+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:42.205+0000 I INDEX    [conn2] build index on: ace.user properties: { v: 2, key: { fingerprint_override: 1, site_id: 1 }, name: "fingerprint_override_1_site_id_1", ns: "ace.user" }
+2024-02-13T10:03:42.205+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:42.206+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:42.223+0000 I INDEX    [conn2] build index on: ace.user properties: { v: 2, key: { use_fixedip: 1, site_id: 1 }, name: "use_fixedip_1_site_id_1", ns: "ace.user" }
+2024-02-13T10:03:42.223+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:42.226+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:42.243+0000 I INDEX    [conn2] build index on: ace.user properties: { v: 2, key: { noted: 1, site_id: 1 }, name: "noted_1_site_id_1", ns: "ace.user" }
+2024-02-13T10:03:42.243+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:42.243+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:42.262+0000 I INDEX    [conn2] build index on: ace.user properties: { v: 2, key: { fixed_ap_mac: 1, site_id: 1 }, name: "fixed_ap_mac_1_site_id_1", ns: "ace.user" }
+2024-02-13T10:03:42.262+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:42.264+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:42.288+0000 I INDEX    [conn2] build index on: ace.user properties: { v: 2, key: { unifi_device_info_from_ucore.product_line: 1, site_id: 1 }, name: "unifi_device_info_from_ucore.product_line_1_site_id_1", ns: "ace.user" }
+2024-02-13T10:03:42.288+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:42.291+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:42.316+0000 I INDEX    [conn2] build index on: ace.user properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.user" }
+2024-02-13T10:03:42.316+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:42.319+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:42.344+0000 I INDEX    [conn2] build index on: ace.user properties: { v: 2, key: { mac: 1, site_id: 1 }, name: "mac_1_site_id_1", ns: "ace.user" }
+2024-02-13T10:03:42.345+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:42.348+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:42.372+0000 I INDEX    [conn2] build index on: ace.user properties: { v: 2, key: { last_seen: 1, site_id: 1 }, name: "last_seen_1_site_id_1", ns: "ace.user" }
+2024-02-13T10:03:42.372+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:42.374+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:42.386+0000 I STORAGE  [conn2] createCollection: ace.wall with generated UUID: d7948636-0cd9-4a2e-805f-5ec16830e0df
+2024-02-13T10:03:42.442+0000 I INDEX    [conn2] build index on: ace.wall properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.wall" }
+2024-02-13T10:03:42.442+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:42.445+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:42.468+0000 I INDEX    [conn2] build index on: ace.wall properties: { v: 2, key: { map_id: 1, site_id: 1 }, name: "map_id_1_site_id_1", ns: "ace.wall" }
+2024-02-13T10:03:42.468+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:42.470+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:42.480+0000 I STORAGE  [conn2] createCollection: ace.account with generated UUID: 9789d30b-0f08-409e-b078-5c971873d049
+2024-02-13T10:03:42.537+0000 I INDEX    [conn2] build index on: ace.account properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.account" }
+2024-02-13T10:03:42.538+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:42.540+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:42.563+0000 I INDEX    [conn2] build index on: ace.account properties: { v: 2, key: { email: 1, site_id: 1 }, name: "email_1_site_id_1", ns: "ace.account" }
+2024-02-13T10:03:42.563+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:42.565+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:42.584+0000 I INDEX    [conn2] build index on: ace.account properties: { v: 2, key: { name: 1, site_id: 1 }, name: "name_1_site_id_1", ns: "ace.account" }
+2024-02-13T10:03:42.584+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:42.586+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:42.594+0000 I STORAGE  [conn2] createCollection: ace.dpigroup with generated UUID: 39a065fb-e39c-4a12-bdeb-c31b771fe875
+2024-02-13T10:03:42.650+0000 I INDEX    [conn2] build index on: ace.dpigroup properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.dpigroup" }
+2024-02-13T10:03:42.651+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:42.653+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:42.818+0000 I STORAGE  [conn2] createCollection: ace.dashboard with generated UUID: 81c7f735-e598-47bf-8e7a-7e1c9e7b8819
+2024-02-13T10:03:47.694+0000 I STORAGE  [conn2] createCollection: ace_stat.stat_minute with generated UUID: 5d670bc2-61f9-4dbb-a892-c7d29cbbdd6d
+2024-02-13T10:03:47.760+0000 I INDEX    [conn2] build index on: ace_stat.stat_minute properties: { v: 2, key: { site_id: 1, datetime: 1 }, name: "site_id_1_datetime_1", ns: "ace_stat.stat_minute" }
+2024-02-13T10:03:47.760+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:47.761+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:47.777+0000 I INDEX    [conn2] build index on: ace_stat.stat_minute properties: { v: 2, key: { datetime: 1, o: 1, site_id: 1, oid: 1 }, name: "datetime_1_o_1_site_id_1_oid_1", ns: "ace_stat.stat_minute" }
+2024-02-13T10:03:47.777+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:47.778+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:47.782+0000 I STORAGE  [conn2] createCollection: ace_stat.stat_5minutes with generated UUID: 0cad0946-3794-410c-863c-96a4534c76b4
+2024-02-13T10:03:47.826+0000 I INDEX    [conn2] build index on: ace_stat.stat_5minutes properties: { v: 2, key: { site_id: 1, datetime: 1 }, name: "site_id_1_datetime_1", ns: "ace_stat.stat_5minutes" }
+2024-02-13T10:03:47.827+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:47.828+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:47.847+0000 I INDEX    [conn2] build index on: ace_stat.stat_5minutes properties: { v: 2, key: { datetime: 1, o: 1, site_id: 1, oid: 1 }, name: "datetime_1_o_1_site_id_1_oid_1", ns: "ace_stat.stat_5minutes" }
+2024-02-13T10:03:47.847+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:47.848+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:47.851+0000 I STORAGE  [conn2] createCollection: ace_stat.stat_hourly with generated UUID: bd747447-8bf0-40df-bdce-44ce98fc84fb
+2024-02-13T10:03:47.892+0000 I INDEX    [conn2] build index on: ace_stat.stat_hourly properties: { v: 2, key: { site_id: 1, datetime: 1 }, name: "site_id_1_datetime_1", ns: "ace_stat.stat_hourly" }
+2024-02-13T10:03:47.892+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:47.893+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:47.910+0000 I INDEX    [conn2] build index on: ace_stat.stat_hourly properties: { v: 2, key: { datetime: 1, o: 1, site_id: 1, oid: 1 }, name: "datetime_1_o_1_site_id_1_oid_1", ns: "ace_stat.stat_hourly" }
+2024-02-13T10:03:47.910+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:47.910+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:47.913+0000 I STORAGE  [conn2] createCollection: ace_stat.stat_daily with generated UUID: 2121df29-e85a-46bf-a8ee-a794104ed2bd
+2024-02-13T10:03:47.955+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:57470 #3 (3 connections now open)
+2024-02-13T10:03:47.955+0000 I NETWORK  [conn3] received client metadata from 127.0.0.1:57470 conn3: { driver: { name: "mongo-java-driver|sync", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }
+2024-02-13T10:03:47.956+0000 I INDEX    [conn2] build index on: ace_stat.stat_daily properties: { v: 2, key: { site_id: 1, datetime: 1 }, name: "site_id_1_datetime_1", ns: "ace_stat.stat_daily" }
+2024-02-13T10:03:47.956+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:47.957+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:47.973+0000 I INDEX    [conn2] build index on: ace_stat.stat_daily properties: { v: 2, key: { datetime: 1, o: 1, site_id: 1, oid: 1 }, name: "datetime_1_o_1_site_id_1_oid_1", ns: "ace_stat.stat_daily" }
+2024-02-13T10:03:47.973+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:47.974+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:47.979+0000 I STORAGE  [conn2] createCollection: ace_stat.stat_monthly with generated UUID: 9dc706f4-a062-4cd4-a8d2-4c2fa8fcec67
+2024-02-13T10:03:48.021+0000 I INDEX    [conn2] build index on: ace_stat.stat_monthly properties: { v: 2, key: { site_id: 1, datetime: 1 }, name: "site_id_1_datetime_1", ns: "ace_stat.stat_monthly" }
+2024-02-13T10:03:48.021+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:48.021+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:48.037+0000 I INDEX    [conn2] build index on: ace_stat.stat_monthly properties: { v: 2, key: { datetime: 1, o: 1, site_id: 1, oid: 1 }, name: "datetime_1_o_1_site_id_1_oid_1", ns: "ace_stat.stat_monthly" }
+2024-02-13T10:03:48.037+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:48.038+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:48.041+0000 I STORAGE  [conn2] createCollection: ace_stat.stat_life with generated UUID: d1e295e8-c59b-43c2-a49f-c02f98e9e54d
+2024-02-13T10:03:48.080+0000 I INDEX    [conn2] build index on: ace_stat.stat_life properties: { v: 2, key: { site_id: 1, o: 1, oid: 1, datetime: 1 }, name: "site_id_1_o_1_oid_1_datetime_1", ns: "ace_stat.stat_life" }
+2024-02-13T10:03:48.080+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:48.081+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:48.097+0000 I INDEX    [conn2] build index on: ace_stat.stat_life properties: { v: 2, key: { datetime: 1 }, name: "datetime_1", ns: "ace_stat.stat_life" }
+2024-02-13T10:03:48.097+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:48.098+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:48.102+0000 I STORAGE  [conn2] createCollection: ace_stat.stat_archive with generated UUID: 4773b9b0-1624-4200-9534-7f4278e37717
+2024-02-13T10:03:48.146+0000 I INDEX    [conn2] build index on: ace_stat.stat_archive properties: { v: 2, key: { site_id: 1, o: 1, oid: 1, datetime: 1 }, name: "site_id_1_o_1_oid_1_datetime_1", ns: "ace_stat.stat_archive" }
+2024-02-13T10:03:48.146+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:48.147+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:48.160+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:57478 #4 (4 connections now open)
+2024-02-13T10:03:48.161+0000 I NETWORK  [conn4] received client metadata from 127.0.0.1:57478 conn4: { driver: { name: "mongo-java-driver|sync", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }
+2024-02-13T10:03:48.163+0000 I INDEX    [conn2] build index on: ace_stat.stat_archive properties: { v: 2, key: { datetime: 1 }, name: "datetime_1", ns: "ace_stat.stat_archive" }
+2024-02-13T10:03:48.163+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:48.164+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:48.167+0000 I STORAGE  [conn2] createCollection: ace_stat.stat_dpi with generated UUID: dd0cb9a5-cad4-4dc3-855c-c75c08b97a61
+2024-02-13T10:03:48.211+0000 I INDEX    [conn2] build index on: ace_stat.stat_dpi properties: { v: 2, key: { site_id: 1, type: 1 }, name: "site_id_1_type_1", ns: "ace_stat.stat_dpi" }
+2024-02-13T10:03:48.211+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:48.212+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:48.229+0000 I INDEX    [conn2] build index on: ace_stat.stat_dpi properties: { v: 2, key: { site_id: 1, o: 1, oid: 1, datetime: 1, app: 1, cat: 1 }, name: "site_id_1_o_1_oid_1_datetime_1_app_1_cat_1", ns: "ace_stat.stat_dpi" }
+2024-02-13T10:03:48.229+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:48.230+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:51.021+0000 I STORAGE  [conn2] createCollection: ace.apgroup with generated UUID: 13142c52-5604-4491-b574-9268333b8be2
+2024-02-13T10:03:52.613+0000 I STORAGE  [conn2] createCollection: ace.alert with generated UUID: 179079d0-ccd9-4f72-898b-91d6b512c877
+2024-02-13T10:03:52.654+0000 I INDEX    [conn2] build index on: ace.alert properties: { v: 2, key: { parameters.DEVICE.target_id: 1 }, name: "parameters.DEVICE.target_id_1", ns: "ace.alert" }
+2024-02-13T10:03:52.654+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:52.655+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:52.672+0000 I INDEX    [conn2] build index on: ace.alert properties: { v: 2, key: { parameters.CLIENT.target_id: 1 }, name: "parameters.CLIENT.target_id_1", ns: "ace.alert" }
+2024-02-13T10:03:52.673+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:52.674+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:56.330+0000 I STORAGE  [conn4] createCollection: ace.wifiman_feedback with generated UUID: da0e7d51-6479-4d8b-8820-ac088fa27e24
+2024-02-13T10:03:56.372+0000 I INDEX    [conn4] build index on: ace.wifiman_feedback properties: { v: 2, key: { site_id: 1 }, name: "site_id", ns: "ace.wifiman_feedback" }
+2024-02-13T10:03:56.372+0000 I INDEX    [conn4] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:56.373+0000 I INDEX    [conn4] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:56.394+0000 I INDEX    [conn2] build index on: ace.apgroup properties: { v: 2, key: { site_id: 1 }, name: "site_id", ns: "ace.apgroup" }
+2024-02-13T10:03:56.394+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:56.401+0000 I INDEX    [conn2] build index done.  scanned 1 total records. 0 secs
+2024-02-13T10:03:56.403+0000 I STORAGE  [conn2] createCollection: ace.teleport_client with generated UUID: 09d6d916-e4b2-4671-aa4d-61144cea561d
+2024-02-13T10:03:56.448+0000 I INDEX    [conn2] build index on: ace.teleport_client properties: { v: 2, key: { external_client_id: 1 }, name: "external_client_id", ns: "ace.teleport_client" }
+2024-02-13T10:03:56.448+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:56.449+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:56.469+0000 I INDEX    [conn2] build index on: ace.teleport_client properties: { v: 2, key: { last_seen_timestamp: 1 }, name: "last_seen_timestamp", ns: "ace.teleport_client" }
+2024-02-13T10:03:56.469+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:56.469+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:56.473+0000 I STORAGE  [conn2] createCollection: ace.traffic_route with generated UUID: df575be5-d448-46e6-a708-0505ee93d6ba
+2024-02-13T10:03:56.513+0000 I INDEX    [conn2] build index on: ace.traffic_route properties: { v: 2, key: { site_id: 1 }, name: "site_id", ns: "ace.traffic_route" }
+2024-02-13T10:03:56.513+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:56.514+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:56.532+0000 I INDEX    [conn2] build index on: ace.traffic_route properties: { v: 2, key: { short_id: -1 }, name: "short_id", ns: "ace.traffic_route" }
+2024-02-13T10:03:56.532+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:56.533+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:56.535+0000 I STORAGE  [conn2] createCollection: ace.wireguard_user with generated UUID: b5340bb0-3e32-4102-841f-b60860902009
+2024-02-13T10:03:56.577+0000 I INDEX    [conn2] build index on: ace.wireguard_user properties: { v: 2, key: { site_id: 1 }, name: "site_id", ns: "ace.wireguard_user" }
+2024-02-13T10:03:56.577+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:56.578+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:56.595+0000 I STORAGE  [conn2] createCollection: ace.admin_activity_log with generated UUID: 8271a44c-ea78-487f-991f-d33ed453bfbd
+2024-02-13T10:03:56.641+0000 I INDEX    [conn2] build index on: ace.admin_activity_log properties: { v: 2, key: { time: -1, site_id: 1, key: 1, change_key: 1 }, name: "time_-1_site_id_1_key_1_change_key_1", ns: "ace.admin_activity_log" }
+2024-02-13T10:03:56.641+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:56.642+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:56.659+0000 I INDEX    [conn2] build index on: ace.admin_activity_log properties: { v: 2, key: { site_id: 1, admin.admin_id: 1 }, name: "site_id_1_admin_admin_id_1", ns: "ace.admin_activity_log" }
+2024-02-13T10:03:56.659+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:56.660+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:56.662+0000 I STORAGE  [conn2] createCollection: ace.alert_setting with generated UUID: aa195fbf-594d-403b-9f2b-c0c2047d27f2
+2024-02-13T10:03:56.704+0000 I INDEX    [conn2] build index on: ace.alert_setting properties: { v: 2, unique: true, key: { site_id: 1, admin_id: 1 }, name: "site_id_1_admin_id_1", ns: "ace.alert_setting" }
+2024-02-13T10:03:56.704+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:56.705+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:56.708+0000 I STORAGE  [conn2] createCollection: ace.config_meta with generated UUID: 0503d308-bc1d-483f-bba4-653cb702c8d4
+2024-02-13T10:03:56.749+0000 I INDEX    [conn2] build index on: ace.config_meta properties: { v: 2, key: { site_id: 1, mac: 1 }, name: "site_id_1_mac_1", ns: "ace.config_meta" }
+2024-02-13T10:03:56.749+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:56.750+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:56.752+0000 I STORAGE  [conn2] createCollection: ace.diagnostics_config with generated UUID: ca4702f9-e393-4a5f-bd70-c15ea4abc214
+2024-02-13T10:03:56.794+0000 I INDEX    [conn2] build index on: ace.diagnostics_config properties: { v: 2, key: { mac: 1 }, name: "mac", ns: "ace.diagnostics_config" }
+2024-02-13T10:03:56.794+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:56.795+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:56.798+0000 I STORAGE  [conn2] createCollection: ace.trigger_log with generated UUID: a3e93405-fc7e-4bef-9b4c-07ccefb8bb75
+2024-02-13T10:03:56.842+0000 I INDEX    [conn2] build index on: ace.trigger_log properties: { v: 2, key: { time: -1, site_id: 1, trigger.type: 1, source.mac: 1 }, name: "time_-1_site_id_1_trigger_type_1_source_mac_1", ns: "ace.trigger_log" }
+2024-02-13T10:03:56.842+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:56.843+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:56.859+0000 I INDEX    [conn2] build index on: ace.trigger_log properties: { v: 2, key: { time: 1, trigger.trigger_id: 1, key: 1, source.mac: 1, source.ip: 1 }, name: "time_1_trigger_trigger_id_1_key_1_source_mac_1_source_ip_1", ns: "ace.trigger_log" }
+2024-02-13T10:03:56.859+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:56.860+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:56.863+0000 I STORAGE  [conn2] createCollection: ace.threat_log_view with generated UUID: 3ecd5e34-7633-4680-bf33-fa006e034567
+2024-02-13T10:03:56.905+0000 I INDEX    [conn2] build index on: ace.threat_log_view properties: { v: 2, key: { time: -1, site_id: 1, src_mac: 1, threat_type: 1, threat_direction: 1 }, name: "time-1_site_id_1_client_mac_1_threat_type_1_threat_direction_1", ns: "ace.threat_log_view" }
+2024-02-13T10:03:56.905+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:56.906+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:56.907+0000 I STORAGE  [conn2] createCollection: ace.teleport_token with generated UUID: c48e0185-f2eb-4156-b020-ff8f7e464a9c
+2024-02-13T10:03:56.948+0000 I INDEX    [conn2] build index on: ace.teleport_token properties: { v: 2, key: { token: 1 }, name: "token", ns: "ace.teleport_token" }
+2024-02-13T10:03:56.948+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:56.949+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:56.952+0000 I STORAGE  [conn2] createCollection: ace.traffic_rule with generated UUID: 394dced0-a202-42b6-8b2d-bcfc9f9fb76f
+2024-02-13T10:03:56.995+0000 I INDEX    [conn2] build index on: ace.traffic_rule properties: { v: 2, key: { site_id: 1 }, name: "site_id", ns: "ace.traffic_rule" }
+2024-02-13T10:03:56.995+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:56.996+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:57.012+0000 I INDEX    [conn2] build index on: ace.traffic_rule properties: { v: 2, key: { short_id: -1 }, name: "short_id", ns: "ace.traffic_rule" }
+2024-02-13T10:03:57.012+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:57.013+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:57.015+0000 I STORAGE  [conn2] createCollection: ace.appstate_log with generated UUID: 5bb6481b-1b7e-468c-8144-928fd3e8b850
+2024-02-13T10:03:57.059+0000 I INDEX    [conn2] build index on: ace.appstate_log properties: { v: 2, key: { time: 1 }, name: "time", ns: "ace.appstate_log" }
+2024-02-13T10:03:57.059+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:57.060+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:57.075+0000 I INDEX    [conn2] build index on: ace.alert properties: { v: 2, key: { time: -1, key: 1, site_id: 1, status: 1 }, name: "time_-1_key_1_site_id_1_status_1", ns: "ace.alert" }
+2024-02-13T10:03:57.075+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:57.076+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:57.079+0000 I STORAGE  [conn2] createCollection: ace_stat.downtime with generated UUID: 389fc5a7-b84c-4a1f-b260-82e054afe727
+2024-02-13T10:03:57.121+0000 I INDEX    [conn2] build index on: ace_stat.downtime properties: { v: 2, key: { timestamp: 1 }, name: "timestamp", ns: "ace_stat.downtime" }
+2024-02-13T10:03:57.121+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:57.122+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:57.124+0000 I STORAGE  [conn2] createCollection: ace_stat.dpi with generated UUID: cc5bda4d-d31a-49fe-bf09-51d30b3be17c
+2024-02-13T10:03:57.168+0000 I INDEX    [conn2] build index on: ace_stat.dpi properties: { v: 2, key: { time: 1, site_id: 1, type: 1 }, name: "time_1_site_id_1_type_1", ns: "ace_stat.dpi" }
+2024-02-13T10:03:57.168+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:57.169+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:57.186+0000 I INDEX    [conn2] build index on: ace_stat.dpi properties: { v: 2, key: { stat_object_id: 1 }, name: "stat_object_id", ns: "ace_stat.dpi" }
+2024-02-13T10:03:57.186+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:57.187+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:57.189+0000 I STORAGE  [conn2] createCollection: ace_stat.wifi_connection_event with generated UUID: 589dc7f7-d65a-4052-ba33-5417fd85ed36
+2024-02-13T10:03:57.237+0000 I INDEX    [conn2] build index on: ace_stat.wifi_connection_event properties: { v: 2, key: { site_id: 1, time: 1 }, name: "site_id_1_time_1", ns: "ace_stat.wifi_connection_event" }
+2024-02-13T10:03:57.237+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:57.238+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:57.242+0000 I STORAGE  [conn2] createCollection: ace_stat.pingtest with generated UUID: 07225b50-2654-4033-bc01-84c623482120
+2024-02-13T10:03:57.287+0000 I INDEX    [conn2] build index on: ace_stat.pingtest properties: { v: 2, key: { client_mac: 1, site_id: 1 }, name: "client_mac_1_site_id_1", ns: "ace_stat.pingtest" }
+2024-02-13T10:03:57.288+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:57.288+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:57.306+0000 I INDEX    [conn2] build index on: ace_stat.pingtest properties: { v: 2, key: { site_id: 1 }, name: "site_id", ns: "ace_stat.pingtest" }
+2024-02-13T10:03:57.306+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:57.307+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:03:57.324+0000 I INDEX    [conn2] build index on: ace_stat.pingtest properties: { v: 2, key: { client_mac: 1 }, name: "client_mac", ns: "ace_stat.pingtest" }
+2024-02-13T10:03:57.324+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:03:57.325+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:08:57.395+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:44534 #5 (5 connections now open)
+2024-02-13T10:08:57.395+0000 I NETWORK  [conn5] received client metadata from 127.0.0.1:44534 conn5: { driver: { name: "mongo-java-driver|sync", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }
+2024-02-13T10:13:43.944+0000 I STORAGE  [conn2] createCollection: ace.systemevent with generated UUID: 4fcf0386-4769-4a39-91e4-6dbb088f4240
+2024-02-13T10:18:56.748+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:42068 #6 (6 connections now open)
+2024-02-13T10:18:56.749+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:42060 #7 (7 connections now open)
+2024-02-13T10:18:56.749+0000 I NETWORK  [conn6] received client metadata from 127.0.0.1:42068 conn6: { driver: { name: "mongo-java-driver|sync", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }
+2024-02-13T10:18:56.749+0000 I NETWORK  [conn7] received client metadata from 127.0.0.1:42060 conn7: { driver: { name: "mongo-java-driver|sync", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }
+2024-02-13T10:18:56.751+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:42078 #8 (8 connections now open)
+2024-02-13T10:18:56.751+0000 I NETWORK  [conn8] received client metadata from 127.0.0.1:42078 conn8: { driver: { name: "mongo-java-driver|sync", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }
+2024-02-13T10:18:56.752+0000 I COMMAND  [conn8] dropDatabase ace - starting
+2024-02-13T10:18:56.752+0000 I COMMAND  [conn8] dropDatabase ace - dropping 0 collections
+2024-02-13T10:18:57.602+0000 I COMMAND  [conn8] dropDatabase ace - finished
+2024-02-13T10:18:57.602+0000 I COMMAND  [conn8] command ace command: dropDatabase { dropDatabase: 1, $db: "ace", lsid: { id: UUID("b87d1d69-db97-4b03-8edc-75effe0cff95") } } numYields:0 reslen:39 locks:{ Global: { acquireCount: { r: 2, w: 1, W: 1 } }, Database: { acquireCount: { W: 1 } } } protocol:op_msg 850ms
+2024-02-13T10:18:57.610+0000 I COMMAND  [conn8] CMD: drop ace.heatmap
+2024-02-13T10:18:57.613+0000 I COMMAND  [conn8] CMD: drop ace.voucher
+2024-02-13T10:18:57.618+0000 I COMMAND  [conn8] CMD: drop ace.networkconf
+2024-02-13T10:18:57.623+0000 I STORAGE  [conn8] createCollection: ace.networkconf with generated UUID: 90e9d46d-becd-443e-b92d-7b405451e8ee
+2024-02-13T10:18:57.669+0000 I COMMAND  [conn8] CMD: drop ace.rogueknown
+2024-02-13T10:18:57.670+0000 I COMMAND  [conn8] CMD: drop ace.apgroup
+2024-02-13T10:18:57.672+0000 I STORAGE  [conn8] createCollection: ace.apgroup with generated UUID: 79a0d3ef-56b8-48d9-a5a6-326a6c20c699
+2024-02-13T10:18:57.706+0000 I COMMAND  [conn8] CMD: drop ace.setting
+2024-02-13T10:18:57.707+0000 I STORAGE  [conn8] createCollection: ace.setting with generated UUID: 2cf69302-7f8c-4a60-9aa0-738b1a96cc0f
+2024-02-13T10:18:57.812+0000 I COMMAND  [conn8] CMD: drop ace.notification
+2024-02-13T10:18:57.814+0000 I COMMAND  [conn8] CMD: drop ace.payment
+2024-02-13T10:18:57.816+0000 I COMMAND  [conn8] CMD: drop ace.tag
+2024-02-13T10:18:57.818+0000 I COMMAND  [conn8] CMD: drop ace.spatialrecord
+2024-02-13T10:18:57.820+0000 I COMMAND  [conn8] CMD: drop ace.dashboard
+2024-02-13T10:18:57.822+0000 I STORAGE  [conn8] createCollection: ace.dashboard with generated UUID: ae26bcc6-d15c-4b60-a0ef-d1a55f2daf7c
+2024-02-13T10:18:57.862+0000 I COMMAND  [conn8] CMD: drop ace.verification
+2024-02-13T10:18:57.865+0000 I STORAGE  [conn8] createCollection: ace.verification with generated UUID: 6c21b8c4-0059-4ae7-ac45-2dc34b2317cc
+2024-02-13T10:18:57.897+0000 I COMMAND  [conn8] CMD: drop ace.systemevent
+2024-02-13T10:18:57.898+0000 I COMMAND  [conn8] CMD: drop ace.dpiapp
+2024-02-13T10:18:57.899+0000 I COMMAND  [conn8] CMD: drop ace.virtualdevice
+2024-02-13T10:18:57.900+0000 I COMMAND  [conn8] CMD: drop ace.firewallgroup
+2024-02-13T10:18:57.901+0000 I STORAGE  [conn8] createCollection: ace.firewallgroup with generated UUID: c022c106-f243-445d-9cbb-5863841bed88
+2024-02-13T10:18:57.931+0000 I COMMAND  [conn8] CMD: drop ace.hotspotop
+2024-02-13T10:18:57.932+0000 I COMMAND  [conn8] CMD: drop ace.portforward
+2024-02-13T10:18:57.934+0000 I STORAGE  [conn8] createCollection: ace.portforward with generated UUID: 44899e5d-51f7-4c01-8ce4-d5f87ad33c46
+2024-02-13T10:18:57.963+0000 I COMMAND  [conn8] CMD: drop ace.dhcpoption
+2024-02-13T10:18:57.964+0000 I COMMAND  [conn8] CMD: drop ace.task
+2024-02-13T10:18:57.965+0000 I COMMAND  [conn8] CMD: drop ace.usergroup
+2024-02-13T10:18:57.967+0000 I STORAGE  [conn8] createCollection: ace.usergroup with generated UUID: 35c62d79-61d4-4d4c-8305-8a5e80e6dab2
+2024-02-13T10:18:58.001+0000 I COMMAND  [conn8] CMD: drop ace.guest
+2024-02-13T10:18:58.004+0000 I COMMAND  [conn8] CMD: drop ace.device
+2024-02-13T10:18:58.011+0000 I STORAGE  [conn8] createCollection: ace.device with generated UUID: 7b3c803e-5dcd-42ea-8779-784bed6c2d92
+2024-02-13T10:18:58.046+0000 I COMMAND  [conn8] CMD: drop ace.admin
+2024-02-13T10:18:58.048+0000 I STORAGE  [conn8] createCollection: ace.admin with generated UUID: 60f5200c-93c7-437e-9b47-6a06244a8a7d
+2024-02-13T10:18:58.084+0000 I COMMAND  [conn8] CMD: drop ace.privilege
+2024-02-13T10:18:58.086+0000 I STORAGE  [conn8] createCollection: ace.privilege with generated UUID: 10170cf7-f245-4bb9-ab04-c6e95c1123ad
+2024-02-13T10:18:58.142+0000 I COMMAND  [conn8] CMD: drop ace.radiusprofile
+2024-02-13T10:18:58.146+0000 I STORAGE  [conn8] createCollection: ace.radiusprofile with generated UUID: fa55e3c2-f133-42e4-8361-10318985be17
+2024-02-13T10:18:58.185+0000 I COMMAND  [conn8] CMD: drop ace.channelplan
+2024-02-13T10:18:58.186+0000 I COMMAND  [conn8] CMD: drop ace.scheduletask
+2024-02-13T10:18:58.188+0000 I STORAGE  [conn8] createCollection: ace.scheduletask with generated UUID: c5ad32cf-08f0-4084-b280-3711f60a1759
+2024-02-13T10:18:58.224+0000 I COMMAND  [conn8] CMD: drop ace.routing
+2024-02-13T10:18:58.225+0000 I COMMAND  [conn8] CMD: drop ace.portconf
+2024-02-13T10:18:58.226+0000 I STORAGE  [conn8] createCollection: ace.portconf with generated UUID: 1d8cf6a2-5e9c-49b8-949b-b39526c5a1ba
+2024-02-13T10:18:58.265+0000 I COMMAND  [conn8] CMD: drop ace.featuremigration
+2024-02-13T10:18:58.267+0000 I COMMAND  [conn8] CMD: drop ace.firewallrule
+2024-02-13T10:18:58.269+0000 I STORAGE  [conn8] createCollection: ace.firewallrule with generated UUID: 281356c8-b181-4f44-9d6a-3bc9f1199bc6
+2024-02-13T10:18:58.299+0000 I COMMAND  [conn8] CMD: drop ace.wlangroup
+2024-02-13T10:18:58.302+0000 I STORAGE  [conn8] createCollection: ace.wlangroup with generated UUID: 66c94825-6989-4a6d-a276-c3bd8b125bf1
+2024-02-13T10:18:58.341+0000 I COMMAND  [conn8] CMD: drop ace.map
+2024-02-13T10:18:58.343+0000 I STORAGE  [conn8] createCollection: ace.map with generated UUID: 1eda490e-ae3b-4096-abc6-608f1333aa2f
+2024-02-13T10:18:58.389+0000 I COMMAND  [conn8] CMD: drop ace.stat
+2024-02-13T10:18:58.391+0000 I COMMAND  [conn8] CMD: drop ace.wifiman_feedback
+2024-02-13T10:18:58.393+0000 I COMMAND  [conn8] CMD: drop ace.portalfile
+2024-02-13T10:18:58.395+0000 I COMMAND  [conn8] CMD: drop ace.wlanconf
+2024-02-13T10:18:58.398+0000 I STORAGE  [conn8] createCollection: ace.wlanconf with generated UUID: 883b8ecb-d6f8-4bc9-9096-08741660eabb
+2024-02-13T10:18:58.444+0000 I COMMAND  [conn8] CMD: drop ace.heatmappoint
+2024-02-13T10:18:58.446+0000 I COMMAND  [conn8] CMD: drop ace.site
+2024-02-13T10:18:58.449+0000 I STORAGE  [conn8] createCollection: ace.site with generated UUID: 8aa2683c-3965-4245-8bbc-745dca9e86c5
+2024-02-13T10:18:58.494+0000 I COMMAND  [conn8] CMD: drop ace.ssooauthtoken
+2024-02-13T10:18:58.497+0000 I COMMAND  [conn8] CMD: drop ace.hotspot2conf
+2024-02-13T10:18:58.498+0000 I COMMAND  [conn8] CMD: drop ace.dynamicdns
+2024-02-13T10:18:58.500+0000 I COMMAND  [conn8] CMD: drop ace.hotspotpackage
+2024-02-13T10:18:58.501+0000 I COMMAND  [conn8] CMD: drop ace.broadcastgroup
+2024-02-13T10:18:58.503+0000 I STORAGE  [conn8] createCollection: ace.broadcastgroup with generated UUID: c22dbe6c-eddd-4255-8a68-381f037619dc
+2024-02-13T10:18:58.546+0000 I COMMAND  [conn8] CMD: drop ace.mediafile
+2024-02-13T10:18:58.549+0000 I COMMAND  [conn8] CMD: drop ace.user
+2024-02-13T10:18:58.552+0000 I STORAGE  [conn8] createCollection: ace.user with generated UUID: 810b1002-e00d-4060-89b9-34c92c9cdd30
+2024-02-13T10:18:58.701+0000 I COMMAND  [conn8] CMD: drop ace.wall
+2024-02-13T10:18:58.702+0000 I COMMAND  [conn8] CMD: drop ace.account
+2024-02-13T10:18:58.703+0000 I STORAGE  [conn8] createCollection: ace.account with generated UUID: 0fd0f15f-3953-4204-98aa-7c944dc4277e
+2024-02-13T10:18:58.736+0000 I COMMAND  [conn8] CMD: drop ace.dpigroup
+2024-02-13T10:18:58.737+0000 I STORAGE  [conn8] createCollection: ace.dpigroup with generated UUID: 653ed9ae-ac91-495a-816f-fef423f46ef0
+2024-02-13T10:18:58.769+0000 I COMMAND  [conn8] CMD: drop ace.storeddpistats
+2024-02-13T10:18:58.769+0000 I COMMAND  [conn8] CMD: drop ace.crashlog
+2024-02-13T10:18:58.770+0000 I COMMAND  [conn8] CMD: drop ace.rogue
+2024-02-13T10:18:58.771+0000 I COMMAND  [conn8] CMD: drop ace.alarm
+2024-02-13T10:18:58.772+0000 I STORAGE  [conn8] createCollection: ace.alarm with generated UUID: 50b237a5-7e07-4ad2-982d-bc8fc8412206
+2024-02-13T10:18:58.904+0000 I COMMAND  [conn8] CMD: drop ace.event
+2024-02-13T10:18:58.905+0000 I STORAGE  [conn8] createCollection: ace.event with generated UUID: 5f987634-84d3-465c-8c3e-913f19d577d5
+2024-02-13T10:18:59.252+0000 I COMMAND  [conn8] CMD: drop ace.ipsalert
+2024-02-13T10:18:59.260+0000 I NETWORK  [conn8] end connection 127.0.0.1:42078 (7 connections now open)
+2024-02-13T10:18:59.260+0000 I NETWORK  [conn7] end connection 127.0.0.1:42060 (6 connections now open)
+2024-02-13T10:18:59.260+0000 I NETWORK  [conn6] end connection 127.0.0.1:42068 (5 connections now open)
+2024-02-13T10:18:59.263+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:42088 #9 (6 connections now open)
+2024-02-13T10:18:59.263+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:42086 #10 (7 connections now open)
+2024-02-13T10:18:59.263+0000 I NETWORK  [conn9] received client metadata from 127.0.0.1:42088 conn9: { driver: { name: "mongo-java-driver|sync", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }
+2024-02-13T10:18:59.263+0000 I NETWORK  [conn10] received client metadata from 127.0.0.1:42086 conn10: { driver: { name: "mongo-java-driver|sync", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }
+2024-02-13T10:18:59.265+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:42104 #11 (8 connections now open)
+2024-02-13T10:18:59.265+0000 I NETWORK  [conn11] received client metadata from 127.0.0.1:42104 conn11: { driver: { name: "mongo-java-driver|sync", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }
+2024-02-13T10:18:59.266+0000 I COMMAND  [conn11] dropDatabase ace_stat - starting
+2024-02-13T10:18:59.266+0000 I COMMAND  [conn11] dropDatabase ace_stat - dropping 0 collections
+2024-02-13T10:18:59.427+0000 I COMMAND  [conn11] dropDatabase ace_stat - finished
+2024-02-13T10:18:59.427+0000 I COMMAND  [conn11] command ace_stat command: dropDatabase { dropDatabase: 1, $db: "ace_stat", lsid: { id: UUID("a97467db-9bad-4f69-9a4c-f43f5493f64e") } } numYields:0 reslen:44 locks:{ Global: { acquireCount: { r: 2, w: 1, W: 1 } }, Database: { acquireCount: { W: 1 } } } protocol:op_msg 161ms
+2024-02-13T10:18:59.430+0000 I COMMAND  [conn11] CMD: drop ace_stat.notification
+2024-02-13T10:18:59.433+0000 I COMMAND  [conn11] CMD: drop ace_stat.wifiman_feedback
+2024-02-13T10:18:59.436+0000 I COMMAND  [conn11] CMD: drop ace_stat.apgroup
+2024-02-13T10:18:59.437+0000 I COMMAND  [conn11] CMD: drop ace_stat.systemevent
+2024-02-13T10:18:59.438+0000 I COMMAND  [conn11] CMD: drop ace_stat.stat_5minutes
+2024-02-13T10:18:59.439+0000 I STORAGE  [conn11] createCollection: ace_stat.stat_5minutes with generated UUID: 9d1c5c08-773c-4967-a95c-91ea9fb160ab
+2024-02-13T10:19:04.404+0000 I COMMAND  [conn11] CMD: drop ace_stat.stat_life
+2024-02-13T10:19:04.404+0000 I STORAGE  [conn11] createCollection: ace_stat.stat_life with generated UUID: 3887d6bd-f91f-40ff-a98b-4483e4bd748f
+2024-02-13T10:19:04.455+0000 I COMMAND  [conn11] CMD: drop ace_stat.stat_hourly
+2024-02-13T10:19:04.457+0000 I STORAGE  [conn11] createCollection: ace_stat.stat_hourly with generated UUID: fd74f1c9-8ea8-44c4-b129-298029efb9c4
+2024-02-13T10:19:05.371+0000 I COMMAND  [conn11] CMD: drop ace_stat.stat_minute
+2024-02-13T10:19:05.372+0000 I COMMAND  [conn11] CMD: drop ace_stat.stat_monthly
+2024-02-13T10:19:05.372+0000 I COMMAND  [conn11] CMD: drop ace_stat.stat_archive
+2024-02-13T10:19:05.373+0000 I STORAGE  [conn11] createCollection: ace_stat.stat_archive with generated UUID: 63f2d8ba-626d-47ce-a2b0-4af94c57aacd
+2024-02-13T10:19:05.440+0000 I COMMAND  [conn11] CMD: drop ace_stat.stat_dpi
+2024-02-13T10:19:05.441+0000 I STORAGE  [conn11] createCollection: ace_stat.stat_dpi with generated UUID: fd9c3bd0-d71f-4266-80e1-47baa0f9f713
+2024-02-13T10:19:06.107+0000 I COMMAND  [conn11] CMD: drop ace_stat.stat_daily
+2024-02-13T10:19:06.108+0000 I STORAGE  [conn11] createCollection: ace_stat.stat_daily with generated UUID: 59e5b808-976d-481d-ab9a-007f4ed68955
+2024-02-13T10:19:06.240+0000 I NETWORK  [conn11] end connection 127.0.0.1:42104 (7 connections now open)
+2024-02-13T10:19:06.240+0000 I NETWORK  [conn10] end connection 127.0.0.1:42086 (6 connections now open)
+2024-02-13T10:19:06.240+0000 I NETWORK  [conn9] end connection 127.0.0.1:42088 (5 connections now open)
+2024-02-13T10:19:07.460+0000 I NETWORK  [conn4] end connection 127.0.0.1:57478 (4 connections now open)
+2024-02-13T10:19:07.460+0000 I NETWORK  [conn2] end connection 127.0.0.1:39314 (3 connections now open)
+2024-02-13T10:19:07.460+0000 I NETWORK  [conn5] end connection 127.0.0.1:44534 (2 connections now open)
+2024-02-13T10:19:07.461+0000 I NETWORK  [conn1] end connection 127.0.0.1:39308 (1 connection now open)
+2024-02-13T10:19:07.461+0000 I NETWORK  [conn3] end connection 127.0.0.1:57470 (0 connections now open)
+2024-02-13T10:19:07.499+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:52442 #12 (1 connection now open)
+2024-02-13T10:19:07.499+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:52444 #13 (2 connections now open)
+2024-02-13T10:19:07.499+0000 I NETWORK  [conn12] received client metadata from 127.0.0.1:52442 conn12: { driver: { name: "mongo-java-driver|sync", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }
+2024-02-13T10:19:07.499+0000 I NETWORK  [conn13] received client metadata from 127.0.0.1:52444 conn13: { driver: { name: "mongo-java-driver|sync", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }
+2024-02-13T10:19:07.501+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:52474 #14 (3 connections now open)
+2024-02-13T10:19:07.502+0000 I NETWORK  [conn14] received client metadata from 127.0.0.1:52474 conn14: { driver: { name: "mongo-java-driver|sync", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }
+2024-02-13T10:19:07.514+0000 I COMMAND  [conn14] terminating, shutdown command received
+2024-02-13T10:19:07.514+0000 I NETWORK  [conn14] shutdown: going to close listening sockets...
+2024-02-13T10:19:07.514+0000 I NETWORK  [conn14] removing socket file: /usr/lib/unifi/run/mongodb-27117.sock
+2024-02-13T10:19:07.514+0000 I FTDC     [conn14] Shutting down full-time diagnostic data capture
+2024-02-13T10:19:07.517+0000 I STORAGE  [conn14] WiredTigerKVEngine shutting down
+2024-02-13T10:19:07.970+0000 I STORAGE  [conn14] shutdown: removing fs lock...
+2024-02-13T10:19:07.970+0000 I CONTROL  [conn14] now exiting
+2024-02-13T10:19:07.970+0000 I CONTROL  [conn14] shutting down with code:0
+2024-02-13T10:19:28.006+0000 I CONTROL  [main] ***** SERVER RESTARTED *****
+2024-02-13T10:19:28.014+0000 I CONTROL  [initandlisten] MongoDB starting : pid=867 port=27117 dbpath=/usr/lib/unifi/data/db 64-bit host=41456b79963f
+2024-02-13T10:19:28.014+0000 I CONTROL  [initandlisten] db version v3.6.8
+2024-02-13T10:19:28.014+0000 I CONTROL  [initandlisten] git version: 8e540c0b6db93ce994cc548f000900bdc740f80a
+2024-02-13T10:19:28.014+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.1.1f  31 Mar 2020
+2024-02-13T10:19:28.014+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2024-02-13T10:19:28.014+0000 I CONTROL  [initandlisten] modules: none
+2024-02-13T10:19:28.014+0000 I CONTROL  [initandlisten] build environment:
+2024-02-13T10:19:28.014+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2024-02-13T10:19:28.014+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2024-02-13T10:19:28.014+0000 I CONTROL  [initandlisten] options: { net: { bindIp: "127.0.0.1", port: 27117, unixDomainSocket: { pathPrefix: "/usr/lib/unifi/run" } }, processManagement: { pidFilePath: "/usr/lib/unifi/run/mongod.pid" }, storage: { dbPath: "/usr/lib/unifi/data/db", wiredTiger: { engineConfig: { configString: "cache_size=256M" } } }, systemLog: { destination: "file", logAppend: true, logRotate: "reopen", path: "/usr/lib/unifi/logs/mongod.log" } }
+2024-02-13T10:19:28.014+0000 I -        [initandlisten] Detected data files in /usr/lib/unifi/data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2024-02-13T10:19:28.014+0000 I STORAGE  [initandlisten] 
+2024-02-13T10:19:28.014+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2024-02-13T10:19:28.014+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2024-02-13T10:19:28.014+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3382M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),cache_size=256M
+2024-02-13T10:19:29.057+0000 I STORAGE  [initandlisten] WiredTiger message [1707819569:57210][867:0x7fbcfc0bcac0], txn-recover: Main recovery loop: starting at 1/7364608
+2024-02-13T10:19:29.188+0000 I STORAGE  [initandlisten] WiredTiger message [1707819569:188213][867:0x7fbcfc0bcac0], txn-recover: Recovering log 1 through 2
+2024-02-13T10:19:29.287+0000 I STORAGE  [initandlisten] WiredTiger message [1707819569:287390][867:0x7fbcfc0bcac0], txn-recover: Recovering log 2 through 2
+2024-02-13T10:19:29.349+0000 I STORAGE  [initandlisten] WiredTiger message [1707819569:349732][867:0x7fbcfc0bcac0], txn-recover: Set global recovery timestamp: 0
+2024-02-13T10:19:29.713+0000 I CONTROL  [initandlisten] 
+2024-02-13T10:19:29.713+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2024-02-13T10:19:29.713+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2024-02-13T10:19:29.714+0000 I CONTROL  [initandlisten] 
+2024-02-13T10:19:29.800+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/usr/lib/unifi/data/db/diagnostic.data'
+2024-02-13T10:19:29.801+0000 I NETWORK  [initandlisten] waiting for connections on port 27117
+2024-02-13T10:19:30.215+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:47904 #1 (1 connection now open)
+2024-02-13T10:19:30.222+0000 I NETWORK  [conn1] received client metadata from 127.0.0.1:47904 conn1: { driver: { name: "mongo-java-driver|sync", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }
+2024-02-13T10:19:30.273+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:47916 #2 (2 connections now open)
+2024-02-13T10:19:30.274+0000 I NETWORK  [conn2] received client metadata from 127.0.0.1:47916 conn2: { driver: { name: "mongo-java-driver|sync", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }
+2024-02-13T10:19:30.366+0000 I STORAGE  [conn2] createCollection: ace.heatmap with generated UUID: 11cc51f0-1d30-4a09-b244-fec54463b160
+2024-02-13T10:19:30.407+0000 I INDEX    [conn2] build index on: ace.heatmap properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.heatmap" }
+2024-02-13T10:19:30.407+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:30.408+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:30.426+0000 I INDEX    [conn2] build index on: ace.heatmap properties: { v: 2, key: { map_id: 1, site_id: 1 }, name: "map_id_1_site_id_1", ns: "ace.heatmap" }
+2024-02-13T10:19:30.426+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:30.427+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:30.448+0000 I INDEX    [conn2] build index on: ace.heatmap properties: { v: 2, key: { type: 1, site_id: 1 }, name: "type_1_site_id_1", ns: "ace.heatmap" }
+2024-02-13T10:19:30.448+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:30.449+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:30.453+0000 I STORAGE  [conn2] createCollection: ace.voucher with generated UUID: a36358fd-2aec-438a-9007-0f9e35291724
+2024-02-13T10:19:30.497+0000 I INDEX    [conn2] build index on: ace.voucher properties: { v: 2, key: { code: 1, site_id: 1 }, name: "code_1_site_id_1", ns: "ace.voucher" }
+2024-02-13T10:19:30.497+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:30.498+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:30.517+0000 I INDEX    [conn2] build index on: ace.voucher properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.voucher" }
+2024-02-13T10:19:30.517+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:30.518+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:30.539+0000 I INDEX    [conn2] build index on: ace.voucher properties: { v: 2, key: { create_time: 1, site_id: 1 }, name: "create_time_1_site_id_1", ns: "ace.voucher" }
+2024-02-13T10:19:30.539+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:30.542+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:30.563+0000 I INDEX    [conn2] build index on: ace.voucher properties: { v: 2, key: { end_time: 1, site_id: 1 }, name: "end_time_1_site_id_1", ns: "ace.voucher" }
+2024-02-13T10:19:30.563+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:30.564+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:30.588+0000 I INDEX    [conn2] build index on: ace.networkconf properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.networkconf" }
+2024-02-13T10:19:30.588+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:30.594+0000 I INDEX    [conn2] build index done.  scanned 7 total records. 0 secs
+2024-02-13T10:19:30.611+0000 I INDEX    [conn2] build index on: ace.networkconf properties: { v: 2, key: { name: 1, site_id: 1 }, name: "name_1_site_id_1", ns: "ace.networkconf" }
+2024-02-13T10:19:30.611+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:30.618+0000 I INDEX    [conn2] build index done.  scanned 7 total records. 0 secs
+2024-02-13T10:19:30.623+0000 I STORAGE  [conn2] createCollection: ace.rogueknown with generated UUID: 5750f85e-b9c4-4d5c-b49e-edd8af0807fd
+2024-02-13T10:19:30.666+0000 I INDEX    [conn2] build index on: ace.rogueknown properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.rogueknown" }
+2024-02-13T10:19:30.666+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:30.667+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:30.688+0000 I INDEX    [conn2] build index on: ace.setting properties: { v: 2, key: { key: 1, site_id: 1 }, name: "key_1_site_id_1", ns: "ace.setting" }
+2024-02-13T10:19:30.688+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:30.694+0000 I INDEX    [conn2] build index done.  scanned 30 total records. 0 secs
+2024-02-13T10:19:30.708+0000 I INDEX    [conn2] build index on: ace.setting properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.setting" }
+2024-02-13T10:19:30.708+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:30.714+0000 I INDEX    [conn2] build index done.  scanned 30 total records. 0 secs
+2024-02-13T10:19:30.722+0000 I STORAGE  [conn2] createCollection: ace.payment with generated UUID: 1b15e39b-2f47-4b9c-bfa2-a6104e9a8996
+2024-02-13T10:19:30.766+0000 I INDEX    [conn2] build index on: ace.payment properties: { v: 2, key: { within: 1, site_id: 1 }, name: "within_1_site_id_1", ns: "ace.payment" }
+2024-02-13T10:19:30.766+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:30.766+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:30.785+0000 I INDEX    [conn2] build index on: ace.payment properties: { v: 2, key: { time: 1, site_id: 1 }, name: "time_1_site_id_1", ns: "ace.payment" }
+2024-02-13T10:19:30.786+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:30.788+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:30.811+0000 I INDEX    [conn2] build index on: ace.payment properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.payment" }
+2024-02-13T10:19:30.811+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:30.814+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:30.827+0000 I STORAGE  [conn2] createCollection: ace.crashlog with generated UUID: f4c01f77-28da-423f-afcc-27ba508968ac
+2024-02-13T10:19:30.883+0000 I INDEX    [conn2] build index on: ace.crashlog properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.crashlog" }
+2024-02-13T10:19:30.883+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:30.887+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:30.898+0000 I STORAGE  [conn2] createCollection: ace.tag with generated UUID: 960aaaad-bede-4aa4-a0e1-404d04913f6b
+2024-02-13T10:19:30.956+0000 I INDEX    [conn2] build index on: ace.tag properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.tag" }
+2024-02-13T10:19:30.956+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:30.959+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:30.976+0000 I STORAGE  [conn2] createCollection: ace.spatialrecord with generated UUID: 3e112c22-8567-44a6-a217-0604042ebdce
+2024-02-13T10:19:31.034+0000 I INDEX    [conn2] build index on: ace.spatialrecord properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.spatialrecord" }
+2024-02-13T10:19:31.034+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:31.037+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:31.075+0000 I INDEX    [conn2] build index on: ace.verification properties: { v: 2, key: { email: 1 }, name: "email_1", ns: "ace.verification" }
+2024-02-13T10:19:31.075+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:31.083+0000 I INDEX    [conn2] build index done.  scanned 2 total records. 0 secs
+2024-02-13T10:19:31.107+0000 I INDEX    [conn2] build index on: ace.verification properties: { v: 2, key: { token: 1 }, name: "token_1", ns: "ace.verification" }
+2024-02-13T10:19:31.107+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:31.116+0000 I INDEX    [conn2] build index done.  scanned 2 total records. 0 secs
+2024-02-13T10:19:31.132+0000 I STORAGE  [conn2] createCollection: ace.rogue with generated UUID: 19c8b13e-61ad-4f79-9997-7ee9ba137912
+2024-02-13T10:19:31.191+0000 I INDEX    [conn2] build index on: ace.rogue properties: { v: 2, key: { ap_mac: 1, site_id: 1 }, name: "ap_mac_1_site_id_1", ns: "ace.rogue" }
+2024-02-13T10:19:31.192+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:31.195+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:31.229+0000 I INDEX    [conn2] build index on: ace.rogue properties: { v: 2, key: { bssid: 1, site_id: 1 }, name: "bssid_1_site_id_1", ns: "ace.rogue" }
+2024-02-13T10:19:31.229+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:31.233+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:31.256+0000 I INDEX    [conn2] build index on: ace.rogue properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.rogue" }
+2024-02-13T10:19:31.256+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:31.257+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:31.276+0000 I INDEX    [conn2] build index on: ace.rogue properties: { v: 2, key: { rssi: 1, site_id: 1 }, name: "rssi_1_site_id_1", ns: "ace.rogue" }
+2024-02-13T10:19:31.276+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:31.278+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:31.298+0000 I INDEX    [conn2] build index on: ace.rogue properties: { v: 2, key: { last_seen: 1, site_id: 1 }, name: "last_seen_1_site_id_1", ns: "ace.rogue" }
+2024-02-13T10:19:31.298+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:31.299+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:31.303+0000 I STORAGE  [conn2] createCollection: ace.dpiapp with generated UUID: 7bf7d833-18a5-46c5-ba11-7fbb32af5280
+2024-02-13T10:19:31.348+0000 I INDEX    [conn2] build index on: ace.dpiapp properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.dpiapp" }
+2024-02-13T10:19:31.348+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:31.350+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:31.356+0000 I STORAGE  [conn2] createCollection: ace.virtualdevice with generated UUID: d29b753f-7fe1-42fa-997a-6dce912da015
+2024-02-13T10:19:31.406+0000 I INDEX    [conn2] build index on: ace.virtualdevice properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.virtualdevice" }
+2024-02-13T10:19:31.406+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:31.409+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:31.444+0000 I INDEX    [conn2] build index on: ace.firewallgroup properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.firewallgroup" }
+2024-02-13T10:19:31.444+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:31.453+0000 I INDEX    [conn2] build index done.  scanned 1 total records. 0 secs
+2024-02-13T10:19:31.478+0000 I INDEX    [conn2] build index on: ace.firewallgroup properties: { v: 2, key: { name: 1, site_id: 1 }, name: "name_1_site_id_1", ns: "ace.firewallgroup" }
+2024-02-13T10:19:31.478+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:31.487+0000 I INDEX    [conn2] build index done.  scanned 1 total records. 0 secs
+2024-02-13T10:19:31.502+0000 I STORAGE  [conn2] createCollection: ace.hotspotop with generated UUID: 3c931562-fe3c-4f69-bbb6-b937028de3e0
+2024-02-13T10:19:31.566+0000 I INDEX    [conn2] build index on: ace.hotspotop properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.hotspotop" }
+2024-02-13T10:19:31.566+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:31.568+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:31.591+0000 I INDEX    [conn2] build index on: ace.hotspotop properties: { v: 2, key: { name: 1, site_id: 1 }, name: "name_1_site_id_1", ns: "ace.hotspotop" }
+2024-02-13T10:19:31.592+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:31.594+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:31.629+0000 I INDEX    [conn2] build index on: ace.portforward properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.portforward" }
+2024-02-13T10:19:31.629+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:31.638+0000 I INDEX    [conn2] build index done.  scanned 2 total records. 0 secs
+2024-02-13T10:19:31.661+0000 I INDEX    [conn2] build index on: ace.portforward properties: { v: 2, key: { name: 1, site_id: 1 }, name: "name_1_site_id_1", ns: "ace.portforward" }
+2024-02-13T10:19:31.661+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:31.671+0000 I INDEX    [conn2] build index done.  scanned 2 total records. 0 secs
+2024-02-13T10:19:31.684+0000 I STORAGE  [conn2] createCollection: ace.dhcpoption with generated UUID: 6581121f-1def-42ca-aaa4-ef68c2986608
+2024-02-13T10:19:31.739+0000 I INDEX    [conn2] build index on: ace.dhcpoption properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.dhcpoption" }
+2024-02-13T10:19:31.739+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:31.741+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:31.750+0000 I STORAGE  [conn2] createCollection: ace.task with generated UUID: fd703e72-79aa-4545-a8c4-949576b2c69d
+2024-02-13T10:19:31.799+0000 I INDEX    [conn2] build index on: ace.task properties: { v: 2, key: { device_id: 1 }, name: "device_id_1", ns: "ace.task" }
+2024-02-13T10:19:31.799+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:31.800+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:31.820+0000 I INDEX    [conn2] build index on: ace.task properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.task" }
+2024-02-13T10:19:31.820+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:31.822+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:31.847+0000 I INDEX    [conn2] build index on: ace.usergroup properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.usergroup" }
+2024-02-13T10:19:31.847+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:31.854+0000 I INDEX    [conn2] build index done.  scanned 3 total records. 0 secs
+2024-02-13T10:19:31.863+0000 I STORAGE  [conn2] createCollection: ace.guest with generated UUID: 10091281-20ab-45c8-b5d1-2cefe715f9f5
+2024-02-13T10:19:31.916+0000 I INDEX    [conn2] build index on: ace.guest properties: { v: 2, key: { end: 1, site_id: 1 }, name: "end_1_site_id_1", ns: "ace.guest" }
+2024-02-13T10:19:31.916+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:31.919+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:31.938+0000 I INDEX    [conn2] build index on: ace.guest properties: { v: 2, key: { authorized_by: 1, site_id: 1 }, name: "authorized_by_1_site_id_1", ns: "ace.guest" }
+2024-02-13T10:19:31.939+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:31.940+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:31.960+0000 I INDEX    [conn2] build index on: ace.guest properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.guest" }
+2024-02-13T10:19:31.960+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:31.962+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:31.983+0000 I INDEX    [conn2] build index on: ace.guest properties: { v: 2, key: { mac: 1, site_id: 1 }, name: "mac_1_site_id_1", ns: "ace.guest" }
+2024-02-13T10:19:31.983+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:31.985+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:32.007+0000 I INDEX    [conn2] build index on: ace.guest properties: { v: 2, key: { start: 1, site_id: 1 }, name: "start_1_site_id_1", ns: "ace.guest" }
+2024-02-13T10:19:32.007+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:32.011+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:32.035+0000 I INDEX    [conn2] build index on: ace.guest properties: { v: 2, key: { unauthorized_by: 1, site_id: 1 }, name: "unauthorized_by_1_site_id_1", ns: "ace.guest" }
+2024-02-13T10:19:32.035+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:32.038+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:32.072+0000 I INDEX    [conn2] build index on: ace.device properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.device" }
+2024-02-13T10:19:32.072+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:32.079+0000 I INDEX    [conn2] build index done.  scanned 3 total records. 0 secs
+2024-02-13T10:19:32.103+0000 I INDEX    [conn2] build index on: ace.device properties: { v: 2, key: { mac: 1, site_id: 1 }, name: "mac_1_site_id_1", ns: "ace.device" }
+2024-02-13T10:19:32.104+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:32.112+0000 I INDEX    [conn2] build index done.  scanned 3 total records. 0 secs
+2024-02-13T10:19:32.147+0000 I INDEX    [conn2] build index on: ace.admin properties: { v: 2, key: { email: 1 }, name: "email_1", ns: "ace.admin" }
+2024-02-13T10:19:32.147+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:32.158+0000 I INDEX    [conn2] build index done.  scanned 3 total records. 0 secs
+2024-02-13T10:19:32.184+0000 I INDEX    [conn2] build index on: ace.admin properties: { v: 2, key: { uid: 1 }, name: "uid_1", ns: "ace.admin" }
+2024-02-13T10:19:32.184+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:32.192+0000 I INDEX    [conn2] build index done.  scanned 3 total records. 0 secs
+2024-02-13T10:19:32.226+0000 I INDEX    [conn2] build index on: ace.privilege properties: { v: 2, key: { admin_id: 1 }, name: "admin_id_1", ns: "ace.privilege" }
+2024-02-13T10:19:32.226+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:32.236+0000 I INDEX    [conn2] build index done.  scanned 8 total records. 0 secs
+2024-02-13T10:19:32.265+0000 I INDEX    [conn2] build index on: ace.radiusprofile properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.radiusprofile" }
+2024-02-13T10:19:32.265+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:32.272+0000 I INDEX    [conn2] build index done.  scanned 3 total records. 0 secs
+2024-02-13T10:19:32.291+0000 I INDEX    [conn2] build index on: ace.radiusprofile properties: { v: 2, key: { name: 1, site_id: 1 }, name: "name_1_site_id_1", ns: "ace.radiusprofile" }
+2024-02-13T10:19:32.291+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:32.298+0000 I INDEX    [conn2] build index done.  scanned 3 total records. 0 secs
+2024-02-13T10:19:32.334+0000 I INDEX    [conn2] build index on: ace.scheduletask properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.scheduletask" }
+2024-02-13T10:19:32.334+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:32.342+0000 I INDEX    [conn2] build index done.  scanned 2 total records. 0 secs
+2024-02-13T10:19:32.355+0000 I STORAGE  [conn2] createCollection: ace.routing with generated UUID: 6327e433-2c63-4382-8b2d-e9c0e71b10fc
+2024-02-13T10:19:32.404+0000 I INDEX    [conn2] build index on: ace.routing properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.routing" }
+2024-02-13T10:19:32.404+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:32.405+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:32.422+0000 I INDEX    [conn2] build index on: ace.routing properties: { v: 2, key: { name: 1, site_id: 1 }, name: "name_1_site_id_1", ns: "ace.routing" }
+2024-02-13T10:19:32.422+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:32.423+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:32.443+0000 I INDEX    [conn2] build index on: ace.portconf properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.portconf" }
+2024-02-13T10:19:32.443+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:32.449+0000 I INDEX    [conn2] build index done.  scanned 8 total records. 0 secs
+2024-02-13T10:19:32.453+0000 I STORAGE  [conn2] createCollection: ace.featuremigration with generated UUID: 9e861248-0775-4c2c-9c45-eb5f7d3e2ec5
+2024-02-13T10:19:32.509+0000 I INDEX    [conn2] build index on: ace.featuremigration properties: { v: 2, key: { name: 1 }, name: "name_1", ns: "ace.featuremigration" }
+2024-02-13T10:19:32.509+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:32.513+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:32.549+0000 I INDEX    [conn2] build index on: ace.alarm properties: { v: 2, key: { datetime: 1 }, name: "datetime_1", ns: "ace.alarm" }
+2024-02-13T10:19:32.549+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:32.558+0000 I INDEX    [conn2] build index done.  scanned 70 total records. 0 secs
+2024-02-13T10:19:32.583+0000 I INDEX    [conn2] build index on: ace.alarm properties: { v: 2, key: { site_id: 1, archived: 1 }, name: "site_id_1_archived_1", ns: "ace.alarm" }
+2024-02-13T10:19:32.583+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:32.595+0000 I INDEX    [conn2] build index done.  scanned 70 total records. 0 secs
+2024-02-13T10:19:32.616+0000 I INDEX    [conn2] build index on: ace.alarm properties: { v: 2, key: { key: 1 }, name: "key_1", ns: "ace.alarm" }
+2024-02-13T10:19:32.616+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:32.626+0000 I INDEX    [conn2] build index done.  scanned 70 total records. 0 secs
+2024-02-13T10:19:32.658+0000 I INDEX    [conn2] build index on: ace.firewallrule properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.firewallrule" }
+2024-02-13T10:19:32.659+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:32.666+0000 I INDEX    [conn2] build index done.  scanned 1 total records. 0 secs
+2024-02-13T10:19:32.692+0000 I INDEX    [conn2] build index on: ace.firewallrule properties: { v: 2, key: { name: 1, site_id: 1 }, name: "name_1_site_id_1", ns: "ace.firewallrule" }
+2024-02-13T10:19:32.693+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:32.701+0000 I INDEX    [conn2] build index done.  scanned 1 total records. 0 secs
+2024-02-13T10:19:32.736+0000 I INDEX    [conn2] build index on: ace.event properties: { v: 2, key: { subsystem: 1, site_id: 1 }, name: "subsystem_1_site_id_1", ns: "ace.event" }
+2024-02-13T10:19:32.737+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:32.748+0000 I INDEX    [conn2] build index done.  scanned 279 total records. 0 secs
+2024-02-13T10:19:32.771+0000 I INDEX    [conn2] build index on: ace.event properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.event" }
+2024-02-13T10:19:32.771+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:32.781+0000 I INDEX    [conn2] build index done.  scanned 279 total records. 0 secs
+2024-02-13T10:19:32.808+0000 I INDEX    [conn2] build index on: ace.event properties: { v: 2, key: { datetime: 1, key: 1 }, name: "datetime_1_key_1", ns: "ace.event" }
+2024-02-13T10:19:32.808+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:32.821+0000 I INDEX    [conn2] build index done.  scanned 279 total records. 0 secs
+2024-02-13T10:19:32.855+0000 I INDEX    [conn2] build index on: ace.wlangroup properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.wlangroup" }
+2024-02-13T10:19:32.855+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:32.866+0000 I INDEX    [conn2] build index done.  scanned 4 total records. 0 secs
+2024-02-13T10:19:32.891+0000 I INDEX    [conn2] build index on: ace.wlangroup properties: { v: 2, key: { name: 1, site_id: 1 }, name: "name_1_site_id_1", ns: "ace.wlangroup" }
+2024-02-13T10:19:32.892+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:32.899+0000 I INDEX    [conn2] build index done.  scanned 4 total records. 0 secs
+2024-02-13T10:19:32.929+0000 I INDEX    [conn2] build index on: ace.map properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.map" }
+2024-02-13T10:19:32.929+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:32.937+0000 I INDEX    [conn2] build index done.  scanned 2 total records. 0 secs
+2024-02-13T10:19:32.947+0000 I STORAGE  [conn2] createCollection: ace.stat with generated UUID: 6e181b4e-37d0-45a8-86f9-d7bdff586bc0
+2024-02-13T10:19:33.004+0000 I INDEX    [conn2] build index on: ace.stat properties: { v: 2, key: { datetime: 1, site_id: 1 }, name: "datetime_1_site_id_1", ns: "ace.stat" }
+2024-02-13T10:19:33.004+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:33.006+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:33.029+0000 I INDEX    [conn2] build index on: ace.stat properties: { v: 2, key: { wlan: 1, site_id: 1 }, name: "wlan_1_site_id_1", ns: "ace.stat" }
+2024-02-13T10:19:33.029+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:33.031+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:33.055+0000 I INDEX    [conn2] build index on: ace.stat properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.stat" }
+2024-02-13T10:19:33.055+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:33.058+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:33.083+0000 I INDEX    [conn2] build index on: ace.stat properties: { v: 2, key: { ap: 1, site_id: 1 }, name: "ap_1_site_id_1", ns: "ace.stat" }
+2024-02-13T10:19:33.083+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:33.086+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:33.112+0000 I INDEX    [conn2] build index on: ace.stat properties: { v: 2, key: { user: 1, site_id: 1 }, name: "user_1_site_id_1", ns: "ace.stat" }
+2024-02-13T10:19:33.113+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:33.118+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:33.143+0000 I INDEX    [conn2] build index on: ace.stat properties: { v: 2, key: { o: 1, site_id: 1 }, name: "o_1_site_id_1", ns: "ace.stat" }
+2024-02-13T10:19:33.143+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:33.146+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:33.157+0000 I STORAGE  [conn2] createCollection: ace.portalfile with generated UUID: 8a9aa4cf-5f4c-43ce-9dea-3d27c3e7bf99
+2024-02-13T10:19:33.211+0000 I INDEX    [conn2] build index on: ace.portalfile properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.portalfile" }
+2024-02-13T10:19:33.211+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:33.213+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:33.246+0000 I INDEX    [conn2] build index on: ace.wlanconf properties: { v: 2, key: { usergroup_id: 1, site_id: 1 }, name: "usergroup_id_1_site_id_1", ns: "ace.wlanconf" }
+2024-02-13T10:19:33.247+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:33.255+0000 I INDEX    [conn2] build index done.  scanned 4 total records. 0 secs
+2024-02-13T10:19:33.277+0000 I INDEX    [conn2] build index on: ace.wlanconf properties: { v: 2, key: { attr_hidden_id: 1, site_id: 1 }, name: "attr_hidden_id_1_site_id_1", ns: "ace.wlanconf" }
+2024-02-13T10:19:33.278+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:33.287+0000 I INDEX    [conn2] build index done.  scanned 4 total records. 0 secs
+2024-02-13T10:19:33.310+0000 I INDEX    [conn2] build index on: ace.wlanconf properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.wlanconf" }
+2024-02-13T10:19:33.310+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:33.319+0000 I INDEX    [conn2] build index done.  scanned 4 total records. 0 secs
+2024-02-13T10:19:33.348+0000 I INDEX    [conn2] build index on: ace.wlanconf properties: { v: 2, key: { name: 1, site_id: 1 }, name: "name_1_site_id_1", ns: "ace.wlanconf" }
+2024-02-13T10:19:33.348+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:33.357+0000 I INDEX    [conn2] build index done.  scanned 4 total records. 0 secs
+2024-02-13T10:19:33.370+0000 I STORAGE  [conn2] createCollection: ace.ipsalert with generated UUID: d8ec55b0-8dc2-47a2-b7a5-40b0d3eedaa8
+2024-02-13T10:19:33.415+0000 I INDEX    [conn2] build index on: ace.ipsalert properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.ipsalert" }
+2024-02-13T10:19:33.415+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:33.416+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:33.438+0000 I INDEX    [conn2] build index on: ace.ipsalert properties: { v: 2, key: { timestamp: 1 }, name: "timestamp_1", ns: "ace.ipsalert" }
+2024-02-13T10:19:33.438+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:33.439+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:33.444+0000 I STORAGE  [conn2] createCollection: ace.heatmappoint with generated UUID: 227934d4-c5ca-4cd8-a291-f0dd94f3f73a
+2024-02-13T10:19:33.489+0000 I INDEX    [conn2] build index on: ace.heatmappoint properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.heatmappoint" }
+2024-02-13T10:19:33.489+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:33.490+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:33.507+0000 I INDEX    [conn2] build index on: ace.heatmappoint properties: { v: 2, key: { heatmap_id: 1, site_id: 1 }, name: "heatmap_id_1_site_id_1", ns: "ace.heatmappoint" }
+2024-02-13T10:19:33.507+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:33.508+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:33.535+0000 I INDEX    [conn2] build index on: ace.site properties: { v: 2, key: { name: 1 }, name: "name_1", ns: "ace.site" }
+2024-02-13T10:19:33.535+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:33.541+0000 I INDEX    [conn2] build index done.  scanned 3 total records. 0 secs
+2024-02-13T10:19:33.561+0000 I INDEX    [conn2] build index on: ace.site properties: { v: 2, key: { attr_hidden_id: 1 }, name: "attr_hidden_id_1", ns: "ace.site" }
+2024-02-13T10:19:33.561+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:33.569+0000 I INDEX    [conn2] build index done.  scanned 3 total records. 0 secs
+2024-02-13T10:19:33.577+0000 I STORAGE  [conn2] createCollection: ace.ssooauthtoken with generated UUID: cc96265c-c88e-4c34-a964-38226ce5b94f
+2024-02-13T10:19:33.633+0000 I INDEX    [conn2] build index on: ace.ssooauthtoken properties: { v: 2, key: { ssooauthtoken: 1 }, name: "ssooauthtoken_1", ns: "ace.ssooauthtoken" }
+2024-02-13T10:19:33.633+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:33.636+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:33.644+0000 I STORAGE  [conn2] createCollection: ace.hotspot2conf with generated UUID: 32999a46-94a8-4c8b-90e4-47ecc2087446
+2024-02-13T10:19:33.703+0000 I INDEX    [conn2] build index on: ace.hotspot2conf properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.hotspot2conf" }
+2024-02-13T10:19:33.703+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:33.705+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:33.717+0000 I STORAGE  [conn2] createCollection: ace.dynamicdns with generated UUID: f2f2bcde-21f0-4dac-abf3-42119e6d2373
+2024-02-13T10:19:33.781+0000 I INDEX    [conn2] build index on: ace.dynamicdns properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.dynamicdns" }
+2024-02-13T10:19:33.781+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:33.785+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:33.801+0000 I STORAGE  [conn2] createCollection: ace.hotspotpackage with generated UUID: 8fb4cfd6-d13e-4096-9b14-0cb7aa7c91bb
+2024-02-13T10:19:33.853+0000 I INDEX    [conn2] build index on: ace.hotspotpackage properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.hotspotpackage" }
+2024-02-13T10:19:33.853+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:33.855+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:33.874+0000 I INDEX    [conn2] build index on: ace.hotspotpackage properties: { v: 2, key: { name: 1, site_id: 1 }, name: "name_1_site_id_1", ns: "ace.hotspotpackage" }
+2024-02-13T10:19:33.874+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:33.875+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:33.900+0000 I INDEX    [conn2] build index on: ace.user properties: { v: 2, key: { fingerprint_source: 1, product_line: 1 }, name: "fingerprint_source_1_product_line_1", ns: "ace.user" }
+2024-02-13T10:19:33.900+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:33.907+0000 I INDEX    [conn2] build index done.  scanned 74 total records. 0 secs
+2024-02-13T10:19:33.925+0000 I INDEX    [conn2] build index on: ace.user properties: { v: 2, key: { is_guest: 1, site_id: 1 }, name: "is_guest_1_site_id_1", ns: "ace.user" }
+2024-02-13T10:19:33.925+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:33.932+0000 I INDEX    [conn2] build index done.  scanned 74 total records. 0 secs
+2024-02-13T10:19:33.950+0000 I INDEX    [conn2] build index on: ace.user properties: { v: 2, key: { blocked: 1, site_id: 1 }, name: "blocked_1_site_id_1", ns: "ace.user" }
+2024-02-13T10:19:33.950+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:33.957+0000 I INDEX    [conn2] build index done.  scanned 74 total records. 0 secs
+2024-02-13T10:19:33.977+0000 I INDEX    [conn2] build index on: ace.user properties: { v: 2, key: { fixed_ap_enabled: 1, site_id: 1 }, name: "fixed_ap_enabled_1_site_id_1", ns: "ace.user" }
+2024-02-13T10:19:33.977+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:33.984+0000 I INDEX    [conn2] build index done.  scanned 74 total records. 0 secs
+2024-02-13T10:19:34.006+0000 I INDEX    [conn2] build index on: ace.user properties: { v: 2, key: { blocked: 1, use_fixedip: 1, noted: 1, last_seen: 1, first_seen: 1 }, name: "blocked_1_use_fixedip_1_noted_1_last_seen_1_first_seen_1", ns: "ace.user" }
+2024-02-13T10:19:34.006+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:34.016+0000 I INDEX    [conn2] build index done.  scanned 74 total records. 0 secs
+2024-02-13T10:19:34.036+0000 I INDEX    [conn2] build index on: ace.user properties: { v: 2, key: { fingerprint_override: 1, site_id: 1 }, name: "fingerprint_override_1_site_id_1", ns: "ace.user" }
+2024-02-13T10:19:34.036+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:34.042+0000 I INDEX    [conn2] build index done.  scanned 74 total records. 0 secs
+2024-02-13T10:19:34.060+0000 I INDEX    [conn2] build index on: ace.user properties: { v: 2, key: { use_fixedip: 1, site_id: 1 }, name: "use_fixedip_1_site_id_1", ns: "ace.user" }
+2024-02-13T10:19:34.060+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:34.067+0000 I INDEX    [conn2] build index done.  scanned 74 total records. 0 secs
+2024-02-13T10:19:34.085+0000 I INDEX    [conn2] build index on: ace.user properties: { v: 2, key: { noted: 1, site_id: 1 }, name: "noted_1_site_id_1", ns: "ace.user" }
+2024-02-13T10:19:34.085+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:34.092+0000 I INDEX    [conn2] build index done.  scanned 74 total records. 0 secs
+2024-02-13T10:19:34.109+0000 I INDEX    [conn2] build index on: ace.user properties: { v: 2, key: { fixed_ap_mac: 1, site_id: 1 }, name: "fixed_ap_mac_1_site_id_1", ns: "ace.user" }
+2024-02-13T10:19:34.109+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:34.115+0000 I INDEX    [conn2] build index done.  scanned 74 total records. 0 secs
+2024-02-13T10:19:34.133+0000 I INDEX    [conn2] build index on: ace.user properties: { v: 2, key: { unifi_device_info_from_ucore.product_line: 1, site_id: 1 }, name: "unifi_device_info_from_ucore.product_line_1_site_id_1", ns: "ace.user" }
+2024-02-13T10:19:34.134+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:34.141+0000 I INDEX    [conn2] build index done.  scanned 74 total records. 0 secs
+2024-02-13T10:19:34.163+0000 I INDEX    [conn2] build index on: ace.user properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.user" }
+2024-02-13T10:19:34.163+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:34.171+0000 I INDEX    [conn2] build index done.  scanned 74 total records. 0 secs
+2024-02-13T10:19:34.196+0000 I INDEX    [conn2] build index on: ace.user properties: { v: 2, key: { mac: 1, site_id: 1 }, name: "mac_1_site_id_1", ns: "ace.user" }
+2024-02-13T10:19:34.196+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:34.205+0000 I INDEX    [conn2] build index done.  scanned 74 total records. 0 secs
+2024-02-13T10:19:34.232+0000 I INDEX    [conn2] build index on: ace.user properties: { v: 2, key: { last_seen: 1, site_id: 1 }, name: "last_seen_1_site_id_1", ns: "ace.user" }
+2024-02-13T10:19:34.232+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:34.240+0000 I INDEX    [conn2] build index done.  scanned 74 total records. 0 secs
+2024-02-13T10:19:34.254+0000 I STORAGE  [conn2] createCollection: ace.wall with generated UUID: 29f0b1d7-c6ad-48f8-9467-f1c5f607e024
+2024-02-13T10:19:34.309+0000 I INDEX    [conn2] build index on: ace.wall properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.wall" }
+2024-02-13T10:19:34.309+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:34.311+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:34.336+0000 I INDEX    [conn2] build index on: ace.wall properties: { v: 2, key: { map_id: 1, site_id: 1 }, name: "map_id_1_site_id_1", ns: "ace.wall" }
+2024-02-13T10:19:34.336+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:34.340+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:34.374+0000 I INDEX    [conn2] build index on: ace.account properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.account" }
+2024-02-13T10:19:34.375+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:34.384+0000 I INDEX    [conn2] build index done.  scanned 3 total records. 0 secs
+2024-02-13T10:19:34.406+0000 I INDEX    [conn2] build index on: ace.account properties: { v: 2, key: { email: 1, site_id: 1 }, name: "email_1_site_id_1", ns: "ace.account" }
+2024-02-13T10:19:34.406+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:34.416+0000 I INDEX    [conn2] build index done.  scanned 3 total records. 0 secs
+2024-02-13T10:19:34.436+0000 I INDEX    [conn2] build index on: ace.account properties: { v: 2, key: { name: 1, site_id: 1 }, name: "name_1_site_id_1", ns: "ace.account" }
+2024-02-13T10:19:34.436+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:34.442+0000 I INDEX    [conn2] build index done.  scanned 3 total records. 0 secs
+2024-02-13T10:19:34.467+0000 I INDEX    [conn2] build index on: ace.dpigroup properties: { v: 2, key: { site_id: 1 }, name: "site_id_1", ns: "ace.dpigroup" }
+2024-02-13T10:19:34.467+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:34.473+0000 I INDEX    [conn2] build index done.  scanned 2 total records. 0 secs
+2024-02-13T10:19:38.214+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:48630 #3 (3 connections now open)
+2024-02-13T10:19:38.215+0000 I NETWORK  [conn3] received client metadata from 127.0.0.1:48630 conn3: { driver: { name: "mongo-java-driver|sync", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }
+2024-02-13T10:19:41.593+0000 I STORAGE  [conn2] createCollection: ace_stat.stat_minute with generated UUID: 78d2751c-fa95-46aa-bd15-5b7a9a1d9743
+2024-02-13T10:19:41.666+0000 I INDEX    [conn2] build index on: ace_stat.stat_minute properties: { v: 2, key: { site_id: 1, datetime: 1 }, name: "site_id_1_datetime_1", ns: "ace_stat.stat_minute" }
+2024-02-13T10:19:41.666+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:41.669+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:41.686+0000 I INDEX    [conn2] build index on: ace_stat.stat_minute properties: { v: 2, key: { datetime: 1, o: 1, site_id: 1, oid: 1 }, name: "datetime_1_o_1_site_id_1_oid_1", ns: "ace_stat.stat_minute" }
+2024-02-13T10:19:41.686+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:41.687+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:41.720+0000 I INDEX    [conn2] build index on: ace_stat.stat_5minutes properties: { v: 2, key: { site_id: 1, datetime: 1 }, name: "site_id_1_datetime_1", ns: "ace_stat.stat_5minutes" }
+2024-02-13T10:19:41.720+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:41.765+0000 I INDEX    [conn2] build index done.  scanned 7200 total records. 0 secs
+2024-02-13T10:19:41.782+0000 I INDEX    [conn2] build index on: ace_stat.stat_5minutes properties: { v: 2, key: { datetime: 1, o: 1, site_id: 1, oid: 1 }, name: "datetime_1_o_1_site_id_1_oid_1", ns: "ace_stat.stat_5minutes" }
+2024-02-13T10:19:41.782+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:41.838+0000 I INDEX    [conn2] build index done.  scanned 7200 total records. 0 secs
+2024-02-13T10:19:41.867+0000 I INDEX    [conn2] build index on: ace_stat.stat_hourly properties: { v: 2, key: { site_id: 1, datetime: 1 }, name: "site_id_1_datetime_1", ns: "ace_stat.stat_hourly" }
+2024-02-13T10:19:41.867+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:41.884+0000 I INDEX    [conn2] build index done.  scanned 2582 total records. 0 secs
+2024-02-13T10:19:41.903+0000 I INDEX    [conn2] build index on: ace_stat.stat_hourly properties: { v: 2, key: { datetime: 1, o: 1, site_id: 1, oid: 1 }, name: "datetime_1_o_1_site_id_1_oid_1", ns: "ace_stat.stat_hourly" }
+2024-02-13T10:19:41.903+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:41.929+0000 I INDEX    [conn2] build index done.  scanned 2582 total records. 0 secs
+2024-02-13T10:19:41.955+0000 I INDEX    [conn2] build index on: ace_stat.stat_daily properties: { v: 2, key: { site_id: 1, datetime: 1 }, name: "site_id_1_datetime_1", ns: "ace_stat.stat_daily" }
+2024-02-13T10:19:41.955+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:41.962+0000 I INDEX    [conn2] build index done.  scanned 115 total records. 0 secs
+2024-02-13T10:19:41.973+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:48636 #4 (4 connections now open)
+2024-02-13T10:19:41.973+0000 I NETWORK  [conn4] received client metadata from 127.0.0.1:48636 conn4: { driver: { name: "mongo-java-driver|sync", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }
+2024-02-13T10:19:41.982+0000 I INDEX    [conn2] build index on: ace_stat.stat_daily properties: { v: 2, key: { datetime: 1, o: 1, site_id: 1, oid: 1 }, name: "datetime_1_o_1_site_id_1_oid_1", ns: "ace_stat.stat_daily" }
+2024-02-13T10:19:41.982+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:41.990+0000 I INDEX    [conn2] build index done.  scanned 115 total records. 0 secs
+2024-02-13T10:19:41.994+0000 I STORAGE  [conn2] createCollection: ace_stat.stat_monthly with generated UUID: 1b9d48c9-f009-4db1-8bf0-8651e7f461e4
+2024-02-13T10:19:42.041+0000 I INDEX    [conn2] build index on: ace_stat.stat_monthly properties: { v: 2, key: { site_id: 1, datetime: 1 }, name: "site_id_1_datetime_1", ns: "ace_stat.stat_monthly" }
+2024-02-13T10:19:42.042+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:42.043+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:42.063+0000 I INDEX    [conn2] build index on: ace_stat.stat_monthly properties: { v: 2, key: { datetime: 1, o: 1, site_id: 1, oid: 1 }, name: "datetime_1_o_1_site_id_1_oid_1", ns: "ace_stat.stat_monthly" }
+2024-02-13T10:19:42.063+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:42.064+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:42.085+0000 I INDEX    [conn2] build index on: ace_stat.stat_life properties: { v: 2, key: { site_id: 1, o: 1, oid: 1, datetime: 1 }, name: "site_id_1_o_1_oid_1_datetime_1", ns: "ace_stat.stat_life" }
+2024-02-13T10:19:42.085+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:42.091+0000 I INDEX    [conn2] build index done.  scanned 10 total records. 0 secs
+2024-02-13T10:19:42.111+0000 I INDEX    [conn2] build index on: ace_stat.stat_life properties: { v: 2, key: { datetime: 1 }, name: "datetime_1", ns: "ace_stat.stat_life" }
+2024-02-13T10:19:42.111+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:42.118+0000 I INDEX    [conn2] build index done.  scanned 10 total records. 0 secs
+2024-02-13T10:19:42.147+0000 I INDEX    [conn2] build index on: ace_stat.stat_archive properties: { v: 2, key: { site_id: 1, o: 1, oid: 1, datetime: 1 }, name: "site_id_1_o_1_oid_1_datetime_1", ns: "ace_stat.stat_archive" }
+2024-02-13T10:19:42.147+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:42.157+0000 I INDEX    [conn2] build index done.  scanned 81 total records. 0 secs
+2024-02-13T10:19:42.175+0000 I INDEX    [conn2] build index on: ace_stat.stat_archive properties: { v: 2, key: { datetime: 1 }, name: "datetime_1", ns: "ace_stat.stat_archive" }
+2024-02-13T10:19:42.175+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:42.183+0000 I INDEX    [conn2] build index done.  scanned 81 total records. 0 secs
+2024-02-13T10:19:42.220+0000 I INDEX    [conn2] build index on: ace_stat.stat_dpi properties: { v: 2, key: { site_id: 1, type: 1 }, name: "site_id_1_type_1", ns: "ace_stat.stat_dpi" }
+2024-02-13T10:19:42.221+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:42.239+0000 I INDEX    [conn2] build index done.  scanned 1841 total records. 0 secs
+2024-02-13T10:19:42.260+0000 I INDEX    [conn2] build index on: ace_stat.stat_dpi properties: { v: 2, key: { site_id: 1, o: 1, oid: 1, datetime: 1, app: 1, cat: 1 }, name: "site_id_1_o_1_oid_1_datetime_1_app_1_cat_1", ns: "ace_stat.stat_dpi" }
+2024-02-13T10:19:42.260+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:42.301+0000 I INDEX    [conn2] build index done.  scanned 1841 total records. 0 secs
+2024-02-13T10:19:49.238+0000 I STORAGE  [conn2] createCollection: ace.alert with generated UUID: d823a81a-d275-4dcd-9e38-460c0c846618
+2024-02-13T10:19:49.288+0000 I INDEX    [conn2] build index on: ace.alert properties: { v: 2, key: { parameters.DEVICE.target_id: 1 }, name: "parameters.DEVICE.target_id_1", ns: "ace.alert" }
+2024-02-13T10:19:49.288+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:49.289+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:49.309+0000 I INDEX    [conn2] build index on: ace.alert properties: { v: 2, key: { parameters.CLIENT.target_id: 1 }, name: "parameters.CLIENT.target_id_1", ns: "ace.alert" }
+2024-02-13T10:19:49.309+0000 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:49.310+0000 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:55.670+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:48600 #5 (5 connections now open)
+2024-02-13T10:19:55.670+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:48602 #6 (6 connections now open)
+2024-02-13T10:19:55.670+0000 I NETWORK  [conn5] received client metadata from 127.0.0.1:48600 conn5: { driver: { name: "mongo-java-driver|legacy", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }
+2024-02-13T10:19:55.670+0000 I NETWORK  [conn6] received client metadata from 127.0.0.1:48602 conn6: { driver: { name: "mongo-java-driver|legacy", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }
+2024-02-13T10:19:55.717+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:48614 #7 (7 connections now open)
+2024-02-13T10:19:55.718+0000 I NETWORK  [conn7] received client metadata from 127.0.0.1:48614 conn7: { driver: { name: "mongo-java-driver|legacy", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }
+2024-02-13T10:19:55.862+0000 I NETWORK  [conn7] end connection 127.0.0.1:48614 (6 connections now open)
+2024-02-13T10:19:55.863+0000 I NETWORK  [conn5] end connection 127.0.0.1:48600 (5 connections now open)
+2024-02-13T10:19:55.863+0000 I NETWORK  [conn6] end connection 127.0.0.1:48602 (4 connections now open)
+2024-02-13T10:19:55.865+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:48626 #8 (5 connections now open)
+2024-02-13T10:19:55.865+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:48624 #9 (6 connections now open)
+2024-02-13T10:19:55.865+0000 I NETWORK  [conn8] received client metadata from 127.0.0.1:48626 conn8: { driver: { name: "mongo-java-driver|legacy", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }
+2024-02-13T10:19:55.866+0000 I NETWORK  [conn9] received client metadata from 127.0.0.1:48624 conn9: { driver: { name: "mongo-java-driver|legacy", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }
+2024-02-13T10:19:55.871+0000 I NETWORK  [conn8] end connection 127.0.0.1:48626 (5 connections now open)
+2024-02-13T10:19:55.871+0000 I NETWORK  [conn9] end connection 127.0.0.1:48624 (4 connections now open)
+2024-02-13T10:19:57.228+0000 I COMMAND  [conn2] CMD: drop ace.storeddpistats
+2024-02-13T10:19:58.156+0000 I STORAGE  [conn4] createCollection: ace.threat_log_view with generated UUID: 1d5557cd-e208-46cf-9a47-92bec7f89bf6
+2024-02-13T10:19:58.321+0000 I COMMAND  [conn4] CMD: drop ace.storeddpistats
+2024-02-13T10:19:58.701+0000 I COMMAND  [conn4] CMD: drop ace.mediafile
+2024-02-13T10:19:58.701+0000 I COMMAND  [conn4] CMD: drop ace.broadcastgroup
+2024-02-13T10:19:58.701+0000 I STORAGE  [conn4] Finishing collection drop for ace.broadcastgroup (c22dbe6c-eddd-4255-8a68-381f037619dc).
+2024-02-13T10:19:59.180+0000 I INDEX    [conn4] build index on: ace.threat_log_view properties: { v: 2, key: { time: -1, site_id: 1, src_mac: 1, threat_type: 1, threat_direction: 1 }, name: "time-1_site_id_1_client_mac_1_threat_type_1_threat_direction_1", ns: "ace.threat_log_view" }
+2024-02-13T10:19:59.180+0000 I INDEX    [conn4] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:59.192+0000 I INDEX    [conn4] build index done.  scanned 69 total records. 0 secs
+2024-02-13T10:19:59.222+0000 I INDEX    [conn4] build index on: ace.apgroup properties: { v: 2, key: { site_id: 1 }, name: "site_id", ns: "ace.apgroup" }
+2024-02-13T10:19:59.222+0000 I INDEX    [conn4] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:59.231+0000 I INDEX    [conn4] build index done.  scanned 2 total records. 0 secs
+2024-02-13T10:19:59.249+0000 I STORAGE  [conn4] createCollection: ace.config_meta with generated UUID: 7d95d4b3-49d4-4b77-b143-9160bbee09e6
+2024-02-13T10:19:59.303+0000 I INDEX    [conn4] build index on: ace.config_meta properties: { v: 2, key: { site_id: 1, mac: 1 }, name: "site_id_1_mac_1", ns: "ace.config_meta" }
+2024-02-13T10:19:59.304+0000 I INDEX    [conn4] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:59.306+0000 I INDEX    [conn4] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:59.313+0000 I STORAGE  [conn4] createCollection: ace.traffic_route with generated UUID: 866eda8a-db98-48bf-8359-f783527c89fe
+2024-02-13T10:19:59.367+0000 I INDEX    [conn4] build index on: ace.traffic_route properties: { v: 2, key: { site_id: 1 }, name: "site_id", ns: "ace.traffic_route" }
+2024-02-13T10:19:59.367+0000 I INDEX    [conn4] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:59.370+0000 I INDEX    [conn4] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:59.394+0000 I INDEX    [conn4] build index on: ace.traffic_route properties: { v: 2, key: { short_id: -1 }, name: "short_id", ns: "ace.traffic_route" }
+2024-02-13T10:19:59.394+0000 I INDEX    [conn4] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:59.396+0000 I INDEX    [conn4] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:59.415+0000 I STORAGE  [conn4] createCollection: ace.admin_activity_log with generated UUID: 0ef3f930-9f2e-4678-95b3-c0bee5caef08
+2024-02-13T10:19:59.490+0000 I INDEX    [conn4] build index on: ace.admin_activity_log properties: { v: 2, key: { time: -1, site_id: 1, key: 1, change_key: 1 }, name: "time_-1_site_id_1_key_1_change_key_1", ns: "ace.admin_activity_log" }
+2024-02-13T10:19:59.490+0000 I INDEX    [conn4] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:59.502+0000 I INDEX    [conn4] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:59.522+0000 I INDEX    [conn4] build index on: ace.admin_activity_log properties: { v: 2, key: { site_id: 1, admin.admin_id: 1 }, name: "site_id_1_admin_admin_id_1", ns: "ace.admin_activity_log" }
+2024-02-13T10:19:59.522+0000 I INDEX    [conn4] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:59.523+0000 I INDEX    [conn4] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:59.541+0000 I STORAGE  [conn4] createCollection: ace.traffic_rule with generated UUID: 1d7a3808-4a40-43fc-b2d0-5fe107afa813
+2024-02-13T10:19:59.599+0000 I INDEX    [conn4] build index on: ace.traffic_rule properties: { v: 2, key: { site_id: 1 }, name: "site_id", ns: "ace.traffic_rule" }
+2024-02-13T10:19:59.599+0000 I INDEX    [conn4] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:59.601+0000 I INDEX    [conn4] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:59.627+0000 I INDEX    [conn4] build index on: ace.traffic_rule properties: { v: 2, key: { short_id: -1 }, name: "short_id", ns: "ace.traffic_rule" }
+2024-02-13T10:19:59.627+0000 I INDEX    [conn4] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:59.637+0000 I INDEX    [conn4] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:59.642+0000 I STORAGE  [conn4] createCollection: ace.wireguard_user with generated UUID: c4dbe7fa-77d2-4ec6-9ad5-d6166cf325b8
+2024-02-13T10:19:59.703+0000 I INDEX    [conn4] build index on: ace.wireguard_user properties: { v: 2, key: { site_id: 1 }, name: "site_id", ns: "ace.wireguard_user" }
+2024-02-13T10:19:59.703+0000 I INDEX    [conn4] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:59.707+0000 I INDEX    [conn4] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:59.715+0000 I STORAGE  [conn4] createCollection: ace.alert_setting with generated UUID: 064c6922-2b28-4147-a7a8-1656d2a2a944
+2024-02-13T10:19:59.777+0000 I INDEX    [conn4] build index on: ace.alert_setting properties: { v: 2, unique: true, key: { site_id: 1, admin_id: 1 }, name: "site_id_1_admin_id_1", ns: "ace.alert_setting" }
+2024-02-13T10:19:59.778+0000 I INDEX    [conn4] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:59.780+0000 I INDEX    [conn4] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:59.806+0000 I INDEX    [conn4] build index on: ace.alert properties: { v: 2, key: { time: -1, key: 1, site_id: 1, status: 1 }, name: "time_-1_key_1_site_id_1_status_1", ns: "ace.alert" }
+2024-02-13T10:19:59.806+0000 I INDEX    [conn4] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:59.808+0000 I INDEX    [conn4] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:59.815+0000 I STORAGE  [conn4] createCollection: ace.teleport_token with generated UUID: 1323fa01-1ff3-4b7d-9e00-47c65b4a203c
+2024-02-13T10:19:59.869+0000 I INDEX    [conn4] build index on: ace.teleport_token properties: { v: 2, key: { token: 1 }, name: "token", ns: "ace.teleport_token" }
+2024-02-13T10:19:59.869+0000 I INDEX    [conn4] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:59.871+0000 I INDEX    [conn4] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:59.877+0000 I STORAGE  [conn4] createCollection: ace.diagnostics_config with generated UUID: 9af3146c-cac8-4894-869c-167b6c446920
+2024-02-13T10:19:59.929+0000 I INDEX    [conn4] build index on: ace.diagnostics_config properties: { v: 2, key: { mac: 1 }, name: "mac", ns: "ace.diagnostics_config" }
+2024-02-13T10:19:59.929+0000 I INDEX    [conn4] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:59.931+0000 I INDEX    [conn4] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:19:59.935+0000 I STORAGE  [conn4] createCollection: ace.teleport_client with generated UUID: a168c73c-6430-4f2a-831c-8e46b5b84609
+2024-02-13T10:19:59.986+0000 I INDEX    [conn4] build index on: ace.teleport_client properties: { v: 2, key: { external_client_id: 1 }, name: "external_client_id", ns: "ace.teleport_client" }
+2024-02-13T10:19:59.986+0000 I INDEX    [conn4] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:19:59.988+0000 I INDEX    [conn4] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:20:00.009+0000 I INDEX    [conn4] build index on: ace.teleport_client properties: { v: 2, key: { last_seen_timestamp: 1 }, name: "last_seen_timestamp", ns: "ace.teleport_client" }
+2024-02-13T10:20:00.009+0000 I INDEX    [conn4] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:20:00.010+0000 I INDEX    [conn4] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:20:00.019+0000 I STORAGE  [conn4] createCollection: ace.wifiman_feedback with generated UUID: 51e92f4c-690f-4a48-ad60-c02310244583
+2024-02-13T10:20:00.069+0000 I INDEX    [conn4] build index on: ace.wifiman_feedback properties: { v: 2, key: { site_id: 1 }, name: "site_id", ns: "ace.wifiman_feedback" }
+2024-02-13T10:20:00.069+0000 I INDEX    [conn4] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:20:00.072+0000 I INDEX    [conn4] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:20:00.096+0000 I STORAGE  [conn4] createCollection: ace.trigger_log with generated UUID: f23340d7-0f78-493b-a5b9-1c7498c66228
+2024-02-13T10:20:00.148+0000 I INDEX    [conn4] build index on: ace.trigger_log properties: { v: 2, key: { time: -1, site_id: 1, trigger.type: 1, source.mac: 1 }, name: "time_-1_site_id_1_trigger_type_1_source_mac_1", ns: "ace.trigger_log" }
+2024-02-13T10:20:00.148+0000 I INDEX    [conn4] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:20:00.150+0000 I INDEX    [conn4] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:20:00.172+0000 I INDEX    [conn4] build index on: ace.trigger_log properties: { v: 2, key: { time: 1, trigger.trigger_id: 1, key: 1, source.mac: 1, source.ip: 1 }, name: "time_1_trigger_trigger_id_1_key_1_source_mac_1_source_ip_1", ns: "ace.trigger_log" }
+2024-02-13T10:20:00.172+0000 I INDEX    [conn4] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:20:00.173+0000 I INDEX    [conn4] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:20:00.175+0000 I STORAGE  [conn4] createCollection: ace.appstate_log with generated UUID: 96efa2e4-2231-4b55-9ca8-3abad72d80a3
+2024-02-13T10:20:00.223+0000 I INDEX    [conn4] build index on: ace.appstate_log properties: { v: 2, key: { time: 1 }, name: "time", ns: "ace.appstate_log" }
+2024-02-13T10:20:00.223+0000 I INDEX    [conn4] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:20:00.225+0000 I INDEX    [conn4] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:20:00.229+0000 I STORAGE  [conn4] createCollection: ace_stat.wifi_connection_event with generated UUID: eabc7379-fd1a-48da-a51e-14f6c0c587e4
+2024-02-13T10:20:00.286+0000 I INDEX    [conn4] build index on: ace_stat.wifi_connection_event properties: { v: 2, key: { site_id: 1, time: 1 }, name: "site_id_1_time_1", ns: "ace_stat.wifi_connection_event" }
+2024-02-13T10:20:00.286+0000 I INDEX    [conn4] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:20:00.289+0000 I INDEX    [conn4] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:20:00.297+0000 I STORAGE  [conn4] createCollection: ace_stat.pingtest with generated UUID: fa491c1e-4418-4423-9035-596029c2bd1a
+2024-02-13T10:20:00.351+0000 I INDEX    [conn4] build index on: ace_stat.pingtest properties: { v: 2, key: { client_mac: 1, site_id: 1 }, name: "client_mac_1_site_id_1", ns: "ace_stat.pingtest" }
+2024-02-13T10:20:00.351+0000 I INDEX    [conn4] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:20:00.354+0000 I INDEX    [conn4] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:20:00.378+0000 I INDEX    [conn4] build index on: ace_stat.pingtest properties: { v: 2, key: { site_id: 1 }, name: "site_id", ns: "ace_stat.pingtest" }
+2024-02-13T10:20:00.379+0000 I INDEX    [conn4] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:20:00.381+0000 I INDEX    [conn4] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:20:00.405+0000 I INDEX    [conn4] build index on: ace_stat.pingtest properties: { v: 2, key: { client_mac: 1 }, name: "client_mac", ns: "ace_stat.pingtest" }
+2024-02-13T10:20:00.405+0000 I INDEX    [conn4] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:20:00.407+0000 I INDEX    [conn4] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:20:00.410+0000 I STORAGE  [conn4] createCollection: ace_stat.downtime with generated UUID: 735c4436-bdb4-4838-af90-2cca05043e13
+2024-02-13T10:20:00.471+0000 I INDEX    [conn4] build index on: ace_stat.downtime properties: { v: 2, key: { timestamp: 1 }, name: "timestamp", ns: "ace_stat.downtime" }
+2024-02-13T10:20:00.471+0000 I INDEX    [conn4] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:20:00.475+0000 I INDEX    [conn4] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:20:00.482+0000 I STORAGE  [conn4] createCollection: ace_stat.dpi with generated UUID: 5530cc7c-d96e-4e49-bad2-c3941ce6a007
+2024-02-13T10:20:00.543+0000 I INDEX    [conn4] build index on: ace_stat.dpi properties: { v: 2, key: { time: 1, site_id: 1, type: 1 }, name: "time_1_site_id_1_type_1", ns: "ace_stat.dpi" }
+2024-02-13T10:20:00.543+0000 I INDEX    [conn4] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:20:00.547+0000 I INDEX    [conn4] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:20:00.570+0000 I INDEX    [conn4] build index on: ace_stat.dpi properties: { v: 2, key: { stat_object_id: 1 }, name: "stat_object_id", ns: "ace_stat.dpi" }
+2024-02-13T10:20:00.570+0000 I INDEX    [conn4] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2024-02-13T10:20:00.573+0000 I INDEX    [conn4] build index done.  scanned 0 total records. 0 secs
+2024-02-13T10:25:00.643+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:37066 #10 (5 connections now open)
+2024-02-13T10:25:00.644+0000 I NETWORK  [conn10] received client metadata from 127.0.0.1:37066 conn10: { driver: { name: "mongo-java-driver|sync", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }
+2024-02-13T10:35:30.238+0000 I NETWORK  [conn10] end connection 127.0.0.1:37066 (4 connections now open)
+2024-02-13T10:36:30.238+0000 I NETWORK  [conn2] end connection 127.0.0.1:47916 (3 connections now open)
+2024-02-13T10:36:48.732+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:48960 #11 (4 connections now open)
+2024-02-13T10:36:48.733+0000 I NETWORK  [conn11] received client metadata from 127.0.0.1:48960 conn11: { driver: { name: "mongo-java-driver|sync", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }
+2024-02-13T10:45:57.407+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:43044 #12 (5 connections now open)
+2024-02-13T10:45:57.408+0000 I NETWORK  [conn12] received client metadata from 127.0.0.1:43044 conn12: { driver: { name: "mongo-java-driver|sync", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }
+2024-02-13T11:05:30.238+0000 I NETWORK  [conn4] end connection 127.0.0.1:48636 (4 connections now open)
+2024-02-13T11:05:30.238+0000 I NETWORK  [conn12] end connection 127.0.0.1:43044 (3 connections now open)
+2024-02-13T11:11:25.825+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:60008 #13 (4 connections now open)
+2024-02-13T11:11:25.834+0000 I NETWORK  [conn13] received client metadata from 127.0.0.1:60008 conn13: { driver: { name: "mongo-java-driver|sync", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }
+2024-02-13T11:21:30.238+0000 I NETWORK  [conn11] end connection 127.0.0.1:48960 (3 connections now open)
+2024-02-13T12:07:05.114+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:34720 #14 (4 connections now open)
+2024-02-13T12:07:05.134+0000 I NETWORK  [conn14] received client metadata from 127.0.0.1:34720 conn14: { driver: { name: "mongo-java-driver|sync", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }
+2024-02-13T12:17:30.238+0000 I NETWORK  [conn14] end connection 127.0.0.1:34720 (3 connections now open)
+2024-02-13T13:02:13.071+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:55818 #15 (4 connections now open)
+2024-02-13T13:02:13.071+0000 I NETWORK  [conn15] received client metadata from 127.0.0.1:55818 conn15: { driver: { name: "mongo-java-driver|sync", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }
+2024-02-13T13:21:30.238+0000 I NETWORK  [conn15] end connection 127.0.0.1:55818 (3 connections now open)
+2024-02-13T13:31:23.746+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:53012 #16 (4 connections now open)
+2024-02-13T13:31:23.746+0000 I NETWORK  [conn16] received client metadata from 127.0.0.1:53012 conn16: { driver: { name: "mongo-java-driver|sync", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }
+2024-02-13T13:31:33.446+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:60096 #17 (5 connections now open)
+2024-02-13T13:31:33.446+0000 I NETWORK  [conn17] received client metadata from 127.0.0.1:60096 conn17: { driver: { name: "mongo-java-driver|sync", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }
+2024-02-13T13:43:30.238+0000 I NETWORK  [conn17] end connection 127.0.0.1:60096 (4 connections now open)
+2024-02-13T13:46:30.238+0000 I NETWORK  [conn16] end connection 127.0.0.1:53012 (3 connections now open)
+2024-02-13T14:08:40.483+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:36090 #18 (4 connections now open)
+2024-02-13T14:08:40.483+0000 I NETWORK  [conn18] received client metadata from 127.0.0.1:36090 conn18: { driver: { name: "mongo-java-driver|sync", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }
+2024-02-13T15:02:06.535+0000 I NETWORK  [conn18] end connection 127.0.0.1:36090 (3 connections now open)
+2024-02-13T15:02:06.535+0000 I NETWORK  [conn13] end connection 127.0.0.1:60008 (2 connections now open)
+2024-02-13T15:02:06.536+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:49816 #19 (3 connections now open)
+2024-02-13T15:02:06.536+0000 I NETWORK  [conn19] received client metadata from 127.0.0.1:49816 conn19: { driver: { name: "mongo-java-driver|sync", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }
+2024-02-13T15:04:02.339+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:48382 #20 (4 connections now open)
+2024-02-13T15:04:02.339+0000 I NETWORK  [conn20] received client metadata from 127.0.0.1:48382 conn20: { driver: { name: "mongo-java-driver|sync", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }
+2024-02-13T15:16:33.156+0000 I NETWORK  [conn19] end connection 127.0.0.1:49816 (3 connections now open)
+2024-02-13T15:56:32.380+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:47388 #21 (4 connections now open)
+2024-02-13T15:56:32.380+0000 I NETWORK  [conn21] received client metadata from 127.0.0.1:47388 conn21: { driver: { name: "mongo-java-driver|sync", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }
+2024-02-13T16:06:33.157+0000 I NETWORK  [conn20] end connection 127.0.0.1:48382 (3 connections now open)
+2024-02-14T01:44:48.518+0000 I NETWORK  [conn21] end connection 127.0.0.1:47388 (2 connections now open)
+2024-02-14T01:44:49.574+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:57786 #22 (3 connections now open)
+2024-02-14T01:44:49.577+0000 I NETWORK  [conn22] received client metadata from 127.0.0.1:57786 conn22: { driver: { name: "mongo-java-driver|sync", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }
+2024-02-14T04:22:44.477+0000 I NETWORK  [conn22] end connection 127.0.0.1:57786 (2 connections now open)
+2024-02-14T04:23:14.242+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:46462 #23 (3 connections now open)
+2024-02-14T04:23:14.242+0000 I NETWORK  [conn23] received client metadata from 127.0.0.1:46462 conn23: { driver: { name: "mongo-java-driver|sync", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }
+2024-02-14T05:19:58.208+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:59006 #24 (4 connections now open)
+2024-02-14T05:19:58.208+0000 I NETWORK  [conn24] received client metadata from 127.0.0.1:59006 conn24: { driver: { name: "mongo-java-driver|sync", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }
+2024-02-14T05:30:44.476+0000 I NETWORK  [conn24] end connection 127.0.0.1:59006 (3 connections now open)
+2024-02-14T05:53:07.323+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:39478 #25 (4 connections now open)
+2024-02-14T05:53:07.323+0000 I NETWORK  [conn25] received client metadata from 127.0.0.1:39478 conn25: { driver: { name: "mongo-java-driver|sync", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }
+2024-02-14T06:03:44.476+0000 I NETWORK  [conn23] end connection 127.0.0.1:46462 (3 connections now open)
+2024-02-14T06:37:11.213+0000 I NETWORK  [conn25] end connection 127.0.0.1:39478 (2 connections now open)
+2024-02-14T06:38:40.977+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:58812 #26 (3 connections now open)
+2024-02-14T06:38:40.978+0000 I NETWORK  [conn26] received client metadata from 127.0.0.1:58812 conn26: { driver: { name: "mongo-java-driver|sync", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }
+2024-02-14T07:59:52.885+0000 I NETWORK  [conn26] end connection 127.0.0.1:58812 (2 connections now open)
+2024-02-14T08:00:53.637+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:42400 #27 (3 connections now open)
+2024-02-14T08:00:53.637+0000 I NETWORK  [conn27] received client metadata from 127.0.0.1:42400 conn27: { driver: { name: "mongo-java-driver|sync", version: "4.6.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "6.5.0-17-generic" }, platform: "Java/Private Build/17.0.9+9-Ubuntu-120.04" }

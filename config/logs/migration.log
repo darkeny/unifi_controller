@@ -1,0 +1,797 @@
+[2024-02-13 10:19:55,653] <launcher> INFO  migration - DB migration initialized
+[2024-02-13 10:19:55,660] <launcher> INFO  migration - DB version (6.0.45) different from Runtime Version(8.0.24), migrating...
+[2024-02-13 10:19:56,101] <launcher> INFO  migration - *** Migrating site[5d4a945677c82720d174d6dd]
+[2024-02-13 10:19:56,267] <launcher> ERROR migration - Removing Honeypots failed: null
+[2024-02-13 10:19:56,268] <launcher> INFO  migration - Adding Optimize IoT WiFi Connectivity toggle
+[2024-02-13 10:19:56,274] <launcher> INFO  migration - Updating DTIM period for WiFi with Default DTIM mode
+[2024-02-13 10:19:56,287] <launcher> INFO  migration - Updating DTIM 6e period for WiFi with Default DTIM mode
+[2024-02-13 10:19:56,602] <launcher> INFO  migration - Started migration step: Add setting preference to LAN Configuration
+[2024-02-13 10:19:56,613] <launcher> INFO  migration - Finished migration step: Add setting preference to LAN Configuration
+[2024-02-13 10:19:56,625] <launcher> INFO  migration - Started migration step: Rename default WAN names
+[2024-02-13 10:19:56,631] <launcher> INFO  migration - Finished migration step: Rename default WAN names
+[2024-02-13 10:19:56,632] <launcher> INFO  migration - Started migration step: Create missing WiFi AI Setting
+[2024-02-13 10:19:56,636] <launcher> INFO  migration - Finished migration step: Create missing WiFi AI Setting
+[2024-02-13 10:19:56,638] <launcher> INFO  migration - Started migration step: Add setting preference to Firewall Rules
+[2024-02-13 10:19:56,641] <launcher> INFO  migration - Finished migration step: Add setting preference to Firewall Rules
+[2024-02-13 10:19:56,642] <launcher> INFO  migration - Started migration step: Disable endpoint scanning since the feature has been removed from user interface
+[2024-02-13 10:19:56,644] <launcher> INFO  migration - Finished migration step: Disable endpoint scanning since the feature has been removed from user interface
+[2024-02-13 10:19:56,646] <launcher> INFO  migration - Started migration step: Provision Ubios Gateway with Latency monitor config
+[2024-02-13 10:19:56,649] <launcher> INFO  migration - Finished migration step: Provision Ubios Gateway with Latency monitor config
+[2024-02-13 10:19:56,650] <launcher> INFO  migration - Started migration step: Add Allow Weak Ciphers option to L2TP VPNs
+[2024-02-13 10:19:56,653] <launcher> INFO  migration - Finished migration step: Add Allow Weak Ciphers option to L2TP VPNs
+[2024-02-13 10:19:56,653] <launcher> INFO  migration - Started migration step: Add Guest Access setting preference
+[2024-02-13 10:19:56,666] <launcher> INFO  migration - Finished migration step: Add Guest Access setting preference
+[2024-02-13 10:19:56,667] <launcher> INFO  migration - Started migration step: Start IGMP Snooping for UDM-family
+[2024-02-13 10:19:56,668] <launcher> INFO  migration - Finished migration step: Start IGMP Snooping for UDM-family
+[2024-02-13 10:19:56,669] <launcher> INFO  migration - Started migration step: Add NTP setting preference
+[2024-02-13 10:19:56,675] <launcher> INFO  migration - Finished migration step: Add NTP setting preference
+[2024-02-13 10:19:56,678] <launcher> INFO  migration - Started migration step: Re-provision Ubios gateway if Port Forward Configured to ULTE
+[2024-02-13 10:19:56,681] <launcher> INFO  migration - Finished migration step: Re-provision Ubios gateway if Port Forward Configured to ULTE
+[2024-02-13 10:19:56,682] <launcher> INFO  migration - Started migration step: Migrate Simple VPN to VPN with Auto Setting preference
+[2024-02-13 10:19:56,684] <launcher> INFO  migration - Finished migration step: Migrate Simple VPN to VPN with Auto Setting preference
+[2024-02-13 10:19:56,685] <launcher> INFO  migration - Started migration step: Remove obsolete Teleport tokens
+[2024-02-13 10:19:56,706] <launcher> INFO  migration - Finished migration step: Remove obsolete Teleport tokens
+[2024-02-13 10:19:56,707] <launcher> INFO  migration - Started migration step: Provision UbiOS gateway to enable alerting WAN monitor
+[2024-02-13 10:19:56,711] <launcher> INFO  migration - Finished migration step: Provision UbiOS gateway to enable alerting WAN monitor
+[2024-02-13 10:19:56,712] <launcher> INFO  migration - Started migration step: Remove blacklist channel plans if multiple plans defined
+[2024-02-13 10:19:56,715] <launcher> INFO  migration - Finished migration step: Remove blacklist channel plans if multiple plans defined
+[2024-02-13 10:19:56,716] <launcher> INFO  migration - Started migration step: Provision default RADIUS Profile if IP is missing
+[2024-02-13 10:19:56,721] <launcher> INFO  migration - Finished migration step: Provision default RADIUS Profile if IP is missing
+[2024-02-13 10:19:56,722] <launcher> INFO  migration - Started migration step: Remove not supported Site to Site Auto VPN if setup is based on UDM device
+[2024-02-13 10:19:56,725] <launcher> INFO  migration - Finished migration step: Remove not supported Site to Site Auto VPN if setup is based on UDM device
+[2024-02-13 10:19:56,726] <launcher> INFO  migration - Started migration step: Disable Port Forward rules with invalid port configuration
+[2024-02-13 10:19:56,732] <launcher> INFO  migration - Finished migration step: Disable Port Forward rules with invalid port configuration
+[2024-02-13 10:19:56,732] <launcher> INFO  migration - Started migration step: Update Setting Preference in Local Network after changing default for Multicast DNS to enabled
+[2024-02-13 10:19:56,740] <launcher> INFO  migration - Finished migration step: Update Setting Preference in Local Network after changing default for Multicast DNS to enabled
+[2024-02-13 10:19:56,740] <launcher> INFO  migration - Started migration step: Fix WiFiman feedback fingerprint
+[2024-02-13 10:19:56,749] <launcher> INFO  migration - Finished migration step: Fix WiFiman feedback fingerprint
+[2024-02-13 10:19:56,749] <launcher> INFO  migration - Started migration step: Remove Teleport Enabled toggle
+[2024-02-13 10:19:56,751] <launcher> INFO  migration - Finished migration step: Remove Teleport Enabled toggle
+[2024-02-13 10:19:56,752] <launcher> INFO  migration - Started migration step: Enable Teleport if any token has been already generated
+[2024-02-13 10:19:56,756] <launcher> INFO  migration - Finished migration step: Enable Teleport if any token has been already generated
+[2024-02-13 10:19:56,757] <launcher> INFO  migration - Started migration step: Re-provision site gateway with normal arp cache timeout
+[2024-02-13 10:19:56,765] <launcher> INFO  migration - Finished migration step: Re-provision site gateway with normal arp cache timeout
+[2024-02-13 10:19:56,765] <launcher> INFO  migration - Started migration step: Remove redundant scheduled task for auto optimizer
+[2024-02-13 10:19:56,769] <launcher> INFO  migration - Finished migration step: Remove redundant scheduled task for auto optimizer
+[2024-02-13 10:19:56,770] <launcher> INFO  migration - Started migration step: Provision Ubios Gateway with Latency monitor config
+[2024-02-13 10:19:56,773] <launcher> INFO  migration - Finished migration step: Provision Ubios Gateway with Latency monitor config
+[2024-02-13 10:19:56,773] <launcher> INFO  migration - Started migration step: Set missing disabled Multicast DNS Setting
+[2024-02-13 10:19:56,780] <launcher> INFO  migration - Finished migration step: Set missing disabled Multicast DNS Setting
+[2024-02-13 10:19:56,780] <launcher> INFO  migration - Started migration step: Enable Teleport by default
+[2024-02-13 10:19:56,784] <launcher> INFO  migration - Finished migration step: Enable Teleport by default
+[2024-02-13 10:19:56,785] <launcher> INFO  migration - Started migration step: Set missing disabled Auto Scale Network Setting
+[2024-02-13 10:19:56,791] <launcher> INFO  migration - Finished migration step: Set missing disabled Auto Scale Network Setting
+[2024-02-13 10:19:56,792] <launcher> INFO  migration - Started migration step: Migrate users to Global AP Settings
+[2024-02-13 10:19:56,801] <launcher> INFO  migration - Finished migration step: Migrate users to Global AP Settings
+[2024-02-13 10:19:56,802] <launcher> INFO  migration - Started migration step: Migrate WiFi AI schedule time and channel list to defaults
+[2024-02-13 10:19:56,813] <launcher> INFO  migration - Finished migration step: Migrate WiFi AI schedule time and channel list to defaults
+[2024-02-13 10:19:56,814] <launcher> INFO  migration - Started migration step: Add one time device auto upgrade notification
+[2024-02-13 10:19:56,816] <launcher> INFO  migration - Finished migration step: Add one time device auto upgrade notification
+[2024-02-13 10:19:56,817] <launcher> INFO  migration - Started migration step: Remove references to invalid Network Confs from Traffic Rules
+[2024-02-13 10:19:56,819] <launcher> INFO  migration - Finished migration step: Remove references to invalid Network Confs from Traffic Rules
+[2024-02-13 10:19:56,819] <launcher> INFO  migration - Started migration step: Remove blocked flag from Unifi devices
+[2024-02-13 10:19:56,825] <launcher> INFO  migration - Finished migration step: Remove blocked flag from Unifi devices
+[2024-02-13 10:19:56,826] <launcher> INFO  migration - Started migration step: Unlock Clients locked to removed APs
+[2024-02-13 10:19:56,832] <launcher> INFO  migration - Finished migration step: Unlock Clients locked to removed APs
+[2024-02-13 10:19:56,833] <launcher> INFO  migration - Started migration step: Remove references to invalid Network Confs from IPS setting
+[2024-02-13 10:19:56,835] <launcher> INFO  migration - Finished migration step: Remove references to invalid Network Confs from IPS setting
+[2024-02-13 10:19:56,835] <launcher> INFO  migration - Started migration step: Re-provision gateway if firewall rule exists for disabled network
+[2024-02-13 10:19:56,838] <launcher> INFO  migration - Finished migration step: Re-provision gateway if firewall rule exists for disabled network
+[2024-02-13 10:19:56,839] <launcher> INFO  migration - Started migration step: Re-provision gateway if traffic rule exists for disabled network
+[2024-02-13 10:19:56,844] <launcher> INFO  migration - Finished migration step: Re-provision gateway if traffic rule exists for disabled network
+[2024-02-13 10:19:56,846] <launcher> INFO  migration - Started migration step: Re-provision gateway if traffic route exists for disabled network
+[2024-02-13 10:19:56,851] <launcher> INFO  migration - Finished migration step: Re-provision gateway if traffic route exists for disabled network
+[2024-02-13 10:19:56,855] <launcher> INFO  migration - Started migration step: Remove L3 Switch MAC from Network if it is not Layer 3 network
+[2024-02-13 10:19:56,859] <launcher> INFO  migration - Finished migration step: Remove L3 Switch MAC from Network if it is not Layer 3 network
+[2024-02-13 10:19:56,861] <launcher> INFO  migration - Started migration step: Migrate auto speedtest to cron expr
+[2024-02-13 10:19:56,865] <launcher> INFO  migration - Finished migration step: Migrate auto speedtest to cron expr
+[2024-02-13 10:19:56,866] <launcher> INFO  migration - Started migration step: Create to Global Switch Settings
+[2024-02-13 10:19:56,875] <launcher> INFO  migration - Finished migration step: Create to Global Switch Settings
+[2024-02-13 10:19:56,876] <launcher> INFO  migration - Started migration step: Migrate NG Minimum Rates
+[2024-02-13 10:19:56,902] <launcher> INFO  migration - Finished migration step: Migrate NG Minimum Rates
+[2024-02-13 10:19:56,903] <launcher> INFO  migration - Started migration step: Migrate UXG IPv6 firewall rules
+[2024-02-13 10:19:56,908] <launcher> INFO  migration - Finished migration step: Migrate UXG IPv6 firewall rules
+[2024-02-13 10:19:56,909] <launcher> INFO  migration - Started migration step: Remove migrate_inform_url from UDM
+[2024-02-13 10:19:56,914] <launcher> INFO  migration - Finished migration step: Remove migrate_inform_url from UDM
+[2024-02-13 10:19:56,915] <launcher> INFO  migration - Started migration step: Remove STP Priority from Global Switch Settings
+[2024-02-13 10:19:56,922] <launcher> INFO  migration - Finished migration step: Remove STP Priority from Global Switch Settings
+[2024-02-13 10:19:56,924] <launcher> INFO  migration - Started migration step: Exclude every domain in Traffic Rules & Routes from content filtering
+[2024-02-13 10:19:56,932] <launcher> INFO  migration - Finished migration step: Exclude every domain in Traffic Rules & Routes from content filtering
+[2024-02-13 10:19:56,934] <launcher> INFO  migration - Started migration step: Seed Connectivity Setting for site if it's missing
+[2024-02-13 10:19:56,938] <launcher> INFO  migration - Finished migration step: Seed Connectivity Setting for site if it's missing
+[2024-02-13 10:19:56,940] <launcher> INFO  migration - Started migration step: Seed Connectivity Setting for site if it's missing
+[2024-02-13 10:19:56,943] <launcher> INFO  migration - Finished migration step: Seed Connectivity Setting for site if it's missing
+[2024-02-13 10:19:56,945] <launcher> INFO  migration - Started migration step: Provision console which is remotely logging to itself
+[2024-02-13 10:19:56,950] <launcher> INFO  migration - Finished migration step: Provision console which is remotely logging to itself
+[2024-02-13 10:19:56,951] <launcher> INFO  migration - Started migration step: Remove WAN2 network when console has single WAN interface
+[2024-02-13 10:19:56,951] <launcher> INFO  migration - Finished migration step: Remove WAN2 network when console has single WAN interface
+[2024-02-13 10:19:56,952] <launcher> INFO  migration - Started migration step: Populating default values to missing mandatory fields in enabled radius setting
+[2024-02-13 10:19:56,953] <launcher> INFO  migration - Finished migration step: Populating default values to missing mandatory fields in enabled radius setting
+[2024-02-13 10:19:56,954] <launcher> INFO  migration - Started migration step: Fix invalid WAN Load Balance weights
+[2024-02-13 10:19:56,957] <launcher> INFO  migration - Finished migration step: Fix invalid WAN Load Balance weights
+[2024-02-13 10:19:56,958] <launcher> INFO  migration - Started migration step: Add missing Global AP Setting
+[2024-02-13 10:19:56,961] <launcher> INFO  migration - Finished migration step: Add missing Global AP Setting
+[2024-02-13 10:19:56,963] <launcher> INFO  migration - Started migration step: Remove invalid device MACs from Ap Groups
+[2024-02-13 10:19:57,007] <launcher> INFO  migration - Finished migration step: Remove invalid device MACs from Ap Groups
+[2024-02-13 10:19:57,008] <launcher> INFO  migration - Started migration step: Remove invalid device MACs from WiFi AI
+[2024-02-13 10:19:57,017] <launcher> INFO  migration - Finished migration step: Remove invalid device MACs from WiFi AI
+[2024-02-13 10:19:57,018] <launcher> INFO  migration - Started migration step: Re-provision gateway with updated NAT exclusion rule
+[2024-02-13 10:19:57,019] <launcher> INFO  migration - Finished migration step: Re-provision gateway with updated NAT exclusion rule
+[2024-02-13 10:19:57,020] <launcher> INFO  migration - Started migration step: Create threat log table
+[2024-02-13 10:19:57,027] <launcher> INFO  migration - Finished migration step: Create threat log table
+[2024-02-13 10:19:57,028] <launcher> INFO  migration - Started migration step: Re-provision gateway with updated Site to Site VPN id
+[2024-02-13 10:19:57,030] <launcher> INFO  migration - Finished migration step: Re-provision gateway with updated Site to Site VPN id
+[2024-02-13 10:19:57,031] <launcher> INFO  migration - Started migration step: Provision non-console Ubios Gateway with FW release channel
+[2024-02-13 10:19:57,033] <launcher> INFO  migration - Finished migration step: Provision non-console Ubios Gateway with FW release channel
+[2024-02-13 10:19:57,033] <launcher> INFO  migration - Started migration step: Re-provision gateway with updated Site to Site VPN ids
+[2024-02-13 10:19:57,034] <launcher> INFO  migration - Finished migration step: Re-provision gateway with updated Site to Site VPN ids
+[2024-02-13 10:19:57,035] <launcher> INFO  migration - Started migration step: Remove ap_group_ids from Element WLAN
+[2024-02-13 10:19:57,041] <launcher> INFO  migration - Finished migration step: Remove ap_group_ids from Element WLAN
+[2024-02-13 10:19:57,041] <launcher> INFO  migration - Started migration step: Provision Ubios Gateway for lower ARP cache timeout on WAN
+[2024-02-13 10:19:57,045] <launcher> INFO  migration - Finished migration step: Provision Ubios Gateway for lower ARP cache timeout on WAN
+[2024-02-13 10:19:57,045] <launcher> INFO  migration - Started migration step: Provision Ubios Gateway for ebtables on guest network
+[2024-02-13 10:19:57,047] <launcher> INFO  migration - Finished migration step: Provision Ubios Gateway for ebtables on guest network
+[2024-02-13 10:19:57,047] <launcher> INFO  migration - Started migration step: Provision UbiOS gateways on non-UDM family hosts to disable ARP inspector
+[2024-02-13 10:19:57,050] <launcher> INFO  migration - Finished migration step: Provision UbiOS gateways on non-UDM family hosts to disable ARP inspector
+[2024-02-13 10:19:57,050] <launcher> INFO  migration - Started migration step: Enable all WLAN iapp_enabled by default
+[2024-02-13 10:19:57,053] <launcher> INFO  migration - Finished migration step: Enable all WLAN iapp_enabled by default
+[2024-02-13 10:19:57,053] <launcher> INFO  migration - Started migration step: Provision wireless devices to fix NG mgmt_rate to support 11b only clients
+[2024-02-13 10:19:57,064] <launcher> INFO  migration - Finished migration step: Provision wireless devices to fix NG mgmt_rate to support 11b only clients
+[2024-02-13 10:19:57,064] <launcher> INFO  migration - Started migration step: Provision UDR with bridge vlan filter capability
+[2024-02-13 10:19:57,064] <launcher> INFO  migration - Finished migration step: Provision UDR with bridge vlan filter capability
+[2024-02-13 10:19:57,065] <launcher> INFO  migration - Started migration step: Disable WAN VLAN if QoS Tag is not set when WAN VLAN is zero
+[2024-02-13 10:19:57,068] <launcher> INFO  migration - Finished migration step: Disable WAN VLAN if QoS Tag is not set when WAN VLAN is zero
+[2024-02-13 10:19:57,068] <launcher> INFO  migration - Started migration step: Provision Ubios Gateway with LTE modem
+[2024-02-13 10:19:57,070] <launcher> INFO  migration - Finished migration step: Provision Ubios Gateway with LTE modem
+[2024-02-13 10:19:57,071] <launcher> INFO  migration - Started migration step: Re-provision UXG-Pro with new outlet config if it exists
+[2024-02-13 10:19:57,074] <launcher> INFO  migration - Finished migration step: Re-provision UXG-Pro with new outlet config if it exists
+[2024-02-13 10:19:57,074] <launcher> INFO  migration - Started migration step: Set debug tool setting default value false
+[2024-02-13 10:19:57,080] <launcher> INFO  migration - Finished migration step: Set debug tool setting default value false
+[2024-02-13 10:19:57,081] <launcher> INFO  migration - Started migration step: Set missing setup provision flags
+[2024-02-13 10:19:57,083] <launcher> INFO  migration - Finished migration step: Set missing setup provision flags
+[2024-02-13 10:19:57,086] <launcher> INFO  migration - Started migration step: Rename default WAN names
+[2024-02-13 10:19:57,088] <launcher> INFO  migration - Finished migration step: Rename default WAN names
+[2024-02-13 10:19:57,089] <launcher> INFO  migration - Started migration step: Seed default IPS setting if it doesn't exist
+[2024-02-13 10:19:57,095] <launcher> INFO  migration - Finished migration step: Seed default IPS setting if it doesn't exist
+[2024-02-13 10:19:57,097] <launcher> INFO  migration - Started migration step: Disable direct connect for UDMs
+[2024-02-13 10:19:57,100] <launcher> INFO  migration - Finished migration step: Disable direct connect for UDMs
+[2024-02-13 10:19:57,102] <launcher> INFO  migration - Started migration step: Remove blocked flag from Unifi device macs
+[2024-02-13 10:19:57,119] <launcher> INFO  migration - Finished migration step: Remove blocked flag from Unifi device macs
+[2024-02-13 10:19:57,120] <launcher> INFO  migration - Started migration step: Add Magic Site-to-Site VPN Setting
+[2024-02-13 10:19:57,126] <launcher> INFO  migration - Finished migration step: Add Magic Site-to-Site VPN Setting
+[2024-02-13 10:19:57,127] <launcher> INFO  migration - Started migration step: Add new Guest Access defaults
+[2024-02-13 10:19:57,138] <launcher> INFO  migration - Finished migration step: Add new Guest Access defaults
+[2024-02-13 10:19:57,140] <launcher> INFO  migration - Started migration step: Re-provision UDAPI config without invalid UPnP WAN interface
+[2024-02-13 10:19:57,142] <launcher> INFO  migration - Finished migration step: Re-provision UDAPI config without invalid UPnP WAN interface
+[2024-02-13 10:19:57,143] <launcher> INFO  migration - Started migration step: Provision Ubios gateway for DNS fallback
+[2024-02-13 10:19:57,147] <launcher> INFO  migration - Finished migration step: Provision Ubios gateway for DNS fallback
+[2024-02-13 10:19:57,148] <launcher> INFO  migration - Started migration step: Remove default system-generated Port Profiles, and adjust referrals to them
+[2024-02-13 10:19:57,182] <launcher> INFO  migration - Port Profile new UX: Removing system-generated PortConfs - [[5d4a945677c82720d174d6e9, 5d4a945677c82720d174d6e8, 5d4a945677c82720d174d6ea]]
+[2024-02-13 10:19:57,182] <launcher> INFO  migration - Finished migration step: Remove default system-generated Port Profiles, and adjust referrals to them
+[2024-02-13 10:19:57,182] <launcher> INFO  migration - Started migration step: Disentangle Port Overrides and add setting preferences
+[2024-02-13 10:19:57,192] <launcher> INFO  migration - Finished migration step: Disentangle Port Overrides and add setting preferences
+[2024-02-13 10:19:57,193] <launcher> INFO  migration - Started migration step: Re-provision devices which user has port_overrides for them
+[2024-02-13 10:19:57,196] <launcher> INFO  migration - Finished migration step: Re-provision devices which user has port_overrides for them
+[2024-02-13 10:19:57,197] <launcher> INFO  migration - Started migration step: Apply local address for OpenVPN clients
+[2024-02-13 10:19:57,201] <launcher> INFO  migration - Finished migration step: Apply local address for OpenVPN clients
+[2024-02-13 10:19:57,203] <launcher> INFO  migration - Started migration step: Provision APs to enforce the use of elementWlan for autolink
+[2024-02-13 10:19:57,216] <launcher> INFO  migration - Finished migration step: Provision APs to enforce the use of elementWlan for autolink
+[2024-02-13 10:19:57,216] <launcher> INFO  migration - Started migration step: Provision gateway configuration to update UPnP ACL rules
+[2024-02-13 10:19:57,218] <launcher> INFO  migration - Finished migration step: Provision gateway configuration to update UPnP ACL rules
+[2024-02-13 10:19:57,219] <launcher> INFO  migration - Started migration step: Migrate Echo Server for gateway
+[2024-02-13 10:19:57,220] <launcher> INFO  migration - Finished migration step: Migrate Echo Server for gateway
+[2024-02-13 10:19:57,221] <launcher> INFO  migration - Started migration step: Provision gateway when Ad Blocking is enabled
+[2024-02-13 10:19:57,223] <launcher> INFO  migration - Finished migration step: Provision gateway when Ad Blocking is enabled
+[2024-02-13 10:19:57,224] <launcher> INFO  migration - Started migration step: Drop ace.storeddpistats collection
+[2024-02-13 10:19:57,229] <launcher> INFO  migration - Finished migration step: Drop ace.storeddpistats collection
+[2024-02-13 10:19:57,231] <launcher> INFO  migration - Started migration step: Drop site DPI documents in ace_stat.stat_dpi collection
+[2024-02-13 10:19:57,236] <launcher> INFO  migration - Finished migration step: Drop site DPI documents in ace_stat.stat_dpi collection
+[2024-02-13 10:19:57,237] <launcher> INFO  migration - Started migration step: Update DPI Interval
+[2024-02-13 10:19:57,242] <launcher> INFO  migration - Finished migration step: Update DPI Interval
+[2024-02-13 10:19:57,243] <launcher> INFO  migration - Started migration step: Remove invalid speed port conf from UXG port
+[2024-02-13 10:19:57,248] <launcher> INFO  migration - Finished migration step: Remove invalid speed port conf from UXG port
+[2024-02-13 10:19:57,248] <launcher> INFO  migration - Started migration step: Provision UDM if ethernet_table is inconsistent
+[2024-02-13 10:19:57,251] <launcher> INFO  migration - Finished migration step: Provision UDM if ethernet_table is inconsistent
+[2024-02-13 10:19:57,251] <launcher> INFO  migration - Started migration step: Update port profile default values for auto setting preference
+[2024-02-13 10:19:57,254] <launcher> INFO  migration - Finished migration step: Update port profile default values for auto setting preference
+[2024-02-13 10:19:57,255] <launcher> INFO  migration - Started migration step: Generate OpenVPN id
+[2024-02-13 10:19:57,260] <launcher> INFO  migration - Finished migration step: Generate OpenVPN id
+[2024-02-13 10:19:57,261] <launcher> INFO  migration - Started migration step: Remove reserved DHCP fixed IP
+[2024-02-13 10:19:57,269] <launcher> INFO  migration - Finished migration step: Remove reserved DHCP fixed IP
+[2024-02-13 10:19:57,269] <launcher> INFO  migration - Started migration step: Provision DHCP reserved static lease for 192.168.1.20
+[2024-02-13 10:19:57,271] <launcher> INFO  migration - Finished migration step: Provision DHCP reserved static lease for 192.168.1.20
+[2024-02-13 10:19:57,273] <launcher> INFO  migration - Started migration step: Fix WAN missing field
+[2024-02-13 10:19:57,277] <launcher> INFO  migration - Finished migration step: Fix WAN missing field
+[2024-02-13 10:19:57,277] <launcher> INFO  migration - Started migration step: Provision WPA EAP RADIUS filters
+[2024-02-13 10:19:57,284] <launcher> INFO  migration - Finished migration step: Provision WPA EAP RADIUS filters
+[2024-02-13 10:19:57,285] <launcher> INFO  migration - Started migration step: Remove honeypot setting when the site gateway is USG
+[2024-02-13 10:19:57,287] <launcher> INFO  migration - Finished migration step: Remove honeypot setting when the site gateway is USG
+[2024-02-13 10:19:57,287] <launcher> INFO  migration - Started migration step: Rectify wrongly configured VLAN-tagging properties in port_overrides in USW-Flex-mini
+[2024-02-13 10:19:57,291] <launcher> INFO  migration - Finished migration step: Rectify wrongly configured VLAN-tagging properties in port_overrides in USW-Flex-mini
+[2024-02-13 10:19:57,291] <launcher> INFO  migration - Started migration step: Remove empty pre-auth allowances and post-auth restrictions
+[2024-02-13 10:19:57,294] <launcher> INFO  migration - Finished migration step: Remove empty pre-auth allowances and post-auth restrictions
+[2024-02-13 10:19:57,295] <launcher> INFO  migration - Started migration step: Deprecate 3DES from IPSec VPN
+[2024-02-13 10:19:57,297] <launcher> INFO  migration - Finished migration step: Deprecate 3DES from IPSec VPN
+[2024-02-13 10:19:57,297] <launcher> INFO  migration - Started migration step: Fix UID WiFi when users are global
+[2024-02-13 10:19:57,299] <launcher> INFO  migration - Finished migration step: Fix UID WiFi when users are global
+[2024-02-13 10:19:57,299] <launcher> INFO  migration - Started migration step: Disable auto speed-test if gateway does not support it
+[2024-02-13 10:19:57,306] <launcher> INFO  migration - Finished migration step: Disable auto speed-test if gateway does not support it
+[2024-02-13 10:19:57,307] <launcher> INFO  migration - Started migration step: Provision all access points for updated connectivity setting
+[2024-02-13 10:19:57,317] <launcher> INFO  migration - Finished migration step: Provision all access points for updated connectivity setting
+[2024-02-13 10:19:57,318] <launcher> INFO  migration - Started migration step: Disable LLDP on WAN
+[2024-02-13 10:19:57,320] <launcher> INFO  migration - Finished migration step: Disable LLDP on WAN
+[2024-02-13 10:19:57,321] <launcher> INFO  migration - Started migration step: Add missing value for portal_enabled property
+[2024-02-13 10:19:57,323] <launcher> INFO  migration - Finished migration step: Add missing value for portal_enabled property
+[2024-02-13 10:19:57,324] <launcher> INFO  migration - Started migration step: Re-provision UDAPI service/redirector when portal is enabled and has guest network or guest WLAN
+[2024-02-13 10:19:57,326] <launcher> INFO  migration - Finished migration step: Re-provision UDAPI service/redirector when portal is enabled and has guest network or guest WLAN
+[2024-02-13 10:19:57,327] <launcher> INFO  migration - Started migration step: Remove invalid port index port overrides
+[2024-02-13 10:19:57,331] <launcher> INFO  migration - Finished migration step: Remove invalid port index port overrides
+[2024-02-13 10:19:57,331] <launcher> INFO  migration - Started migration step: Remove lcm_night_mode_enabled for all devices with LCM support
+[2024-02-13 10:19:57,334] <launcher> INFO  migration - Finished migration step: Remove lcm_night_mode_enabled for all devices with LCM support
+[2024-02-13 10:19:57,335] <launcher> INFO  migration - Started migration step: Remove persisted storage and temperatures
+[2024-02-13 10:19:57,337] <launcher> INFO  migration - Finished migration step: Remove persisted storage and temperatures
+[2024-02-13 10:19:57,337] <launcher> INFO  migration - Started migration step: Remove non-exist voice network conf ID from Port Conf
+[2024-02-13 10:19:57,342] <launcher> INFO  migration - Finished migration step: Remove non-exist voice network conf ID from Port Conf
+[2024-02-13 10:19:57,343] <launcher> INFO  migration - Started migration step: Clean non-exist network conf IDs in port configs with disabled vlan forward and remove voice network which is equal to native network
+[2024-02-13 10:19:57,351] <launcher> INFO  migration - Finished migration step: Clean non-exist network conf IDs in port configs with disabled vlan forward and remove voice network which is equal to native network
+[2024-02-13 10:19:57,351] <launcher> INFO  migration - Started migration step: Disable outdoor_mode_override for all APs without outdoor mode support
+[2024-02-13 10:19:57,353] <launcher> INFO  migration - Finished migration step: Disable outdoor_mode_override for all APs without outdoor mode support
+[2024-02-13 10:19:57,354] <launcher> INFO  migration - Started migration step: Update WAN DNS secondary failover
+[2024-02-13 10:19:57,355] <launcher> INFO  migration - Finished migration step: Update WAN DNS secondary failover
+[2024-02-13 10:19:57,356] <launcher> INFO  migration - Started migration step: Fix IPv6 static address and prefix delegation on gateway
+[2024-02-13 10:19:57,359] <launcher> INFO  migration - Finished migration step: Fix IPv6 static address and prefix delegation on gateway
+[2024-02-13 10:19:57,360] <launcher> INFO  migration - Started migration step: Add advanced filtering preference in ips settings
+[2024-02-13 10:19:57,371] <launcher> INFO  migration - Finished migration step: Add advanced filtering preference in ips settings
+[2024-02-13 10:19:57,372] <launcher> INFO  migration - Started migration step: Create DNS over HTTPS Settings
+[2024-02-13 10:19:57,376] <launcher> INFO  migration - Finished migration step: Create DNS over HTTPS Settings
+[2024-02-13 10:19:57,378] <launcher> INFO  migration - Started migration step: Removed enabled Honeypots outside configured network subnets
+[2024-02-13 10:19:57,381] <launcher> INFO  migration - Finished migration step: Removed enabled Honeypots outside configured network subnets
+[2024-02-13 10:19:57,382] <launcher> INFO  migration - Started migration step: Change to less restrictive DHCPv6 rules
+[2024-02-13 10:19:57,385] <launcher> INFO  migration - Finished migration step: Change to less restrictive DHCPv6 rules
+[2024-02-13 10:19:57,386] <launcher> INFO  migration - Started migration step: Provision Ubios Gateway for Guest network IPv6 support
+[2024-02-13 10:19:57,388] <launcher> INFO  migration - Finished migration step: Provision Ubios Gateway for Guest network IPv6 support
+[2024-02-13 10:19:57,389] <launcher> INFO  migration - Started migration step: Migrate auto speedtest cron_expr to random minute
+[2024-02-13 10:19:57,391] <launcher> INFO  migration - Finished migration step: Migrate auto speedtest cron_expr to random minute
+[2024-02-13 10:19:57,392] <launcher> INFO  migration - Started migration step: Enable channel optimization on radios
+[2024-02-13 10:19:57,411] <launcher> INFO  migration - Finished migration step: Enable channel optimization on radios
+[2024-02-13 10:19:57,411] <launcher> INFO  migration - Started migration step: Create or replace schedule task for channel optimization
+[2024-02-13 10:19:57,415] <launcher> INFO  migration - Finished migration step: Create or replace schedule task for channel optimization
+[2024-02-13 10:19:57,416] <launcher> INFO  migration - Started migration step: Disable RADIUS MAC Authentication on UID WiFi
+[2024-02-13 10:19:57,418] <launcher> INFO  migration - Finished migration step: Disable RADIUS MAC Authentication on UID WiFi
+[2024-02-13 10:19:57,418] <launcher> INFO  migration - Started migration step: Provision Ubios Gateway if there is Device with static IP
+[2024-02-13 10:19:57,423] <launcher> INFO  migration - Finished migration step: Provision Ubios Gateway if there is Device with static IP
+[2024-02-13 10:19:57,424] <launcher> INFO  migration - Started migration step: Rename element wlan name and add non actionable flag in system log
+[2024-02-13 10:19:57,447] <launcher> INFO  migration - Finished migration step: Rename element wlan name and add non actionable flag in system log
+[2024-02-13 10:19:57,448] <launcher> INFO  migration - Started migration step: Provision Ubios Gateway with new Latency monitor config
+[2024-02-13 10:19:57,449] <launcher> INFO  migration - Finished migration step: Provision Ubios Gateway with new Latency monitor config
+[2024-02-13 10:19:57,450] <launcher> INFO  migration - Started migration step: Disable custom AP groups when default is used
+[2024-02-13 10:19:57,456] <launcher> INFO  migration - Finished migration step: Disable custom AP groups when default is used
+[2024-02-13 10:19:57,460] <launcher> INFO  migration - Started migration step: Do not allow to remove UID VPN from NET FE
+[2024-02-13 10:19:57,463] <launcher> INFO  migration - Finished migration step: Do not allow to remove UID VPN from NET FE
+[2024-02-13 10:19:57,464] <launcher> INFO  migration - Started migration step: Remove obsolete UID RADIUS certificates
+[2024-02-13 10:19:57,466] <launcher> INFO  migration - Finished migration step: Remove obsolete UID RADIUS certificates
+[2024-02-13 10:19:57,467] <launcher> INFO  migration - Started migration step: Update IPv6 setting preference
+[2024-02-13 10:19:57,470] <launcher> INFO  migration - Finished migration step: Update IPv6 setting preference
+[2024-02-13 10:19:57,471] <launcher> INFO  migration - Started migration step: Update IPv6 DHCPv6 range
+[2024-02-13 10:19:57,473] <launcher> INFO  migration - Finished migration step: Update IPv6 DHCPv6 range
+[2024-02-13 10:19:57,474] <launcher> INFO  migration - Started migration step: Provision gateway if IPv6 is enabled
+[2024-02-13 10:19:57,476] <launcher> INFO  migration - Finished migration step: Provision gateway if IPv6 is enabled
+[2024-02-13 10:19:57,476] <launcher> INFO  migration - Started migration step: Disable auto speed-test if gateway does not support it
+[2024-02-13 10:19:57,481] <launcher> INFO  migration - Finished migration step: Disable auto speed-test if gateway does not support it
+[2024-02-13 10:19:57,481] <launcher> INFO  migration - Started migration step: Update WAN DNS secondary failover
+[2024-02-13 10:19:57,482] <launcher> INFO  migration - Finished migration step: Update WAN DNS secondary failover
+[2024-02-13 10:19:57,483] <launcher> INFO  migration - Started migration step: Fill default DHCPv6 range
+[2024-02-13 10:19:57,487] <launcher> INFO  migration - Finished migration step: Fill default DHCPv6 range
+[2024-02-13 10:19:57,487] <launcher> INFO  migration - Started migration step: Provision IPv6 config for auto setting preference
+[2024-02-13 10:19:57,489] <launcher> INFO  migration - Finished migration step: Provision IPv6 config for auto setting preference
+[2024-02-13 10:19:57,490] <launcher> INFO  migration - Started migration step: Provision Ubios Gateway for new Udapi Interface format
+[2024-02-13 10:19:57,492] <launcher> INFO  migration - Finished migration step: Provision Ubios Gateway for new Udapi Interface format
+[2024-02-13 10:19:57,493] <launcher> INFO  migration - Started migration step: Move non-switching op-mode from port profile to device port_overrides
+[2024-02-13 10:19:57,495] <launcher> INFO  migration - Finished migration step: Move non-switching op-mode from port profile to device port_overrides
+[2024-02-13 10:19:57,496] <launcher> INFO  migration - Started migration step: Enable Masquerade on UID VPN for backward compatibility
+[2024-02-13 10:19:57,498] <launcher> INFO  migration - Finished migration step: Enable Masquerade on UID VPN for backward compatibility
+[2024-02-13 10:19:57,499] <launcher> INFO  migration - Started migration step: Apply filtering WAN IPs in MASQUERADE rules of iptables
+[2024-02-13 10:19:57,500] <launcher> INFO  migration - Finished migration step: Apply filtering WAN IPs in MASQUERADE rules of iptables
+[2024-02-13 10:19:57,500] <launcher> INFO  migration - Started migration step: Remove all loop detection alerts from DB
+[2024-02-13 10:19:57,502] <launcher> INFO  migration - Finished migration step: Remove all loop detection alerts from DB
+[2024-02-13 10:19:57,502] <launcher> INFO  migration - Started migration step: Separate IPsec VPN IKE/ESP encryption and hash, and populate lifetime
+[2024-02-13 10:19:57,504] <launcher> INFO  migration - Finished migration step: Separate IPsec VPN IKE/ESP encryption and hash, and populate lifetime
+[2024-02-13 10:19:57,505] <launcher> INFO  migration - Started migration step: Introduce "All" AP Group mode
+[2024-02-13 10:19:57,512] <launcher> INFO  migration - Finished migration step: Introduce "All" AP Group mode
+[2024-02-13 10:19:57,512] <launcher> INFO  migration - Started migration step: Check and update DHCPv6 range for auto preference
+[2024-02-13 10:19:57,514] <launcher> INFO  migration - Finished migration step: Check and update DHCPv6 range for auto preference
+[2024-02-13 10:19:57,515] <launcher> INFO  migration - Started migration step: Add missing value for portal_enabled property
+[2024-02-13 10:19:57,516] <launcher> INFO  migration - Finished migration step: Add missing value for portal_enabled property
+[2024-02-13 10:19:57,516] <launcher> INFO  migration - Started migration step: Reset IPv6 configuration if disabled
+[2024-02-13 10:19:57,518] <launcher> INFO  migration - Finished migration step: Reset IPv6 configuration if disabled
+[2024-02-13 10:19:57,518] <launcher> INFO  migration - Started migration step: Set default AP Group mode
+[2024-02-13 10:19:57,522] <launcher> INFO  migration - Finished migration step: Set default AP Group mode
+[2024-02-13 10:19:57,523] <launcher> INFO  migration - Started migration step: Reset WAN IPv6 to default if IPv6 is disabled
+[2024-02-13 10:19:57,525] <launcher> INFO  migration - Finished migration step: Reset WAN IPv6 to default if IPv6 is disabled
+[2024-02-13 10:19:57,526] <launcher> INFO  migration - Started migration step: Remove blocked state from locally administered address
+[2024-02-13 10:19:57,529] <launcher> INFO  migration - Finished migration step: Remove blocked state from locally administered address
+[2024-02-13 10:19:57,530] <launcher> INFO  migration - Started migration step: Provision layer-3 switches if layer-3 routing exists
+[2024-02-13 10:19:57,532] <launcher> INFO  migration - Finished migration step: Provision layer-3 switches if layer-3 routing exists
+[2024-02-13 10:19:57,532] <launcher> INFO  migration - Started migration step: Apply new IpSets to iptables
+[2024-02-13 10:19:57,533] <launcher> INFO  migration - Finished migration step: Apply new IpSets to iptables
+[2024-02-13 10:19:57,534] <launcher> INFO  migration - Started migration step: Fix Firewall rules with inverted protocol TCP_UDP and source port
+[2024-02-13 10:19:57,535] <launcher> INFO  migration - Finished migration step: Fix Firewall rules with inverted protocol TCP_UDP and source port
+[2024-02-13 10:19:57,536] <launcher> INFO  migration - Started migration step: Fix invalid client fixed IPs
+[2024-02-13 10:19:57,540] <launcher> INFO  migration - Finished migration step: Fix invalid client fixed IPs
+[2024-02-13 10:19:57,540] <launcher> INFO  migration - Started migration step: Remove orphaned dpi statistics
+[2024-02-13 10:19:57,549] <launcher> INFO  migration - About to remove 35 `stat_dpi` documents
+[2024-02-13 10:19:57,553] <launcher> INFO  migration - Finished migration step: Remove orphaned dpi statistics
+[2024-02-13 10:19:57,553] <launcher> INFO  migration - Started migration step: Fixup missing Pause state in WiFi
+[2024-02-13 10:19:57,555] <launcher> INFO  migration - Finished migration step: Fixup missing Pause state in WiFi
+[2024-02-13 10:19:57,556] <launcher> INFO  migration - Started migration step: Remove port profile and forward on WAN ports
+[2024-02-13 10:19:57,558] <launcher> INFO  migration - Finished migration step: Remove port profile and forward on WAN ports
+[2024-02-13 10:19:57,558] <launcher> INFO  migration - Started migration step: Provision gateway for duplicated guest rules
+[2024-02-13 10:19:57,560] <launcher> INFO  migration - Finished migration step: Provision gateway for duplicated guest rules
+[2024-02-13 10:19:57,561] <launcher> INFO  migration - Started migration step: Provision Ubios to fix OpenVPN Client DNS leak
+[2024-02-13 10:19:57,562] <launcher> INFO  migration - Finished migration step: Provision Ubios to fix OpenVPN Client DNS leak
+[2024-02-13 10:19:57,563] <launcher> INFO  migration - Started migration step: Migrate invalid default AP groups
+[2024-02-13 10:19:57,565] <launcher> INFO  migration - Finished migration step: Migrate invalid default AP groups
+[2024-02-13 10:19:57,565] <launcher> INFO  migration - Started migration step: Provision Ubios Gateway to set missing OpenVPN Server DNS in Auto mode
+[2024-02-13 10:19:57,567] <launcher> INFO  migration - Finished migration step: Provision Ubios Gateway to set missing OpenVPN Server DNS in Auto mode
+[2024-02-13 10:19:57,567] <launcher> INFO  migration - Started migration step: Re-provision Gateway to add new Talk ip/port ranges for FW rules
+[2024-02-13 10:19:57,567] <launcher> INFO  migration - Finished migration step: Re-provision Gateway to add new Talk ip/port ranges for FW rules
+[2024-02-13 10:19:57,567] <launcher> INFO  migration - Started migration step: Remove Global AP Setting
+[2024-02-13 10:19:57,572] <launcher> INFO  migration - Finished migration step: Remove Global AP Setting
+[2024-02-13 10:19:57,572] <launcher> INFO  migration - Started migration step: Find and remove invalid channels in radio table of devices
+[2024-02-13 10:19:57,584] <launcher> INFO  migration - Finished migration step: Find and remove invalid channels in radio table of devices
+[2024-02-13 10:19:57,585] <launcher> INFO  migration - Started migration step: Recover from wrongly-allowed VLAN management options in mini switches
+[2024-02-13 10:19:57,589] <launcher> INFO  migration - Finished migration step: Recover from wrongly-allowed VLAN management options in mini switches
+[2024-02-13 10:19:57,589] <launcher> INFO  migration - Started migration step: Add new tagged_vlan_mgmt option to port configurations
+[2024-02-13 10:19:57,599] <launcher> INFO  migration - Finished migration step: Add new tagged_vlan_mgmt option to port configurations
+[2024-02-13 10:19:57,599] <launcher> INFO  migration - Started migration step: Remove unusable WANs
+[2024-02-13 10:19:57,601] <launcher> INFO  migration - Finished migration step: Remove unusable WANs
+[2024-02-13 10:19:57,602] <launcher> INFO  migration - Started migration step: Add ipv6_wan_delegation_type on each WAN network configuration
+[2024-02-13 10:19:57,605] <launcher> INFO  migration - Finished migration step: Add ipv6_wan_delegation_type on each WAN network configuration
+[2024-02-13 10:19:57,606] <launcher> INFO  migration - Started migration step: Provision IPv6 loopback address
+[2024-02-13 10:19:57,610] <launcher> INFO  migration - Finished migration step: Provision IPv6 loopback address
+[2024-02-13 10:19:57,616] <launcher> INFO  migration - Started migration step: Remove PPTP Server if gateway not supported
+[2024-02-13 10:19:57,619] <launcher> INFO  migration - Finished migration step: Remove PPTP Server if gateway not supported
+[2024-02-13 10:19:57,620] <launcher> INFO  migration - Started migration step: Remove Auto IPSec site-to-site if gateway not supported
+[2024-02-13 10:19:57,623] <launcher> INFO  migration - Finished migration step: Remove Auto IPSec site-to-site if gateway not supported
+[2024-02-13 10:19:57,623] <launcher> INFO  migration - Started migration step: Re-provision non-gateway L3 switches to clean up irrelevant routing interface configurations
+[2024-02-13 10:19:57,629] <launcher> INFO  migration - Finished migration step: Re-provision non-gateway L3 switches to clean up irrelevant routing interface configurations
+[2024-02-13 10:19:57,632] <launcher> INFO  migration - Started migration step: Disable L3 routes created beyond switch max static routes capability and provision if there is any
+[2024-02-13 10:19:57,636] <launcher> INFO  migration - Finished migration step: Disable L3 routes created beyond switch max static routes capability and provision if there is any
+[2024-02-13 10:19:57,637] <launcher> INFO  migration - Started migration step: Provision Ubios gateway if there were invalid DHCP options
+[2024-02-13 10:19:57,640] <launcher> INFO  migration - Finished migration step: Provision Ubios gateway if there were invalid DHCP options
+[2024-02-13 10:19:57,641] <launcher> INFO  migration - Started migration step: Unset UniFi Core device info with removed state
+[2024-02-13 10:19:57,642] <launcher> INFO  migration - 0 clients with UniFi Core device info and removed state
+[2024-02-13 10:19:57,643] <launcher> INFO  migration - Finished migration step: Unset UniFi Core device info with removed state
+[2024-02-13 10:19:57,643] <launcher> INFO  migration - Started migration step: Remove non local networks from IPS
+[2024-02-13 10:19:57,645] <launcher> INFO  migration - Finished migration step: Remove non local networks from IPS
+[2024-02-13 10:19:57,646] <launcher> INFO  migration - Started migration step: Unset unsupported DDNS service
+[2024-02-13 10:19:57,648] <launcher> INFO  migration - Finished migration step: Unset unsupported DDNS service
+[2024-02-13 10:19:57,649] <launcher> INFO  migration - Started migration step: Copy Broadcasting APs in Devices mode
+[2024-02-13 10:19:57,670] <launcher> INFO  migration - Finished migration step: Copy Broadcasting APs in Devices mode
+[2024-02-13 10:19:57,670] <launcher> INFO  migration - Started migration step: Migrate firewall rule indexes to five digit index space for ubios devices
+[2024-02-13 10:19:57,672] <launcher> INFO  migration - Finished migration step: Migrate firewall rule indexes to five digit index space for ubios devices
+[2024-02-13 10:19:57,672] <launcher> INFO  migration - Started migration step: Provision gateway which supports Udapi bridge firewall
+[2024-02-13 10:19:57,674] <launcher> INFO  migration - Finished migration step: Provision gateway which supports Udapi bridge firewall
+[2024-02-13 10:19:57,675] <launcher> INFO  migration - Started migration step: Populate Ether-Lighting config and re-provision USW-Pro-Max
+[2024-02-13 10:19:57,687] <launcher> INFO  migration - Finished migration step: Populate Ether-Lighting config and re-provision USW-Pro-Max
+[2024-02-13 10:19:57,687] <launcher> INFO  migration - Started migration step: Update default brightness to 100
+[2024-02-13 10:19:57,690] <launcher> INFO  migration - Finished migration step: Update default brightness to 100
+[2024-02-13 10:19:57,691] <launcher> INFO  migration - Started migration step: Add default PPPoE credential flags if needed
+[2024-02-13 10:19:57,693] <launcher> INFO  migration - Finished migration step: Add default PPPoE credential flags if needed
+[2024-02-13 10:19:57,693] <launcher> INFO  migration - Started migration step: Move EtherLighting config from device-level to site-level
+[2024-02-13 10:19:57,703] <launcher> INFO  migration - Finished migration step: Move EtherLighting config from device-level to site-level
+[2024-02-13 10:19:57,703] <launcher> INFO  migration - *** Migrating site[5c07a47a77c8a0fa7efe8392]
+[2024-02-13 10:19:57,775] <launcher> INFO  migration - Adding Optimize IoT WiFi Connectivity toggle
+[2024-02-13 10:19:57,780] <launcher> INFO  migration - Updating DTIM period for WiFi with Default DTIM mode
+[2024-02-13 10:19:57,784] <launcher> INFO  migration - Updating DTIM 6e period for WiFi with Default DTIM mode
+[2024-02-13 10:19:57,893] <launcher> INFO  migration - Started migration step: Add setting preference to LAN Configuration
+[2024-02-13 10:19:57,905] <launcher> INFO  migration - Finished migration step: Add setting preference to LAN Configuration
+[2024-02-13 10:19:57,915] <launcher> INFO  migration - Started migration step: Rename default WAN names
+[2024-02-13 10:19:57,921] <launcher> INFO  migration - Finished migration step: Rename default WAN names
+[2024-02-13 10:19:57,922] <launcher> INFO  migration - Started migration step: Create missing WiFi AI Setting
+[2024-02-13 10:19:57,923] <launcher> INFO  migration - Finished migration step: Create missing WiFi AI Setting
+[2024-02-13 10:19:57,923] <launcher> INFO  migration - Started migration step: Add setting preference to Firewall Rules
+[2024-02-13 10:19:57,932] <launcher> INFO  migration - Finished migration step: Add setting preference to Firewall Rules
+[2024-02-13 10:19:57,932] <launcher> INFO  migration - Started migration step: Disable endpoint scanning since the feature has been removed from user interface
+[2024-02-13 10:19:57,933] <launcher> INFO  migration - Finished migration step: Disable endpoint scanning since the feature has been removed from user interface
+[2024-02-13 10:19:57,933] <launcher> INFO  migration - Started migration step: Provision Ubios Gateway with Latency monitor config
+[2024-02-13 10:19:57,934] <launcher> INFO  migration - Finished migration step: Provision Ubios Gateway with Latency monitor config
+[2024-02-13 10:19:57,934] <launcher> INFO  migration - Started migration step: Add Allow Weak Ciphers option to L2TP VPNs
+[2024-02-13 10:19:57,937] <launcher> INFO  migration - Finished migration step: Add Allow Weak Ciphers option to L2TP VPNs
+[2024-02-13 10:19:57,937] <launcher> INFO  migration - Started migration step: Add Guest Access setting preference
+[2024-02-13 10:19:57,941] <launcher> INFO  migration - Finished migration step: Add Guest Access setting preference
+[2024-02-13 10:19:57,941] <launcher> INFO  migration - Started migration step: Start IGMP Snooping for UDM-family
+[2024-02-13 10:19:57,942] <launcher> INFO  migration - Finished migration step: Start IGMP Snooping for UDM-family
+[2024-02-13 10:19:57,942] <launcher> INFO  migration - Started migration step: Add NTP setting preference
+[2024-02-13 10:19:57,947] <launcher> INFO  migration - Finished migration step: Add NTP setting preference
+[2024-02-13 10:19:57,948] <launcher> INFO  migration - Started migration step: Re-provision Ubios gateway if Port Forward Configured to ULTE
+[2024-02-13 10:19:57,949] <launcher> INFO  migration - Finished migration step: Re-provision Ubios gateway if Port Forward Configured to ULTE
+[2024-02-13 10:19:57,950] <launcher> INFO  migration - Started migration step: Migrate Simple VPN to VPN with Auto Setting preference
+[2024-02-13 10:19:57,951] <launcher> INFO  migration - Finished migration step: Migrate Simple VPN to VPN with Auto Setting preference
+[2024-02-13 10:19:57,951] <launcher> INFO  migration - Started migration step: Remove obsolete Teleport tokens
+[2024-02-13 10:19:57,953] <launcher> INFO  migration - Finished migration step: Remove obsolete Teleport tokens
+[2024-02-13 10:19:57,953] <launcher> INFO  migration - Started migration step: Provision UbiOS gateway to enable alerting WAN monitor
+[2024-02-13 10:19:57,954] <launcher> INFO  migration - Finished migration step: Provision UbiOS gateway to enable alerting WAN monitor
+[2024-02-13 10:19:57,954] <launcher> INFO  migration - Started migration step: Remove blacklist channel plans if multiple plans defined
+[2024-02-13 10:19:57,956] <launcher> INFO  migration - Finished migration step: Remove blacklist channel plans if multiple plans defined
+[2024-02-13 10:19:57,956] <launcher> INFO  migration - Started migration step: Provision default RADIUS Profile if IP is missing
+[2024-02-13 10:19:57,957] <launcher> INFO  migration - Finished migration step: Provision default RADIUS Profile if IP is missing
+[2024-02-13 10:19:57,958] <launcher> INFO  migration - Started migration step: Remove not supported Site to Site Auto VPN if setup is based on UDM device
+[2024-02-13 10:19:57,958] <launcher> INFO  migration - Finished migration step: Remove not supported Site to Site Auto VPN if setup is based on UDM device
+[2024-02-13 10:19:57,958] <launcher> INFO  migration - Started migration step: Disable Port Forward rules with invalid port configuration
+[2024-02-13 10:19:57,968] <launcher> INFO  migration - Finished migration step: Disable Port Forward rules with invalid port configuration
+[2024-02-13 10:19:57,968] <launcher> INFO  migration - Started migration step: Update Setting Preference in Local Network after changing default for Multicast DNS to enabled
+[2024-02-13 10:19:57,981] <launcher> INFO  migration - Finished migration step: Update Setting Preference in Local Network after changing default for Multicast DNS to enabled
+[2024-02-13 10:19:57,982] <launcher> INFO  migration - Started migration step: Fix WiFiman feedback fingerprint
+[2024-02-13 10:19:57,984] <launcher> INFO  migration - Finished migration step: Fix WiFiman feedback fingerprint
+[2024-02-13 10:19:57,984] <launcher> INFO  migration - Started migration step: Remove Teleport Enabled toggle
+[2024-02-13 10:19:57,985] <launcher> INFO  migration - Finished migration step: Remove Teleport Enabled toggle
+[2024-02-13 10:19:57,985] <launcher> INFO  migration - Started migration step: Enable Teleport if any token has been already generated
+[2024-02-13 10:19:57,987] <launcher> INFO  migration - Finished migration step: Enable Teleport if any token has been already generated
+[2024-02-13 10:19:57,987] <launcher> INFO  migration - Started migration step: Re-provision site gateway with normal arp cache timeout
+[2024-02-13 10:19:57,993] <launcher> INFO  migration - Finished migration step: Re-provision site gateway with normal arp cache timeout
+[2024-02-13 10:19:57,993] <launcher> INFO  migration - Started migration step: Remove redundant scheduled task for auto optimizer
+[2024-02-13 10:19:57,995] <launcher> INFO  migration - Finished migration step: Remove redundant scheduled task for auto optimizer
+[2024-02-13 10:19:57,996] <launcher> INFO  migration - Started migration step: Provision Ubios Gateway with Latency monitor config
+[2024-02-13 10:19:57,997] <launcher> INFO  migration - Finished migration step: Provision Ubios Gateway with Latency monitor config
+[2024-02-13 10:19:57,997] <launcher> INFO  migration - Started migration step: Set missing disabled Multicast DNS Setting
+[2024-02-13 10:19:58,008] <launcher> INFO  migration - Finished migration step: Set missing disabled Multicast DNS Setting
+[2024-02-13 10:19:58,008] <launcher> INFO  migration - Started migration step: Enable Teleport by default
+[2024-02-13 10:19:58,015] <launcher> INFO  migration - Finished migration step: Enable Teleport by default
+[2024-02-13 10:19:58,015] <launcher> INFO  migration - Started migration step: Set missing disabled Auto Scale Network Setting
+[2024-02-13 10:19:58,022] <launcher> INFO  migration - Finished migration step: Set missing disabled Auto Scale Network Setting
+[2024-02-13 10:19:58,022] <launcher> INFO  migration - Started migration step: Migrate users to Global AP Settings
+[2024-02-13 10:19:58,026] <launcher> INFO  migration - Finished migration step: Migrate users to Global AP Settings
+[2024-02-13 10:19:58,026] <launcher> INFO  migration - Started migration step: Migrate WiFi AI schedule time and channel list to defaults
+[2024-02-13 10:19:58,033] <launcher> INFO  migration - Finished migration step: Migrate WiFi AI schedule time and channel list to defaults
+[2024-02-13 10:19:58,033] <launcher> INFO  migration - Started migration step: Add one time device auto upgrade notification
+[2024-02-13 10:19:58,034] <launcher> INFO  migration - Finished migration step: Add one time device auto upgrade notification
+[2024-02-13 10:19:58,035] <launcher> INFO  migration - Started migration step: Remove references to invalid Network Confs from Traffic Rules
+[2024-02-13 10:19:58,036] <launcher> INFO  migration - Finished migration step: Remove references to invalid Network Confs from Traffic Rules
+[2024-02-13 10:19:58,036] <launcher> INFO  migration - Started migration step: Remove blocked flag from Unifi devices
+[2024-02-13 10:19:58,037] <launcher> INFO  migration - Finished migration step: Remove blocked flag from Unifi devices
+[2024-02-13 10:19:58,037] <launcher> INFO  migration - Started migration step: Unlock Clients locked to removed APs
+[2024-02-13 10:19:58,040] <launcher> INFO  migration - Finished migration step: Unlock Clients locked to removed APs
+[2024-02-13 10:19:58,040] <launcher> INFO  migration - Started migration step: Remove references to invalid Network Confs from IPS setting
+[2024-02-13 10:19:58,047] <launcher> INFO  migration - Finished migration step: Remove references to invalid Network Confs from IPS setting
+[2024-02-13 10:19:58,047] <launcher> INFO  migration - Started migration step: Re-provision gateway if firewall rule exists for disabled network
+[2024-02-13 10:19:58,049] <launcher> INFO  migration - Finished migration step: Re-provision gateway if firewall rule exists for disabled network
+[2024-02-13 10:19:58,050] <launcher> INFO  migration - Started migration step: Re-provision gateway if traffic rule exists for disabled network
+[2024-02-13 10:19:58,054] <launcher> INFO  migration - Finished migration step: Re-provision gateway if traffic rule exists for disabled network
+[2024-02-13 10:19:58,054] <launcher> INFO  migration - Started migration step: Re-provision gateway if traffic route exists for disabled network
+[2024-02-13 10:19:58,057] <launcher> INFO  migration - Finished migration step: Re-provision gateway if traffic route exists for disabled network
+[2024-02-13 10:19:58,063] <launcher> INFO  migration - Started migration step: Remove L3 Switch MAC from Network if it is not Layer 3 network
+[2024-02-13 10:19:58,065] <launcher> INFO  migration - Finished migration step: Remove L3 Switch MAC from Network if it is not Layer 3 network
+[2024-02-13 10:19:58,065] <launcher> INFO  migration - Started migration step: Migrate auto speedtest to cron expr
+[2024-02-13 10:19:58,077] <launcher> INFO  migration - Finished migration step: Migrate auto speedtest to cron expr
+[2024-02-13 10:19:58,078] <launcher> INFO  migration - Started migration step: Create to Global Switch Settings
+[2024-02-13 10:19:58,088] <launcher> INFO  migration - Finished migration step: Create to Global Switch Settings
+[2024-02-13 10:19:58,088] <launcher> INFO  migration - Started migration step: Migrate NG Minimum Rates
+[2024-02-13 10:19:58,099] <launcher> INFO  migration - Finished migration step: Migrate NG Minimum Rates
+[2024-02-13 10:19:58,099] <launcher> INFO  migration - Started migration step: Migrate UXG IPv6 firewall rules
+[2024-02-13 10:19:58,102] <launcher> INFO  migration - Finished migration step: Migrate UXG IPv6 firewall rules
+[2024-02-13 10:19:58,103] <launcher> INFO  migration - Started migration step: Remove migrate_inform_url from UDM
+[2024-02-13 10:19:58,104] <launcher> INFO  migration - Finished migration step: Remove migrate_inform_url from UDM
+[2024-02-13 10:19:58,104] <launcher> INFO  migration - Started migration step: Remove STP Priority from Global Switch Settings
+[2024-02-13 10:19:58,106] <launcher> INFO  migration - Finished migration step: Remove STP Priority from Global Switch Settings
+[2024-02-13 10:19:58,107] <launcher> INFO  migration - Started migration step: Exclude every domain in Traffic Rules & Routes from content filtering
+[2024-02-13 10:19:58,109] <launcher> INFO  migration - Finished migration step: Exclude every domain in Traffic Rules & Routes from content filtering
+[2024-02-13 10:19:58,109] <launcher> INFO  migration - Started migration step: Seed Connectivity Setting for site if it's missing
+[2024-02-13 10:19:58,110] <launcher> INFO  migration - Finished migration step: Seed Connectivity Setting for site if it's missing
+[2024-02-13 10:19:58,110] <launcher> INFO  migration - Started migration step: Seed Connectivity Setting for site if it's missing
+[2024-02-13 10:19:58,112] <launcher> INFO  migration - Finished migration step: Seed Connectivity Setting for site if it's missing
+[2024-02-13 10:19:58,112] <launcher> INFO  migration - Started migration step: Provision console which is remotely logging to itself
+[2024-02-13 10:19:58,113] <launcher> INFO  migration - Finished migration step: Provision console which is remotely logging to itself
+[2024-02-13 10:19:58,113] <launcher> INFO  migration - Started migration step: Remove WAN2 network when console has single WAN interface
+[2024-02-13 10:19:58,113] <launcher> INFO  migration - Finished migration step: Remove WAN2 network when console has single WAN interface
+[2024-02-13 10:19:58,113] <launcher> INFO  migration - Started migration step: Populating default values to missing mandatory fields in enabled radius setting
+[2024-02-13 10:19:58,114] <launcher> INFO  migration - Finished migration step: Populating default values to missing mandatory fields in enabled radius setting
+[2024-02-13 10:19:58,114] <launcher> INFO  migration - Started migration step: Fix invalid WAN Load Balance weights
+[2024-02-13 10:19:58,115] <launcher> INFO  migration - Finished migration step: Fix invalid WAN Load Balance weights
+[2024-02-13 10:19:58,115] <launcher> INFO  migration - Started migration step: Add missing Global AP Setting
+[2024-02-13 10:19:58,116] <launcher> INFO  migration - Finished migration step: Add missing Global AP Setting
+[2024-02-13 10:19:58,116] <launcher> INFO  migration - Started migration step: Remove invalid device MACs from Ap Groups
+[2024-02-13 10:19:58,119] <launcher> INFO  migration - Finished migration step: Remove invalid device MACs from Ap Groups
+[2024-02-13 10:19:58,119] <launcher> INFO  migration - Started migration step: Remove invalid device MACs from WiFi AI
+[2024-02-13 10:19:58,122] <launcher> INFO  migration - Finished migration step: Remove invalid device MACs from WiFi AI
+[2024-02-13 10:19:58,122] <launcher> INFO  migration - Started migration step: Re-provision gateway with updated NAT exclusion rule
+[2024-02-13 10:19:58,124] <launcher> INFO  migration - Finished migration step: Re-provision gateway with updated NAT exclusion rule
+[2024-02-13 10:19:58,124] <launcher> INFO  migration - Started migration step: Create threat log table
+[2024-02-13 10:19:58,192] <launcher> INFO  migration - Finished migration step: Create threat log table
+[2024-02-13 10:19:58,192] <launcher> INFO  migration - Started migration step: Re-provision gateway with updated Site to Site VPN id
+[2024-02-13 10:19:58,194] <launcher> INFO  migration - Finished migration step: Re-provision gateway with updated Site to Site VPN id
+[2024-02-13 10:19:58,194] <launcher> INFO  migration - Started migration step: Provision non-console Ubios Gateway with FW release channel
+[2024-02-13 10:19:58,195] <launcher> INFO  migration - Finished migration step: Provision non-console Ubios Gateway with FW release channel
+[2024-02-13 10:19:58,196] <launcher> INFO  migration - Started migration step: Re-provision gateway with updated Site to Site VPN ids
+[2024-02-13 10:19:58,197] <launcher> INFO  migration - Finished migration step: Re-provision gateway with updated Site to Site VPN ids
+[2024-02-13 10:19:58,197] <launcher> INFO  migration - Started migration step: Remove ap_group_ids from Element WLAN
+[2024-02-13 10:19:58,202] <launcher> INFO  migration - Finished migration step: Remove ap_group_ids from Element WLAN
+[2024-02-13 10:19:58,202] <launcher> INFO  migration - Started migration step: Provision Ubios Gateway for lower ARP cache timeout on WAN
+[2024-02-13 10:19:58,203] <launcher> INFO  migration - Finished migration step: Provision Ubios Gateway for lower ARP cache timeout on WAN
+[2024-02-13 10:19:58,204] <launcher> INFO  migration - Started migration step: Provision Ubios Gateway for ebtables on guest network
+[2024-02-13 10:19:58,204] <launcher> INFO  migration - Finished migration step: Provision Ubios Gateway for ebtables on guest network
+[2024-02-13 10:19:58,205] <launcher> INFO  migration - Started migration step: Provision UbiOS gateways on non-UDM family hosts to disable ARP inspector
+[2024-02-13 10:19:58,206] <launcher> INFO  migration - Finished migration step: Provision UbiOS gateways on non-UDM family hosts to disable ARP inspector
+[2024-02-13 10:19:58,206] <launcher> INFO  migration - Started migration step: Enable all WLAN iapp_enabled by default
+[2024-02-13 10:19:58,207] <launcher> INFO  migration - Finished migration step: Enable all WLAN iapp_enabled by default
+[2024-02-13 10:19:58,207] <launcher> INFO  migration - Started migration step: Provision wireless devices to fix NG mgmt_rate to support 11b only clients
+[2024-02-13 10:19:58,210] <launcher> INFO  migration - Finished migration step: Provision wireless devices to fix NG mgmt_rate to support 11b only clients
+[2024-02-13 10:19:58,210] <launcher> INFO  migration - Started migration step: Provision UDR with bridge vlan filter capability
+[2024-02-13 10:19:58,210] <launcher> INFO  migration - Finished migration step: Provision UDR with bridge vlan filter capability
+[2024-02-13 10:19:58,210] <launcher> INFO  migration - Started migration step: Disable WAN VLAN if QoS Tag is not set when WAN VLAN is zero
+[2024-02-13 10:19:58,213] <launcher> INFO  migration - Finished migration step: Disable WAN VLAN if QoS Tag is not set when WAN VLAN is zero
+[2024-02-13 10:19:58,213] <launcher> INFO  migration - Started migration step: Provision Ubios Gateway with LTE modem
+[2024-02-13 10:19:58,214] <launcher> INFO  migration - Finished migration step: Provision Ubios Gateway with LTE modem
+[2024-02-13 10:19:58,214] <launcher> INFO  migration - Started migration step: Re-provision UXG-Pro with new outlet config if it exists
+[2024-02-13 10:19:58,215] <launcher> INFO  migration - Finished migration step: Re-provision UXG-Pro with new outlet config if it exists
+[2024-02-13 10:19:58,215] <launcher> INFO  migration - Started migration step: Set debug tool setting default value false
+[2024-02-13 10:19:58,217] <launcher> INFO  migration - Finished migration step: Set debug tool setting default value false
+[2024-02-13 10:19:58,217] <launcher> INFO  migration - Started migration step: Set missing setup provision flags
+[2024-02-13 10:19:58,218] <launcher> INFO  migration - Finished migration step: Set missing setup provision flags
+[2024-02-13 10:19:58,220] <launcher> INFO  migration - Started migration step: Rename default WAN names
+[2024-02-13 10:19:58,225] <launcher> INFO  migration - Finished migration step: Rename default WAN names
+[2024-02-13 10:19:58,225] <launcher> INFO  migration - Started migration step: Seed default IPS setting if it doesn't exist
+[2024-02-13 10:19:58,227] <launcher> INFO  migration - Finished migration step: Seed default IPS setting if it doesn't exist
+[2024-02-13 10:19:58,227] <launcher> INFO  migration - Started migration step: Disable direct connect for UDMs
+[2024-02-13 10:19:58,228] <launcher> INFO  migration - Finished migration step: Disable direct connect for UDMs
+[2024-02-13 10:19:58,228] <launcher> INFO  migration - Started migration step: Remove blocked flag from Unifi device macs
+[2024-02-13 10:19:58,234] <launcher> INFO  migration - Finished migration step: Remove blocked flag from Unifi device macs
+[2024-02-13 10:19:58,234] <launcher> INFO  migration - Started migration step: Add Magic Site-to-Site VPN Setting
+[2024-02-13 10:19:58,236] <launcher> INFO  migration - Finished migration step: Add Magic Site-to-Site VPN Setting
+[2024-02-13 10:19:58,236] <launcher> INFO  migration - Started migration step: Add new Guest Access defaults
+[2024-02-13 10:19:58,239] <launcher> INFO  migration - Finished migration step: Add new Guest Access defaults
+[2024-02-13 10:19:58,239] <launcher> INFO  migration - Started migration step: Re-provision UDAPI config without invalid UPnP WAN interface
+[2024-02-13 10:19:58,243] <launcher> INFO  migration - Finished migration step: Re-provision UDAPI config without invalid UPnP WAN interface
+[2024-02-13 10:19:58,243] <launcher> INFO  migration - Started migration step: Provision Ubios gateway for DNS fallback
+[2024-02-13 10:19:58,246] <launcher> INFO  migration - Finished migration step: Provision Ubios gateway for DNS fallback
+[2024-02-13 10:19:58,246] <launcher> INFO  migration - Started migration step: Remove default system-generated Port Profiles, and adjust referrals to them
+[2024-02-13 10:19:58,266] <launcher> INFO  migration - Port Profile new UX: Removing system-generated PortConfs - [[5c07a47b77c8a0fa7efe839f, 602cc9c794a09a0d36525082, 5c07a47b77c8a0fa7efe83a1, 5c07a47b77c8a0fa7efe83a0, 5de9a207ebfffe0ce02fb4f9]]
+[2024-02-13 10:19:58,266] <launcher> INFO  migration - Finished migration step: Remove default system-generated Port Profiles, and adjust referrals to them
+[2024-02-13 10:19:58,266] <launcher> INFO  migration - Started migration step: Disentangle Port Overrides and add setting preferences
+[2024-02-13 10:19:58,268] <launcher> INFO  migration - Finished migration step: Disentangle Port Overrides and add setting preferences
+[2024-02-13 10:19:58,268] <launcher> INFO  migration - Started migration step: Re-provision devices which user has port_overrides for them
+[2024-02-13 10:19:58,269] <launcher> INFO  migration - Finished migration step: Re-provision devices which user has port_overrides for them
+[2024-02-13 10:19:58,269] <launcher> INFO  migration - Started migration step: Apply local address for OpenVPN clients
+[2024-02-13 10:19:58,270] <launcher> INFO  migration - Finished migration step: Apply local address for OpenVPN clients
+[2024-02-13 10:19:58,271] <launcher> INFO  migration - Started migration step: Provision APs to enforce the use of elementWlan for autolink
+[2024-02-13 10:19:58,279] <launcher> INFO  migration - Finished migration step: Provision APs to enforce the use of elementWlan for autolink
+[2024-02-13 10:19:58,280] <launcher> INFO  migration - Started migration step: Provision gateway configuration to update UPnP ACL rules
+[2024-02-13 10:19:58,287] <launcher> INFO  migration - Finished migration step: Provision gateway configuration to update UPnP ACL rules
+[2024-02-13 10:19:58,287] <launcher> INFO  migration - Started migration step: Migrate Echo Server for gateway
+[2024-02-13 10:19:58,311] <launcher> INFO  migration - Finished migration step: Migrate Echo Server for gateway
+[2024-02-13 10:19:58,316] <launcher> INFO  migration - Started migration step: Provision gateway when Ad Blocking is enabled
+[2024-02-13 10:19:58,319] <launcher> INFO  migration - Finished migration step: Provision gateway when Ad Blocking is enabled
+[2024-02-13 10:19:58,320] <launcher> INFO  migration - Started migration step: Drop ace.storeddpistats collection
+[2024-02-13 10:19:58,322] <launcher> INFO  migration - Finished migration step: Drop ace.storeddpistats collection
+[2024-02-13 10:19:58,323] <launcher> INFO  migration - Started migration step: Drop site DPI documents in ace_stat.stat_dpi collection
+[2024-02-13 10:19:58,360] <launcher> INFO  migration - Finished migration step: Drop site DPI documents in ace_stat.stat_dpi collection
+[2024-02-13 10:19:58,360] <launcher> INFO  migration - Started migration step: Update DPI Interval
+[2024-02-13 10:19:58,380] <launcher> INFO  migration - Finished migration step: Update DPI Interval
+[2024-02-13 10:19:58,380] <launcher> INFO  migration - Started migration step: Remove invalid speed port conf from UXG port
+[2024-02-13 10:19:58,383] <launcher> INFO  migration - Finished migration step: Remove invalid speed port conf from UXG port
+[2024-02-13 10:19:58,384] <launcher> INFO  migration - Started migration step: Provision UDM if ethernet_table is inconsistent
+[2024-02-13 10:19:58,385] <launcher> INFO  migration - Finished migration step: Provision UDM if ethernet_table is inconsistent
+[2024-02-13 10:19:58,385] <launcher> INFO  migration - Started migration step: Update port profile default values for auto setting preference
+[2024-02-13 10:19:58,386] <launcher> INFO  migration - Finished migration step: Update port profile default values for auto setting preference
+[2024-02-13 10:19:58,387] <launcher> INFO  migration - Started migration step: Generate OpenVPN id
+[2024-02-13 10:19:58,388] <launcher> INFO  migration - Finished migration step: Generate OpenVPN id
+[2024-02-13 10:19:58,388] <launcher> INFO  migration - Started migration step: Remove reserved DHCP fixed IP
+[2024-02-13 10:19:58,390] <launcher> INFO  migration - Finished migration step: Remove reserved DHCP fixed IP
+[2024-02-13 10:19:58,390] <launcher> INFO  migration - Started migration step: Provision DHCP reserved static lease for 192.168.1.20
+[2024-02-13 10:19:58,391] <launcher> INFO  migration - Finished migration step: Provision DHCP reserved static lease for 192.168.1.20
+[2024-02-13 10:19:58,392] <launcher> INFO  migration - Started migration step: Fix WAN missing field
+[2024-02-13 10:19:58,394] <launcher> INFO  migration - Finished migration step: Fix WAN missing field
+[2024-02-13 10:19:58,394] <launcher> INFO  migration - Started migration step: Provision WPA EAP RADIUS filters
+[2024-02-13 10:19:58,398] <launcher> INFO  migration - Finished migration step: Provision WPA EAP RADIUS filters
+[2024-02-13 10:19:58,399] <launcher> INFO  migration - Started migration step: Remove honeypot setting when the site gateway is USG
+[2024-02-13 10:19:58,405] <launcher> INFO  migration - Finished migration step: Remove honeypot setting when the site gateway is USG
+[2024-02-13 10:19:58,405] <launcher> INFO  migration - Started migration step: Rectify wrongly configured VLAN-tagging properties in port_overrides in USW-Flex-mini
+[2024-02-13 10:19:58,407] <launcher> INFO  migration - Finished migration step: Rectify wrongly configured VLAN-tagging properties in port_overrides in USW-Flex-mini
+[2024-02-13 10:19:58,407] <launcher> INFO  migration - Started migration step: Remove empty pre-auth allowances and post-auth restrictions
+[2024-02-13 10:19:58,408] <launcher> INFO  migration - Finished migration step: Remove empty pre-auth allowances and post-auth restrictions
+[2024-02-13 10:19:58,409] <launcher> INFO  migration - Started migration step: Deprecate 3DES from IPSec VPN
+[2024-02-13 10:19:58,410] <launcher> INFO  migration - Finished migration step: Deprecate 3DES from IPSec VPN
+[2024-02-13 10:19:58,410] <launcher> INFO  migration - Started migration step: Fix UID WiFi when users are global
+[2024-02-13 10:19:58,411] <launcher> INFO  migration - Finished migration step: Fix UID WiFi when users are global
+[2024-02-13 10:19:58,412] <launcher> INFO  migration - Started migration step: Disable auto speed-test if gateway does not support it
+[2024-02-13 10:19:58,413] <launcher> INFO  migration - Finished migration step: Disable auto speed-test if gateway does not support it
+[2024-02-13 10:19:58,414] <launcher> INFO  migration - Started migration step: Provision all access points for updated connectivity setting
+[2024-02-13 10:19:58,416] <launcher> INFO  migration - Finished migration step: Provision all access points for updated connectivity setting
+[2024-02-13 10:19:58,416] <launcher> INFO  migration - Started migration step: Disable LLDP on WAN
+[2024-02-13 10:19:58,417] <launcher> INFO  migration - Finished migration step: Disable LLDP on WAN
+[2024-02-13 10:19:58,418] <launcher> INFO  migration - Started migration step: Add missing value for portal_enabled property
+[2024-02-13 10:19:58,421] <launcher> INFO  migration - Finished migration step: Add missing value for portal_enabled property
+[2024-02-13 10:19:58,422] <launcher> INFO  migration - Started migration step: Re-provision UDAPI service/redirector when portal is enabled and has guest network or guest WLAN
+[2024-02-13 10:19:58,423] <launcher> INFO  migration - Finished migration step: Re-provision UDAPI service/redirector when portal is enabled and has guest network or guest WLAN
+[2024-02-13 10:19:58,424] <launcher> INFO  migration - Started migration step: Remove invalid port index port overrides
+[2024-02-13 10:19:58,425] <launcher> INFO  migration - Finished migration step: Remove invalid port index port overrides
+[2024-02-13 10:19:58,426] <launcher> INFO  migration - Started migration step: Remove lcm_night_mode_enabled for all devices with LCM support
+[2024-02-13 10:19:58,428] <launcher> INFO  migration - Finished migration step: Remove lcm_night_mode_enabled for all devices with LCM support
+[2024-02-13 10:19:58,428] <launcher> INFO  migration - Started migration step: Remove persisted storage and temperatures
+[2024-02-13 10:19:58,429] <launcher> INFO  migration - Finished migration step: Remove persisted storage and temperatures
+[2024-02-13 10:19:58,429] <launcher> INFO  migration - Started migration step: Remove non-exist voice network conf ID from Port Conf
+[2024-02-13 10:19:58,435] <launcher> INFO  migration - Finished migration step: Remove non-exist voice network conf ID from Port Conf
+[2024-02-13 10:19:58,435] <launcher> INFO  migration - Started migration step: Clean non-exist network conf IDs in port configs with disabled vlan forward and remove voice network which is equal to native network
+[2024-02-13 10:19:58,440] <launcher> INFO  migration - Finished migration step: Clean non-exist network conf IDs in port configs with disabled vlan forward and remove voice network which is equal to native network
+[2024-02-13 10:19:58,440] <launcher> INFO  migration - Started migration step: Disable outdoor_mode_override for all APs without outdoor mode support
+[2024-02-13 10:19:58,443] <launcher> INFO  migration - Finished migration step: Disable outdoor_mode_override for all APs without outdoor mode support
+[2024-02-13 10:19:58,444] <launcher> INFO  migration - Started migration step: Update WAN DNS secondary failover
+[2024-02-13 10:19:58,445] <launcher> INFO  migration - Finished migration step: Update WAN DNS secondary failover
+[2024-02-13 10:19:58,446] <launcher> INFO  migration - Started migration step: Fix IPv6 static address and prefix delegation on gateway
+[2024-02-13 10:19:58,449] <launcher> INFO  migration - Finished migration step: Fix IPv6 static address and prefix delegation on gateway
+[2024-02-13 10:19:58,449] <launcher> INFO  migration - Started migration step: Add advanced filtering preference in ips settings
+[2024-02-13 10:19:58,454] <launcher> INFO  migration - Finished migration step: Add advanced filtering preference in ips settings
+[2024-02-13 10:19:58,454] <launcher> INFO  migration - Started migration step: Create DNS over HTTPS Settings
+[2024-02-13 10:19:58,457] <launcher> INFO  migration - Finished migration step: Create DNS over HTTPS Settings
+[2024-02-13 10:19:58,457] <launcher> INFO  migration - Started migration step: Removed enabled Honeypots outside configured network subnets
+[2024-02-13 10:19:58,458] <launcher> INFO  migration - Finished migration step: Removed enabled Honeypots outside configured network subnets
+[2024-02-13 10:19:58,458] <launcher> INFO  migration - Started migration step: Change to less restrictive DHCPv6 rules
+[2024-02-13 10:19:58,460] <launcher> INFO  migration - Finished migration step: Change to less restrictive DHCPv6 rules
+[2024-02-13 10:19:58,460] <launcher> INFO  migration - Started migration step: Provision Ubios Gateway for Guest network IPv6 support
+[2024-02-13 10:19:58,461] <launcher> INFO  migration - Finished migration step: Provision Ubios Gateway for Guest network IPv6 support
+[2024-02-13 10:19:58,462] <launcher> INFO  migration - Started migration step: Migrate auto speedtest cron_expr to random minute
+[2024-02-13 10:19:58,463] <launcher> INFO  migration - Finished migration step: Migrate auto speedtest cron_expr to random minute
+[2024-02-13 10:19:58,464] <launcher> INFO  migration - Started migration step: Enable channel optimization on radios
+[2024-02-13 10:19:58,466] <launcher> INFO  migration - Finished migration step: Enable channel optimization on radios
+[2024-02-13 10:19:58,466] <launcher> INFO  migration - Started migration step: Create or replace schedule task for channel optimization
+[2024-02-13 10:19:58,468] <launcher> INFO  migration - Finished migration step: Create or replace schedule task for channel optimization
+[2024-02-13 10:19:58,468] <launcher> INFO  migration - Started migration step: Disable RADIUS MAC Authentication on UID WiFi
+[2024-02-13 10:19:58,469] <launcher> INFO  migration - Finished migration step: Disable RADIUS MAC Authentication on UID WiFi
+[2024-02-13 10:19:58,469] <launcher> INFO  migration - Started migration step: Provision Ubios Gateway if there is Device with static IP
+[2024-02-13 10:19:58,470] <launcher> INFO  migration - Finished migration step: Provision Ubios Gateway if there is Device with static IP
+[2024-02-13 10:19:58,470] <launcher> INFO  migration - Started migration step: Rename element wlan name and add non actionable flag in system log
+[2024-02-13 10:19:58,473] <launcher> INFO  migration - Finished migration step: Rename element wlan name and add non actionable flag in system log
+[2024-02-13 10:19:58,473] <launcher> INFO  migration - Started migration step: Provision Ubios Gateway with new Latency monitor config
+[2024-02-13 10:19:58,474] <launcher> INFO  migration - Finished migration step: Provision Ubios Gateway with new Latency monitor config
+[2024-02-13 10:19:58,474] <launcher> INFO  migration - Started migration step: Disable custom AP groups when default is used
+[2024-02-13 10:19:58,479] <launcher> INFO  migration - Finished migration step: Disable custom AP groups when default is used
+[2024-02-13 10:19:58,481] <launcher> INFO  migration - Started migration step: Do not allow to remove UID VPN from NET FE
+[2024-02-13 10:19:58,482] <launcher> INFO  migration - Finished migration step: Do not allow to remove UID VPN from NET FE
+[2024-02-13 10:19:58,482] <launcher> INFO  migration - Started migration step: Remove obsolete UID RADIUS certificates
+[2024-02-13 10:19:58,483] <launcher> INFO  migration - Finished migration step: Remove obsolete UID RADIUS certificates
+[2024-02-13 10:19:58,483] <launcher> INFO  migration - Started migration step: Update IPv6 setting preference
+[2024-02-13 10:19:58,488] <launcher> INFO  migration - Finished migration step: Update IPv6 setting preference
+[2024-02-13 10:19:58,488] <launcher> INFO  migration - Started migration step: Update IPv6 DHCPv6 range
+[2024-02-13 10:19:58,489] <launcher> INFO  migration - Finished migration step: Update IPv6 DHCPv6 range
+[2024-02-13 10:19:58,489] <launcher> INFO  migration - Started migration step: Provision gateway if IPv6 is enabled
+[2024-02-13 10:19:58,491] <launcher> INFO  migration - Finished migration step: Provision gateway if IPv6 is enabled
+[2024-02-13 10:19:58,491] <launcher> INFO  migration - Started migration step: Disable auto speed-test if gateway does not support it
+[2024-02-13 10:19:58,492] <launcher> INFO  migration - Finished migration step: Disable auto speed-test if gateway does not support it
+[2024-02-13 10:19:58,492] <launcher> INFO  migration - Started migration step: Update WAN DNS secondary failover
+[2024-02-13 10:19:58,493] <launcher> INFO  migration - Finished migration step: Update WAN DNS secondary failover
+[2024-02-13 10:19:58,493] <launcher> INFO  migration - Started migration step: Fill default DHCPv6 range
+[2024-02-13 10:19:58,499] <launcher> INFO  migration - Finished migration step: Fill default DHCPv6 range
+[2024-02-13 10:19:58,500] <launcher> INFO  migration - Started migration step: Provision IPv6 config for auto setting preference
+[2024-02-13 10:19:58,501] <launcher> INFO  migration - Finished migration step: Provision IPv6 config for auto setting preference
+[2024-02-13 10:19:58,501] <launcher> INFO  migration - Started migration step: Provision Ubios Gateway for new Udapi Interface format
+[2024-02-13 10:19:58,502] <launcher> INFO  migration - Finished migration step: Provision Ubios Gateway for new Udapi Interface format
+[2024-02-13 10:19:58,502] <launcher> INFO  migration - Started migration step: Move non-switching op-mode from port profile to device port_overrides
+[2024-02-13 10:19:58,503] <launcher> INFO  migration - Finished migration step: Move non-switching op-mode from port profile to device port_overrides
+[2024-02-13 10:19:58,503] <launcher> INFO  migration - Started migration step: Enable Masquerade on UID VPN for backward compatibility
+[2024-02-13 10:19:58,504] <launcher> INFO  migration - Finished migration step: Enable Masquerade on UID VPN for backward compatibility
+[2024-02-13 10:19:58,504] <launcher> INFO  migration - Started migration step: Apply filtering WAN IPs in MASQUERADE rules of iptables
+[2024-02-13 10:19:58,506] <launcher> INFO  migration - Finished migration step: Apply filtering WAN IPs in MASQUERADE rules of iptables
+[2024-02-13 10:19:58,506] <launcher> INFO  migration - Started migration step: Remove all loop detection alerts from DB
+[2024-02-13 10:19:58,508] <launcher> INFO  migration - Finished migration step: Remove all loop detection alerts from DB
+[2024-02-13 10:19:58,508] <launcher> INFO  migration - Started migration step: Separate IPsec VPN IKE/ESP encryption and hash, and populate lifetime
+[2024-02-13 10:19:58,509] <launcher> INFO  migration - Finished migration step: Separate IPsec VPN IKE/ESP encryption and hash, and populate lifetime
+[2024-02-13 10:19:58,509] <launcher> INFO  migration - Started migration step: Introduce "All" AP Group mode
+[2024-02-13 10:19:58,515] <launcher> INFO  migration - Finished migration step: Introduce "All" AP Group mode
+[2024-02-13 10:19:58,515] <launcher> INFO  migration - Started migration step: Check and update DHCPv6 range for auto preference
+[2024-02-13 10:19:58,516] <launcher> INFO  migration - Finished migration step: Check and update DHCPv6 range for auto preference
+[2024-02-13 10:19:58,516] <launcher> INFO  migration - Started migration step: Add missing value for portal_enabled property
+[2024-02-13 10:19:58,520] <launcher> INFO  migration - Finished migration step: Add missing value for portal_enabled property
+[2024-02-13 10:19:58,520] <launcher> INFO  migration - Started migration step: Reset IPv6 configuration if disabled
+[2024-02-13 10:19:58,522] <launcher> INFO  migration - Finished migration step: Reset IPv6 configuration if disabled
+[2024-02-13 10:19:58,522] <launcher> INFO  migration - Started migration step: Set default AP Group mode
+[2024-02-13 10:19:58,525] <launcher> INFO  migration - Finished migration step: Set default AP Group mode
+[2024-02-13 10:19:58,526] <launcher> INFO  migration - Started migration step: Reset WAN IPv6 to default if IPv6 is disabled
+[2024-02-13 10:19:58,528] <launcher> INFO  migration - Finished migration step: Reset WAN IPv6 to default if IPv6 is disabled
+[2024-02-13 10:19:58,529] <launcher> INFO  migration - Started migration step: Remove blocked state from locally administered address
+[2024-02-13 10:19:58,532] <launcher> INFO  migration - Finished migration step: Remove blocked state from locally administered address
+[2024-02-13 10:19:58,532] <launcher> INFO  migration - Started migration step: Provision layer-3 switches if layer-3 routing exists
+[2024-02-13 10:19:58,534] <launcher> INFO  migration - Finished migration step: Provision layer-3 switches if layer-3 routing exists
+[2024-02-13 10:19:58,534] <launcher> INFO  migration - Started migration step: Apply new IpSets to iptables
+[2024-02-13 10:19:58,535] <launcher> INFO  migration - Finished migration step: Apply new IpSets to iptables
+[2024-02-13 10:19:58,535] <launcher> INFO  migration - Started migration step: Fix Firewall rules with inverted protocol TCP_UDP and source port
+[2024-02-13 10:19:58,536] <launcher> INFO  migration - Finished migration step: Fix Firewall rules with inverted protocol TCP_UDP and source port
+[2024-02-13 10:19:58,536] <launcher> INFO  migration - Started migration step: Fix invalid client fixed IPs
+[2024-02-13 10:19:58,540] <launcher> INFO  migration - Finished migration step: Fix invalid client fixed IPs
+[2024-02-13 10:19:58,540] <launcher> INFO  migration - Started migration step: Remove orphaned dpi statistics
+[2024-02-13 10:19:58,545] <launcher> INFO  migration - About to remove 2 `stat_dpi` documents
+[2024-02-13 10:19:58,550] <launcher> INFO  migration - Finished migration step: Remove orphaned dpi statistics
+[2024-02-13 10:19:58,551] <launcher> INFO  migration - Started migration step: Fixup missing Pause state in WiFi
+[2024-02-13 10:19:58,552] <launcher> INFO  migration - Finished migration step: Fixup missing Pause state in WiFi
+[2024-02-13 10:19:58,552] <launcher> INFO  migration - Started migration step: Remove port profile and forward on WAN ports
+[2024-02-13 10:19:58,558] <launcher> INFO  migration - Finished migration step: Remove port profile and forward on WAN ports
+[2024-02-13 10:19:58,558] <launcher> INFO  migration - Started migration step: Provision gateway for duplicated guest rules
+[2024-02-13 10:19:58,559] <launcher> INFO  migration - Finished migration step: Provision gateway for duplicated guest rules
+[2024-02-13 10:19:58,560] <launcher> INFO  migration - Started migration step: Provision Ubios to fix OpenVPN Client DNS leak
+[2024-02-13 10:19:58,561] <launcher> INFO  migration - Finished migration step: Provision Ubios to fix OpenVPN Client DNS leak
+[2024-02-13 10:19:58,561] <launcher> INFO  migration - Started migration step: Migrate invalid default AP groups
+[2024-02-13 10:19:58,565] <launcher> INFO  migration - Finished migration step: Migrate invalid default AP groups
+[2024-02-13 10:19:58,565] <launcher> INFO  migration - Started migration step: Provision Ubios Gateway to set missing OpenVPN Server DNS in Auto mode
+[2024-02-13 10:19:58,566] <launcher> INFO  migration - Finished migration step: Provision Ubios Gateway to set missing OpenVPN Server DNS in Auto mode
+[2024-02-13 10:19:58,566] <launcher> INFO  migration - Started migration step: Re-provision Gateway to add new Talk ip/port ranges for FW rules
+[2024-02-13 10:19:58,566] <launcher> INFO  migration - Finished migration step: Re-provision Gateway to add new Talk ip/port ranges for FW rules
+[2024-02-13 10:19:58,567] <launcher> INFO  migration - Started migration step: Remove Global AP Setting
+[2024-02-13 10:19:58,570] <launcher> INFO  migration - Finished migration step: Remove Global AP Setting
+[2024-02-13 10:19:58,571] <launcher> INFO  migration - Started migration step: Find and remove invalid channels in radio table of devices
+[2024-02-13 10:19:58,574] <launcher> INFO  migration - Finished migration step: Find and remove invalid channels in radio table of devices
+[2024-02-13 10:19:58,575] <launcher> INFO  migration - Started migration step: Recover from wrongly-allowed VLAN management options in mini switches
+[2024-02-13 10:19:58,577] <launcher> INFO  migration - Finished migration step: Recover from wrongly-allowed VLAN management options in mini switches
+[2024-02-13 10:19:58,577] <launcher> INFO  migration - Started migration step: Add new tagged_vlan_mgmt option to port configurations
+[2024-02-13 10:19:58,579] <launcher> INFO  migration - Finished migration step: Add new tagged_vlan_mgmt option to port configurations
+[2024-02-13 10:19:58,579] <launcher> INFO  migration - Started migration step: Remove unusable WANs
+[2024-02-13 10:19:58,580] <launcher> INFO  migration - Finished migration step: Remove unusable WANs
+[2024-02-13 10:19:58,580] <launcher> INFO  migration - Started migration step: Add ipv6_wan_delegation_type on each WAN network configuration
+[2024-02-13 10:19:58,599] <launcher> INFO  migration - Finished migration step: Add ipv6_wan_delegation_type on each WAN network configuration
+[2024-02-13 10:19:58,599] <launcher> INFO  migration - Started migration step: Provision IPv6 loopback address
+[2024-02-13 10:19:58,602] <launcher> INFO  migration - Finished migration step: Provision IPv6 loopback address
+[2024-02-13 10:19:58,608] <launcher> INFO  migration - Started migration step: Add enabled Ips networks and provision gateway
+[2024-02-13 10:19:58,620] <launcher> INFO  migration - Finished migration step: Add enabled Ips networks and provision gateway
+[2024-02-13 10:19:58,620] <launcher> INFO  migration - Started migration step: Remove PPTP Server if gateway not supported
+[2024-02-13 10:19:58,621] <launcher> INFO  migration - Finished migration step: Remove PPTP Server if gateway not supported
+[2024-02-13 10:19:58,621] <launcher> INFO  migration - Started migration step: Remove Auto IPSec site-to-site if gateway not supported
+[2024-02-13 10:19:58,622] <launcher> INFO  migration - Finished migration step: Remove Auto IPSec site-to-site if gateway not supported
+[2024-02-13 10:19:58,622] <launcher> INFO  migration - Started migration step: Re-provision non-gateway L3 switches to clean up irrelevant routing interface configurations
+[2024-02-13 10:19:58,624] <launcher> INFO  migration - Finished migration step: Re-provision non-gateway L3 switches to clean up irrelevant routing interface configurations
+[2024-02-13 10:19:58,624] <launcher> INFO  migration - Started migration step: Disable L3 routes created beyond switch max static routes capability and provision if there is any
+[2024-02-13 10:19:58,627] <launcher> INFO  migration - Finished migration step: Disable L3 routes created beyond switch max static routes capability and provision if there is any
+[2024-02-13 10:19:58,627] <launcher> INFO  migration - Started migration step: Provision Ubios gateway if there were invalid DHCP options
+[2024-02-13 10:19:58,629] <launcher> INFO  migration - Finished migration step: Provision Ubios gateway if there were invalid DHCP options
+[2024-02-13 10:19:58,629] <launcher> INFO  migration - Started migration step: Unset UniFi Core device info with removed state
+[2024-02-13 10:19:58,631] <launcher> INFO  migration - 0 clients with UniFi Core device info and removed state
+[2024-02-13 10:19:58,631] <launcher> INFO  migration - Finished migration step: Unset UniFi Core device info with removed state
+[2024-02-13 10:19:58,631] <launcher> INFO  migration - Started migration step: Remove non local networks from IPS
+[2024-02-13 10:19:58,634] <launcher> INFO  migration - Finished migration step: Remove non local networks from IPS
+[2024-02-13 10:19:58,634] <launcher> INFO  migration - Started migration step: Unset unsupported DDNS service
+[2024-02-13 10:19:58,635] <launcher> INFO  migration - Finished migration step: Unset unsupported DDNS service
+[2024-02-13 10:19:58,635] <launcher> INFO  migration - Started migration step: Copy Broadcasting APs in Devices mode
+[2024-02-13 10:19:58,638] <launcher> INFO  migration - Finished migration step: Copy Broadcasting APs in Devices mode
+[2024-02-13 10:19:58,638] <launcher> INFO  migration - Started migration step: Migrate firewall rule indexes to five digit index space for ubios devices
+[2024-02-13 10:19:58,639] <launcher> INFO  migration - Finished migration step: Migrate firewall rule indexes to five digit index space for ubios devices
+[2024-02-13 10:19:58,639] <launcher> INFO  migration - Started migration step: Provision gateway which supports Udapi bridge firewall
+[2024-02-13 10:19:58,640] <launcher> INFO  migration - Finished migration step: Provision gateway which supports Udapi bridge firewall
+[2024-02-13 10:19:58,640] <launcher> INFO  migration - Started migration step: Populate Ether-Lighting config and re-provision USW-Pro-Max
+[2024-02-13 10:19:58,643] <launcher> INFO  migration - Finished migration step: Populate Ether-Lighting config and re-provision USW-Pro-Max
+[2024-02-13 10:19:58,643] <launcher> INFO  migration - Started migration step: Update default brightness to 100
+[2024-02-13 10:19:58,645] <launcher> INFO  migration - Finished migration step: Update default brightness to 100
+[2024-02-13 10:19:58,645] <launcher> INFO  migration - Started migration step: Add default PPPoE credential flags if needed
+[2024-02-13 10:19:58,647] <launcher> INFO  migration - Finished migration step: Add default PPPoE credential flags if needed
+[2024-02-13 10:19:58,647] <launcher> INFO  migration - Started migration step: Move EtherLighting config from device-level to site-level
+[2024-02-13 10:19:58,651] <launcher> INFO  migration - Finished migration step: Move EtherLighting config from device-level to site-level
+[2024-02-13 10:19:58,651] <launcher> INFO  migration - *** Migrating system
+[2024-02-13 10:19:58,656] <launcher> INFO  migration - Started migration step: Enable Cloud Email for email notifications
+[2024-02-13 10:19:58,660] <launcher> INFO  migration - Finished migration step: Enable Cloud Email for email notifications
+[2024-02-13 10:19:58,681] <launcher> INFO  migration - Started migration step: Reset Device Connection setting key
+[2024-02-13 10:19:58,683] <launcher> INFO  migration - Finished migration step: Reset Device Connection setting key
+[2024-02-13 10:19:58,683] <launcher> INFO  migration - Started migration step: Update data retention based on new limits
+[2024-02-13 10:19:58,684] <launcher> INFO  migration - Finished migration step: Update data retention based on new limits
+[2024-02-13 10:19:58,686] <launcher> INFO  migration - Started migration step: Add Statistics History setting preference
+[2024-02-13 10:19:58,690] <launcher> INFO  migration - Finished migration step: Add Statistics History setting preference
+[2024-02-13 10:19:58,691] <launcher> INFO  migration - Started migration step: Initialise empty regions in Traffic Rules
+[2024-02-13 10:19:58,694] <launcher> INFO  migration - Finished migration step: Initialise empty regions in Traffic Rules
+[2024-02-13 10:19:58,695] <launcher> INFO  migration - Started migration step: Fix missing autobackup task schedule
+[2024-02-13 10:19:58,698] <launcher> INFO  migration - Finished migration step: Fix missing autobackup task schedule
+[2024-02-13 10:19:58,699] <launcher> INFO  migration - Started migration step: Update Notification index
+[2024-02-13 10:19:58,700] <launcher> INFO  migration - Finished migration step: Update Notification index
+[2024-02-13 10:19:58,700] <launcher> INFO  migration - Started migration step: Remove all objects related to streaming
+[2024-02-13 10:19:58,712] <launcher> INFO  migration - Finished migration step: Remove all objects related to streaming
+[2024-02-13 10:19:58,712] <launcher> INFO  migration - Started migration step: Migrate notifications settings to be configurable per admin
+[2024-02-13 10:19:58,715] <launcher> WARN  migration - Cannot find global notification settings
+[2024-02-13 10:19:58,715] <launcher> INFO  migration - Finished migration step: Migrate notifications settings to be configurable per admin
+[2024-02-13 10:19:58,715] <launcher> INFO  migration - Started migration step: Remove DFS blacklisted channel plans
+[2024-02-13 10:19:58,717] <launcher> INFO  migration - Finished migration step: Remove DFS blacklisted channel plans
+[2024-02-13 10:19:58,717] <launcher> INFO  migration - Started migration step: Update statistic retention settings
+[2024-02-13 10:19:58,720] <launcher> INFO  migration - Finished migration step: Update statistic retention settings
+[2024-02-13 10:19:58,721] <launcher> INFO  migration - Started migration step: Ensure Data Retention Auto settings
+[2024-02-13 10:19:58,723] <launcher> INFO  migration - Finished migration step: Ensure Data Retention Auto settings
+[2024-02-13 10:19:58,723] <launcher> INFO  migration - Started migration step: Remove Nightly Channel Optimisation scheduled tasks
+[2024-02-13 10:19:58,725] <launcher> INFO  migration - Finished migration step: Remove Nightly Channel Optimisation scheduled tasks
+[2024-02-13 10:19:58,726] <launcher> INFO  migration - Started migration step: Remove obsolete `wlan_overrides` from devices
+[2024-02-13 10:19:58,728] <launcher> INFO  migration - Finished migration step: Remove obsolete `wlan_overrides` from devices
+[2024-02-13 10:19:58,728] <launcher> INFO  migration - Started migration step: Remove firewall udm Ip v6 offset db feature
+[2024-02-13 10:19:58,731] <launcher> INFO  migration - Finished migration step: Remove firewall udm Ip v6 offset db feature
+[2024-02-13 10:19:58,854] <launcher> INFO  migration - DB migration to version (8.0.24) is complete.
+[2024-02-13 10:19:58,856] <launcher> INFO  migration - DB migration finished
